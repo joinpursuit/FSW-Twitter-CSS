@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dougwitter. It's what's happening.</title>
+        <link href="./index.css" rel="stylesheet">
+        <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+    </head>
+    <body>
+        <div id="white-side">
+            <div id="login-bar">
+                <div id="login-container">
+                    <form id="login-form">
+                        <input id="email" placeholder="Phone, email, or username">
+                        <div id="password-holder">
+                            <input id="password" placeholder="Password">
+                            <a id="forgot" href="https://twitter.com/account/begin_password_reset">Forgot password?
+                            </a>
+                        </div>
+                    </form>
+                    <button class="button" id="login-button" value="Log In">Log In</button>
+                </div>
+            </div>
+            <div id="signup-block">
+                <img id="small-bird-logo" src="./birdbackground.png" alt="twitter logo small">
+                <h1 id="signup-header">See what’s happening in the world right now</h1>
+                <div id="signup-buttons">
+                    <h2 id="signup-header-small">Join Twitter today.</h2>
+                    <div id="signup-button-container">
+                            <button class="button" id="signup" onclick="window.location.href = 'https://twitter.com/signup';">Sign up</button>
+                            <button class="button" id="login" onclick="window.location.href = 'https://twitter.com/login';">Log in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
