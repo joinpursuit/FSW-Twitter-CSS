@@ -1,0 +1,209 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    font-family: Arial;
+}
+#main {
+    flex-grow: 1;
+    background-image: url("Pics/birdbackground.png");
+    background-size: cover; 
+    background-color: rgb(41, 167, 245);
+    height: 95%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+#footer {
+    height: 5%;
+    color: gray;
+}
+#blue {
+    float: left;
+    width: 50%; 
+    position: relative;
+}
+#white {
+    background-color: white;
+    width: 50%;
+    position: relative;
+}
+#blue-list {
+    width: 80%;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#blue-list ul {
+    padding-left: 5px;
+}
+#blue-list li {
+    list-style-position: initial;
+    padding: 0;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    font-size: large;
+}
+#blue-list li:hover {
+    cursor: context-menu;
+}
+i {
+    width: 25px;
+    padding-left: 0;
+}
+#login {
+    height: 10%;
+    padding-top: 5px;
+    width: 100%;
+    overflow: auto;
+}
+form {
+    height: 100%;
+    padding: 0 20px 0 20px;
+    display: grid;
+    grid-template-columns: 4fr 4fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+form input{
+    border: solid lightgray 1px;
+    margin: 5px 2px 0px 2px;
+}
+#submit {
+    border:rgb(41, 167, 245) 2px solid;
+    border-radius: 30px;
+    width: auto;
+    background-color: white;
+    color:rgb(41, 167, 245);
+    font-weight: bolder;
+}
+form div {
+    grid-row: 2;
+    grid-column: 2;
+    color:gray;
+    font-size: x-small;
+    padding-left: 5px;
+}
+form div:hover {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#white-middle {
+    width: 60%;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#welcome-text {
+    padding: 0 2px 20px 2px;
+    font-weight: bolder;
+    font-size: larger;
+}
+#sign-up {
+    padding: 10px 2px 0 2px;
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+}
+#sign-up p {
+    text-align: left;
+}
+#sign-up input {
+    border: rgb(41, 167, 245) 2px solid;
+    border-radius: 30px;
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-weight: bold;
+}
+#sign-up-button {
+    background-color: rgb(41, 167, 245);
+    color: white; 
+}
+#sign-up-button:hover {
+    background-color: rgb(9, 130, 206);
+    border-color: rgb(9, 130, 206);
+    cursor: pointer;
+}
+#log-in-button {
+    color: rgb(41, 167, 245);
+}
+#log-in-button:hover, #submit:hover {
+    background-color: rgb(205, 232, 248);
+    cursor: pointer;
+}
+ul {
+    list-style-type: none;
+}
+#footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: x-small;
+}
+#footer li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+#footer #copyright:hover {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 685px) {
+    form {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    html, body {
+        overflow: scroll;
+        flex-grow: 1;
+    }
+    #main {
+        flex-direction: column;
+    }
+    #footer {
+        flex-grow: 1;
+    }
+    #blue {
+        float: inherit;
+        width: 100%; 
+        position: relative;
+    }
+    #white {
+        width: 100%;
+        position: relative;
+    }
+    #login {
+        height: auto;
+    }
+    #white-middle {
+        width: 80%;  
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: auto;
+    }
+    #blue-list {
+        width: 80%;  
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: auto;
+    }
+}
