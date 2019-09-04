@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Quicksand&display=swap');
 * {
 /*     border: 1px solid black; */
 }
 #root {
     font-size: 14px;
-    height: 100%;
+/*     height: 600px; */
     font-family: 'Lexend Deca', sans-serif;
 }
 #white {
@@ -52,9 +52,6 @@
 #blue {
     height: 600px;
 }
-#footer {
-    height: 180px;
-}
 #LogIn-form {
     font-size: 1.25em;
 /*     background: red; */
@@ -82,7 +79,7 @@
     background: white;
 }
 
-/* Blue Part */
+/* BLUE PART */
 
 #blue {
     background: url('images/birdbackground.png');
@@ -92,4 +89,67 @@
 /*     #1b95e0 */
     background-color: #1da1f2;
     color: white;
+    height: 412px;
+    display: flex;
+    justify-content: center;
 }
+#content-container {
+    padding: 30px 20px;
+    width: 405px;
+}
+#content-container > h1 {
+    padding-bottom: 20px;
+}
+#content-container > h2 {
+    font-size: 1.28em;
+    padding-bottom: 35px;
+}
+.item {
+    padding: 18px 0;
+}
+.icon {
+    padding-right: 10px;
+    width: 50px;
+}
+i {
+    font-size: 2.4em;
+}
+.item-text {
+    display: inline-block;
+}
+.item-title {
+    display: inline-block;
+    font-size: 1.25em;
+}
+.item-description {
+/*     display: inline-block; */
+    padding: 5px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* FOOTER */
+#footer-container {
+    height: 88px;
+}
+#footer-list {
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: #adbac4;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .84em;
+}
+li {
+    padding: 0 10px;
+}
+#copyright {
+    color: #adbac4;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .84em;
+}
+
