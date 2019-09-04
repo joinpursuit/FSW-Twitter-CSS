@@ -1,13 +1,15 @@
 html, body {
-    height: 100%;
     width: 100%;
+    height: 100%;
     margin: 0;
     display: flex;
     flex-flow: column;
     font-family: Arial;
 }
+img {
+    width: 80px;
+}
 #main {
-    flex-grow: 1;
     background-image: url("Pics/birdbackground.png");
     background-size: cover; 
     background-color: rgb(41, 167, 245);
@@ -16,40 +18,40 @@ html, body {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    overflow: scroll;
 }
 #footer {
     height: 5%;
     color: gray;
 }
 #blue {
-    float: left;
-    width: 50%; 
-    position: relative;
+    width: 50%;
 }
 #white {
     background-color: white;
     width: 50%;
-    position: relative;
 }
 #blue-list {
     width: 80%;  
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: 30%;
+    bottom: 30%;
+    right:10%;
+    left: 10%;
 }
 #blue-list ul {
-    padding-left: 5px;
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
 }
 #blue-list li {
-    list-style-position: initial;
-    padding: 0;
     color: white;
     padding-top: 1%;
     padding-bottom: 1%;
     margin-top: 7%;
     margin-bottom: 7%;
-    font-size: large;
+    font-size: 18px;
+    font-weight: bold;
 }
 #blue-list li:hover {
     cursor: context-menu;
@@ -59,29 +61,31 @@ i {
     padding-left: 0;
 }
 #login {
-    height: 10%;
     padding-top: 5px;
     width: 100%;
-    overflow: auto;
 }
 form {
-    height: 100%;
+    margin: 0;
     padding: 0 20px 0 20px;
     display: grid;
     grid-template-columns: 4fr 4fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 7fr 2fr;
 }
 form input{
     border: solid lightgray 1px;
     margin: 5px 2px 0px 2px;
 }
+input::placeholder {
+    font-size: smaller;
+}
 #submit {
     border:rgb(41, 167, 245) 2px solid;
     border-radius: 30px;
-    width: auto;
     background-color: white;
     color:rgb(41, 167, 245);
     font-weight: bolder;
+    text-align: center;
+    padding: 0 5px;
 }
 form div {
     grid-row: 2;
@@ -96,16 +100,17 @@ form div:hover {
     cursor: pointer;
 }
 #white-middle {
-    width: 60%;  
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 70%;  
+    position: relative;
+    top: 20%;
+    bottom: 30%;
+    right:15%;
+    left: 15%;
 }
 #welcome-text {
     padding: 0 2px 20px 2px;
-    font-weight: bolder;
-    font-size: larger;
+    font-size: 27px;
+    font-weight: bold;
 }
 #sign-up {
     padding: 10px 2px 0 2px;
@@ -115,6 +120,7 @@ form div:hover {
 }
 #sign-up p {
     text-align: left;
+    font-size: 18px;
 }
 #sign-up input {
     border: rgb(41, 167, 245) 2px solid;
@@ -137,6 +143,7 @@ form div:hover {
 }
 #log-in-button {
     color: rgb(41, 167, 245);
+    margin-bottom: 15px;
 }
 #log-in-button:hover, #submit:hover {
     background-color: rgb(205, 232, 248);
@@ -151,6 +158,9 @@ ul {
     justify-content: space-evenly;
     font-size: x-small;
 }
+#footer li {
+    padding: 2px
+}
 #footer li:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -161,49 +171,49 @@ ul {
 }
 
 
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 855px) {
     form {
         padding: 0;
     }
 }
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #submit {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    #white-middle {
+        top: 10%;
+    }
+}
+@media screen and (max-width: 600px) {
+    
     html, body {
+        height: fit-content;
         overflow: scroll;
-        flex-grow: 1;
     }
     #main {
         flex-direction: column;
     }
     #footer {
-        flex-grow: 1;
+        overflow: scroll;
     }
     #blue {
-        float: inherit;
-        width: 100%; 
-        position: relative;
+        width: 100%;
     }
     #white {
         width: 100%;
-        position: relative;
     }
-    #login {
-        height: auto;
+    form {
+        padding: 0 1%;
+        grid-template-columns: 4fr 4fr 1fr;
+        grid-template-rows: 7fr 2fr;
     }
-    #white-middle {
-        width: 80%;  
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
-        margin: auto;
-    }
-    #blue-list {
-        width: 80%;  
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
-        margin: auto;
+    #submit {
+        grid-row: 1;
+        grid-column: 3;
     }
 }
