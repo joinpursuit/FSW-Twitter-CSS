@@ -2,38 +2,77 @@
 <html>
 
 <head>
-    <title>My Twitter Login Clone</title>
+    <title>Twitter. It's what's happening.</title>
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./twitter_clone.css">
-    <link rel="stylesheet" href="./search-solid.svg">
+    <script src="https://kit.fontawesome.com/0652f5a7ea.js"></script>
+    <link href="./favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 
 <body>
     <div class="container">
         <div id="blue_section">
-            <!-- <div id="blue-section-heading-div">
-                You’re one step away from the shiny new Twitter.com
-            </div> -->
-            <div class="blue-section-icon-item">Follow your interest</div>
-            <div class="blue-section-icon-item">Hear what people are talking about</div>
-            <div class="blue-section-icon-item" 5>Join the conversation</div>
+            <div id="blue-section-container" class="blue-grid">
+                <div id="blue-section-heading-container">
+                    <div class="top-heading-text">You’re one step away from the shiny new Twitter.com</div>
+                    <div class="heading-text">We’ve added tons of cool features, including …</div>
+                </div>
+                <div id="blue-section-body-container" class="blue-grid">
+                    <div class="blue-section-icon-item">
+                        <i class="icon fas fa-hashtag"></i>
+                        <div class="heading-text"> Explore</div>
+                        <div class="text">Get the latest Tweets, news, and videos in one place.</div>
+                    </div>
+
+                    <div class="blue-section-icon-item">
+                        <i class="icon far fa-bookmark"></i>
+                        <div class="heading-text"> Bookmarks</div>
+                        <div class="text">Save that interesting Tweet for later.</div>
+                    </div>
+
+                    <div class="blue-section-icon-item">
+                        <i class="icon fas fa-brush"></i>
+                        <div class="heading-text"> Personalize</div>
+                        <div class="text">Choose from new themes and more dark mode options.</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="white_section">
-            <div id="tester">
+
+            <div id="wite-section-forms">
                 <form class="white-section-form">
-                    <div id="first-form-div">
-                        <input id="username" type="text" placeholder="Phone, Email or Username">
-                        <input id="Password" type="text" placeholder="Password">
-                        <button id="login-button">Log In</button>
+                    <div id="first-form-div" class="white-section-mainText">
+                        <input class="input-box" id="username" type="text" placeholder="Phone, Email or Username">
+                        <input class="input-box" id="Password" type="text" placeholder="Password">
+                        <button class="shared-features" id="login-button">Log In</button>
                     </div>
                 </form>
             </div>
 
-            <div id="white-space-mainText">
-                <h1>See what's happening in the world right now</h1>
+            <div class="white-section-mainText">
+                <div id="white-section-grid-gap">
+                    <div id="white-section-top-heading " class="top-heading-text">
+                        <img src="./images/birdlogo.png" alt="twitter logo">
+                        <br>
+                        See what's happening in the world right now
+                    </div>
+
+                    <div class="heading-text"><b>Join Twitter today.</b></div>
+                </div>
                 <form class="white-section-form">
-                    <button class="white-button" id="white-section-signUp">Sign Up</button>
-                    <button class="white-button" id="white-section-logIn">Log in</button>
+
+                    <br>
+                    <div>
+                        <input type="button" class="white-button shared-features" id="white-section-signUp"
+                            value="Sign Up"></input>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="button" class="white-button shared-features" id="white-section-logIn"
+                            value="Log In"></input>
+                    </div>
                 </form>
             </div>
 

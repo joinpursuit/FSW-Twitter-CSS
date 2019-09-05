@@ -1,65 +1,187 @@
+body {
+    margin: 0;
+
+}
+
 .container {
     display: grid;
-    grid-template-columns: 700px 700px;
+    /* grid-template-columns: 700px 700px; */
+    grid-template-columns: repeat(auto-fit, minmax(50%, 50%));
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url("./images/birdbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1da1f2;
+    width: 100%;
+    position: fixed;
+    opacity: .95
 }
 
-
+/* CSS for the white section of the page */
 #white_section {
-    height: 500px;
+    background-color: white;
+    height: 94vh;
+    width: 100%;
     display: grid;
-    grid-template-columns: 300px;
+    grid-template-columns: 400px;
+    grid-template-rows: 200px;
     justify-content: center;
+    border-bottom: 1px solid lightgray;
+    grid-gap: 30px;
 }
 
-#first-form-div {
-    width: 500px
+#wite-section-forms {
+    margin: 20px;
+    height: 20px;
 }
 
-#white-space-mainText {
-    width: 400px
+#white-section-grid-gap {
+    display: grid;
+    grid-gap: 50px;
+}
+
+/* .heading-text {
+    font-weight: bold;
+} */
+
+img {
+    height: 65px;
+    width: 100px;
+}
+
+/* Class that is applied to all the input boxes in the white section */
+.input-box {
+    height: 35px;
+    font-size: 10px;
+}
+
+.white-section-mainText {
+    width: 400px;
+    align-content: center;
 }
 
 .white-button {
-    font-size: 14px;
-    width: 400px;
-    height: 35px;
-    border: 1px solid lightblue;
-    border-radius: 100px;
-}
+    width: 70%;
 
-
-#blue_section {
-    background-color: #1da1f2;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    /* grid-gap: 5px;
-    grid-template-columns: 200px; */
-    align-items: center;
-    justify-content: center;
-    /* justify-content: space-evenly; */
-}
-
-#footer #footer-list {
-    list-style-type: none;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    width: 1400px;
-}
-
-
-.footer-item:hover {
-    text-decoration: underline;
-}
-
-#login-button:hover {
-    background-color: #e6ecf0;
 }
 
 #login-button {
+    width: auto;
+}
+
+#white-section-signUp {
+    color: white;
+    background-color: #1da1f2;
+}
+
+/* CSS for the blue section of the page */
+#blue_section {
+    width: 94vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#blue-section-container {
+    /* display: grid;
+    grid-auto-columns: 400px;
+    grid-template-rows: 20px; */
+    grid-gap: 120px;
+    font-weight: bold;
+
+}
+
+#blue-section-heading-container {
+    display: grid;
+    grid-gap: 15px;
+}
+
+.top-heading-text {
+    width: 400px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.heading-text {
+    font-size: 18px;
+}
+
+#blue-section-body-container {
+    /* display: grid;
+    grid-auto-columns: 400px;
+    grid-template-rows: 20px; */
+    grid-gap: 55px;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: lighter
+}
+
+.icon {
+    position: absolute;
+    left: 110px;
+    font-size: 30px;
+}
+
+.fa-hashtag {
+    bottom: 421px;
+}
+
+.fa-bookmark {
+    bottom: 340px;
+}
+
+.fa-brush {
+    bottom: 245px;
+}
+
+.blue-grid {
+    display: grid;
+    grid-auto-columns: 410px;
+    grid-template-rows: 20px;
+}
+
+/* features shared between the different buttons */
+.shared-features {
+    background-color: white;
     border: 1px solid lightblue;
     border-radius: 100px;
-    font-size: 19px;
+    font-size: 14px;
+    color: #1da1f2;
+    height: 40px;
+    align-items: center;
+}
+
+.shared-features:hover {
+    background-color: #e6ecf0;
+}
+
+/* The css for the footer section of the page */
+#footer {
     background-color: white;
+    height: 6vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+#footer-list {
+    font-size: 12px;
+    list-style-type: none;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    color: lightgrey;
+    width: 1350px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.footer-item:hover {
+    text-decoration: underline;
 }
