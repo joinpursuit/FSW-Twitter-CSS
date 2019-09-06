@@ -14,11 +14,21 @@
 <body>
     <div id="root">
         <div id="white">
+                <div id="login-form">
+                        <input type="text" name="username" id="username" placeholder="Phone, email, or username">
+                        <div>
+                                <input type="text" name="password" id="password" placeholder="Password">
+                                <span id="forgot-password"><a href="#">Forgot Password?</a></span>
+                        </div>
+                        <input type="button" value="Log in" class="logIn-small">
+                        
+                </div>
             <div id="login-container">
                 <div id="header">
+                    
                     <span id="bird-logo"></span>
                     <!-- <img src="/images/birdlogo.png" alt="Twitter bird" id="logo-bird"> -->
-                    <button id="logIn-small" class="btn-login">Log In</button>
+                    <input type="button" class="btn-login logIn-small" value="Log In" id="login-hide">
                 </div>
                 <h1 class="header-large">See what's happening in the world right now</h1>
                 <form action="#" id="LogIn-form">
