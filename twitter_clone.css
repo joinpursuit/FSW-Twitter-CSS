@@ -6,14 +6,14 @@ body {
 .container {
     display: grid;
     /* grid-template-columns: 700px 700px; */
-    grid-template-columns: repeat(auto-fit, minmax(50%, 50%));
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-image: url("./images/birdbackground.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #1da1f2;
     width: 100%;
-    position: fixed;
+    position: absolute;
     opacity: .95
 }
 
@@ -21,7 +21,7 @@ body {
 #white_section {
     background-color: white;
     height: 94vh;
-    width: 100%;
+    width: auto;
     display: grid;
     grid-template-columns: 400px;
     grid-template-rows: 200px;
@@ -33,26 +33,29 @@ body {
 #wite-section-forms {
     margin: 20px;
     height: 20px;
+    position: relative;
 }
 
 #white-section-grid-gap {
     display: grid;
     grid-gap: 50px;
+    justify-content: center;
+    position: relative;
 }
 
-/* .heading-text {
-    font-weight: bold;
-} */
-
 img {
-    height: 65px;
+    position: relative;
+    right: 28px;
+    size: 30px;
+    height: 68px;
     width: 100px;
 }
 
 /* Class that is applied to all the input boxes in the white section */
 .input-box {
-    height: 35px;
-    font-size: 10px;
+    height: 40px;
+    width: 150px;
+    font-size: 12px;
 }
 
 .white-section-mainText {
@@ -76,7 +79,7 @@ img {
 
 /* CSS for the blue section of the page */
 #blue_section {
-    width: 94vh;
+    width: auto;
     color: white;
     display: flex;
     flex-direction: column;
@@ -90,6 +93,7 @@ img {
     grid-template-rows: 20px; */
     grid-gap: 120px;
     font-weight: bold;
+    position: relative;
 
 }
 
@@ -123,20 +127,21 @@ img {
 
 .icon {
     position: absolute;
-    left: 110px;
+    /* left: -20px; */
+    right: 430px;
     font-size: 30px;
 }
 
 .fa-hashtag {
-    bottom: 421px;
+    top: 141px;
 }
 
 .fa-bookmark {
-    bottom: 340px;
+    top: 220px;
 }
 
 .fa-brush {
-    bottom: 245px;
+    top: 320px;
 }
 
 .blue-grid {
@@ -162,11 +167,13 @@ img {
 
 /* The css for the footer section of the page */
 #footer {
+    display: flex;
     background-color: white;
-    height: 6vh;
+    height: 4vh;
     margin: 0;
     padding: 0;
     width: 100vw;
+    justify-content: center;
 }
 
 #footer-list {
@@ -174,9 +181,9 @@ img {
     list-style-type: none;
     background-color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     color: lightgrey;
-    width: 1350px;
+    width: 80%;
     position: relative;
     top: 15px;
     left: 15px;
