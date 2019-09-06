@@ -1,0 +1,148 @@
+body {
+    font-family: sans-serif
+
+}
+
+.landing-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 95% 5%;
+    min-height: 100vh;
+}
+.left-half {
+   background-color: #1da1f2;
+   color: white;
+   padding: 5px;
+   justify-content: center;
+   align-items: baseline;
+}
+.bird-background-image{
+    opacity: 0.5;
+    position: relative;
+    z-index: 3;
+}
+
+.tagline-list {
+    position: relative;
+
+}
+.right-half {
+background-color: white;
+padding: 5px;
+justify-content: right;
+}
+
+#features {
+    text-align: center;
+    list-style-type: none;
+
+}
+
+.login-form {
+    text-align: center;
+}
+
+.login-form p {
+    font-size: 15px;
+    color: lightgray;
+    margin-left: 4em;
+}
+
+#identifier {
+    height: 30px;
+    width: 200px;
+    border-style: inset;
+    font-size: small;
+}
+
+#password {
+    height: 30px;
+    width: 200px;
+    border-style: inset;
+    font-size: small;
+}
+.login-form button {
+    color:  #1da1f2;
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 10px 12px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+.logo {
+    height:150px;
+}
+.logo img {
+    height: 100px;
+    width: 200px;
+    align-content: center;
+    margin-top: 5em;
+    margin-left: 2em;
+}
+
+.main-heading h1 {
+    margin-inline-start: 6em;
+    margin-inline-end: 3em;
+}
+
+.jointwitter {
+    text-align: center;
+}
+
+#signup {
+    
+    background-color: #1da1f2;
+    color: white;
+    border-radius: 200px;
+    width: 300px;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+   
+}
+#log-in {
+    background-color:white;
+    color: #1da1f2;
+    border-radius: 100px;
+    width: 300px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+
+}
+.joinheader {
+    margin-right: 7em;
+    margin-top: 50px;
+}
+
+.footer-list {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border-top: lightgray;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.footer-list li {
+    color: gray;
+    margin: 0 5px;
+    font-size: small
+}
