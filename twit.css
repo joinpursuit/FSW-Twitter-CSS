@@ -1,8 +1,9 @@
 body {
     background-color:#e6ecf0;
-    ;
+    
     margin: 0;
     padding: 0;
+   color:#14171a;
 
 
 }
@@ -43,6 +44,7 @@ body {
     margin: 10px;
     width: 700px;
     height: 100vh;
+  
 }
 
 .login {
@@ -62,17 +64,64 @@ body {
     background-color: deepskyblue;
     color: white;
 }
-
+/* 
 .button {
-    border-radius: 100px;
-    width: auto; 
-    border-color: deepskyblue; 
-    color: deepskyblue;
-}
+    
+  
+    /* /* /* position: relative;
+    text-align: center;
+    white-space: nowrap; */
+    display:block;
+    /* background-color: white; */ */
+    color: deepskyblue;  */
+   
+
+/* } */
+
 .unordered {
-   list-style-type: none; 
+   list-style-type: none;
+   font-size: 20px; 
 }
 
 .ul-list {
     list-style-type: none;
 }
+
+.ul-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.blue-button {
+        border: 1px solid deepskyblue;
+        border-radius: 100px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        padding: 6px 16px;
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+        display: block;
+        margin: 16px;
+        background-color: deepskyblue;
+}
+
+ .white-button {
+        border: 1px solid deepskyblue;
+        border-radius: 100px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 20px;
+        padding:  16px;
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+        display:block;
+        background-color: white;
+        color: deepskyblue;
+     } 
+ 
