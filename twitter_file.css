@@ -14,7 +14,7 @@ body {
   top: 0;
 }
 
-#bottom {
+.bottom {
   background-color: white;
   cursor: pointer;
   grid-row: 2;
@@ -44,13 +44,12 @@ body {
 .bottom_hover:hover {
   background-color: lightblue;
 }
-#left_side {
-  background-image: url("https://upload.wikimedia.org/wikipedia/fr/c/c8/Twitter_Bird.svg");
+.left_side {
+  background-image: url("./images/birdbackground.png");
   background-repeat: no-repeat;
-  background-size: 200% 300%;
+  background-size: 190%;
   /* background-position: center; */
   background-position: left;
-
 
   color: white;
 
@@ -63,17 +62,17 @@ body {
   justify-content: center;
   align-items: center;
 }
-#right_side {
+.right_side {
   background-color: white;
 }
-#see_what {
+.see_what {
   font-size: 24px;
   line-height: 28px;
   display: flex;
   flex-wrap: wrap;
 }
 
-#join_twitter {
+.join_twitter {
   font-size: 18px;
   line-height: 72px;
 }
@@ -110,23 +109,23 @@ body {
   padding: 12px;
   color: #1da1f2;
 }
-#email {
+.email {
   padding: 12px;
   width: 140px;
 }
 
-#password {
+.password {
   padding: 12px;
     width: 140px;
 }
 
-#top_enter {
+.top_enter {
   padding: 20px;
   position: relative;
   right: -25%;
   left: 20%;
 }
-#forgot_password {
+.forgot_password {
   position: relative;
   top: -32px;
   left: 305px;
@@ -134,15 +133,17 @@ body {
   font-size: 14px;
 }
 
-#bird_loginbelow {
+.bird_loginbelow {
 
 
 position: absolute;
 left: 59%;
-top: 72%;
+top: 49%;
 right: 19%;
 }
 
-#bird{
-height: 18px;
+.bird{
+  height: 66px;
+  position: relative;
+  left: -15%;
 }
