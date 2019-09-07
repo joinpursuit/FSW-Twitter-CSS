@@ -2,13 +2,13 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-image: url(./images/birdbackground.png);
     background-size: auto;
     background-repeat: no-repeat;
 }
 
 #white-side {
     text-align: center;
+    align-items: center;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -19,26 +19,36 @@ body {
 }
 
 #blue-side {
-    text-align: center;
+    text-align: left;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 50%;
     grid-row: 1;
     grid-column: 1;
-    background-color: skyblue
+    background-color: rgb(169, 169, 255);
+    background-image: url(./images/birdbackground.png);
+    background-size: cover;
+    color: white;
+}
+
+#blue-content-block {
+    padding: 50px;
+
 }
 
 .listyMcMistface {
     background-color: white;
     grid-row: 2;
-    display: inline-flex;
+    display: flex;
     position: fixed;
     bottom: 0;
-    width: inherit;
-    height: inherit;
+    width: auto;
+    height: auto;
     grid-column: 1 / 3;
     list-style: none;
+    padding: 5px;
+    text-align: center;
 }
 
 #small-bird-logo {
