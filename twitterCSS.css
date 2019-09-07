@@ -1,4 +1,13 @@
+/* @media screen and (500px){
+  .white{
+    top:0;
+    width:100%;
+    z-index: 100;
+  }
+} */
+
 body{
+  justify-content: center;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   display: flex;
   flex-wrap: wrap;
@@ -6,8 +15,11 @@ body{
 }
 
 .blue{
+  width: 50%;
+  justify-content: center;
   color:white;
   background-image: url('./images/card_wide_blue.png');
+  background-size: cover;
 }
 
 ul > li{
@@ -15,7 +27,16 @@ ul > li{
 }
 
 .white{
-font-size: 14px;
+  width: 50%;
+  justify-content: center;
+  font-size: 14px;
+}
+
+#word-content{
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 25%;
+  padding-bottom: 38%;
 }
 
 img{
@@ -23,17 +44,47 @@ img{
   width:auto;
 }
 
+
 .white-button{
 text-align: center;
-border-radius: 12px;
+border-radius: 16px;
 padding-left: 25%;
 padding-right: 25%;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+#sign-up{
+  background-color: #38A1F3;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+#login2{
+  background-color: white;
+  border: 2px solid #38A1F3;
+  color: #38A1F3;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#footer{
+  width: 100%;
+  position: fixed;
+  left:0;
+  bottom:0;
+  text-align: center;
+  margin-top: 10px;
+  background-color: white;
 }
 
 #footer ul li{
+  /* justify-content: center; */
   color: lightgrey;
-  font-size: 9px;
-  display:inline-block;
+  font-size: 12px;
+  display: inline-block;
 }
 
 #footer ul li a{
