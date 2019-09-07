@@ -61,6 +61,7 @@ li,p,a {
 .rightside .loginitems h1 {
     font-size: 27px;
     line-height: 32px;
+    width: 300px;
     color: black;
 }
 
