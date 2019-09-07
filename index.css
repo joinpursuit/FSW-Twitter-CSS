@@ -11,7 +11,9 @@ img {
 }
 #main {
     background-image: url("Pics/birdbackground.png");
-    background-size: cover; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: rgb(41, 167, 245);
     height: 95%;
 
