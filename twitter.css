@@ -1,0 +1,140 @@
+body {
+    background: whitesmoke;
+    color: black;
+    font-size:14px;
+    line-height: 20px;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.containter {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90vh 10vh;
+}
+#left-side ul li {
+    list-style-type: none;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 50px 0;
+    font-weight: bold;
+    color: white;
+}
+
+#leftside ul li .icon {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+#right-side form {
+    font-size:10px;
+
+}
+.birdlogopage {
+    font-size: 4cm;
+    color:rgb(59, 165, 252);
+}
+span {
+    display: block;
+  }
+  
+  .first {
+    background: blue;
+  }
+  
+  .inner-container {
+    height:50px;
+    background:white;
+  }
+  button.EdgeButton{
+      display:block;
+      border:none;
+      outline:none;
+      font-size: 14px;
+      line-height: 18px;
+      padding: 8px 16px;
+      border-radius:100px;
+      
+  }
+  .EdgeButton{
+      border-radius: 100px;
+      box-shadow: none;
+      cursor:pointer;
+      font-size:14px;
+      font-weight: bold;
+      line-height: 20px;
+      padding: 6px 16px;
+      position: relative;
+      text-align: center;
+      white-space: nowrap;
+
+      width:200px;
+      margin-bottom:16px;
+
+  }
+  .StaticLoggedOut-buttonLogin{
+    display:block;
+    margin-bottom:16px;
+}
+.EdgeButton--primary{
+    background-color:white;
+    color:rgb(59, 165, 252);
+    border:1px solid rgb(59, 165, 252);
+}
+
+.EdgeButton--secondary{
+    background-color:white;
+    color:rgb(59, 165, 252);
+    border:1px solid rgb(59, 165, 252);
+}
+#Login-Input{
+    display:block;
+    position: absolute;
+    top:20px;
+    width:40px;
+    display:flex;
+    justify-content: center;
+}
+
+footer{
+    grid-column:1/-1;
+    border-bottom:2px solid grey;
+}
+.footer ul {
+    text-align:justify;
+    font-size:8px;
+    color:grey;
+}
+.footer ul li {
+    display:inline-block;
+    margin: 0 6px;
+}
+.footer ul li a {
+    text-decoration: none;
+    color:grey;
+    font-size:8px;
+}
+/*left-side{
+    background-image: ("./images/card_wide_blue.png");
+    background-color: rgb(59, 165, 252);
+    background-repeat:no-repeat;
+    background-size:100vw 100%;
+    background-position: fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    grid-area: blue;
+    height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+right-side{
+    background-color: white;
+    grid-column:2/1;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
