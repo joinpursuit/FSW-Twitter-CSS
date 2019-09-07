@@ -73,8 +73,18 @@ li,p,a {
 
 .rightside .toppageleft {
     display: flex;
-    top: 0%;
+    top: 3%;
     position: absolute;
+}
+
+.rightside .toppageleft div p a{
+    text-decoration: none;
+    font-size: 13px;
+    color: gray;
+}
+
+.rightside .toppageleft div p a:hover{
+    text-decoration: underline;
 }
 
 .rightside .toppageleft input {
