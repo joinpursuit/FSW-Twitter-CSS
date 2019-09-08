@@ -1,0 +1,368 @@
+/* Joseph P. Pasaoa
+*/
+
+
+/* CSS RESET -- begin
+
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS RESET -- end
+*/
+
+
+
+
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #14171a;
+  font-size: 14px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 20px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div#base-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 45px;
+}
+
+h1 {
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+div#white-half {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+}
+
+div#logincontainer {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 100%;
+}
+
+form#login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  width: 511px;
+  max-width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+form#login input {
+  display: inline-block;
+  padding: 12px;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  outline: 0px;
+  box-sizing: border-box;
+  border: 1px solid #e6ecf0;
+  border-radius: 3px;
+}
+
+div.login-texts {
+  margin-right: 12px;
+  width: 210px;
+}
+
+input[type="submit"] {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  -webkit-appearance: button;
+  cursor: pointer; 
+  background-color: #fff;
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+
+  border-radius: 100px;
+box-shadow: none;
+cursor: pointer;
+font-size: 14px;
+font-weight: bold;
+line-height: 20px;
+padding: 6px 16px;
+position: relative;
+text-align: center;
+white-space: nowrap;
+
+  user-select: none;
+  white-space: pre;
+  align-items: flex-start;
+  display: inline-block;
+
+  -webkit-rtl-ordering: logical;
+  background-color: #fff;
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+
+  height: 100%;
+  padding: 12px;
+  width: auto;
+  box-sizing: border-box;
+  margin-top: 12px;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+div#white-copycontainer {
+  max-width: 350px;
+  background-color: transparent;
+}
+
+div#white-header-img {
+  margin: 16px auto;
+  display: flex;
+  align-items: center;
+}
+
+.Icon {
+  background: transparent;
+  display: inline-block;
+  font-style: normal;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.Icon:before {
+  display: block;
+  font-family: "edgeicons";
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.Icon--bird {
+  color: #1da1f2;
+  font-size: 45px;
+  margin-bottom: 8px;
+}
+
+.Icon--bird:before {
+  content: "\f179";
+}
+
+.Icon--discover:before {
+  content: "\f052";
+}
+
+.Icon--editPencil:before {
+	content: "\f112"
+}
+
+div#white-half h2 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+a#button-sign-up {
+  background-color: #1da1f2;
+  border: 1px solid #1da1f2;
+  color: #fff;
+}
+
+a#button-log-in {
+  background-color: #fff;
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+}
+
+div#home-buttons a:link {
+  border-radius: 100px;
+  box-shadow: none;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  
+  display: block;
+  margin-bottom: 16px;
+  padding: 6px 16px;
+  
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+div#home-buttons a:visited {
+}
+
+div#home-buttons a:hover {
+  background-color: #006dbf;
+  border-color: #006dbf;
+  outline: 0;
+}
+
+div#home-buttons a:active {
+  background-color: #006dbf;
+  border-color: #006dbf;
+  box-shadow: 0 0 0 2px #fff,0 0 0 4px #1da1f2;
+}
+
+div#blue-half {
+  order: -1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  background-color: #1da1f2;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.twitterIcon-bird {
+  height: 140vh;
+  right: -80vh;
+  top: -20vh;
+  max-width: none;
+  position: absolute;
+  z-index: 0;
+}
+
+div#blue-copycontainer {
+  max-width: 440px;
+  padding: 0 16px;
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+}
+
+div#blue-half h1 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+div#blue-half h2 {
+  margin-bottom: 48px;
+}
+
+div.lit-contain {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+div.lit-contain .Icon {
+  font-size: 35px;
+  margin-right: 16px;
+  margin-top: 8px;
+  color: white;
+}
+
+div.lit-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+div.lit-item {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+div#footer {
+  grid-column: span 2;
+
+  background-color: white;
+  border-top: 1px solid #e6ecf0;
+  padding: 11px 0;
+  color: #aab8c2;
+  font-size: 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+div#footer li {
+  display: none;
+}
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx)
+body {
+    -webkit-font-smoothing: antialiased;
+}
