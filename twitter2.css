@@ -1,0 +1,175 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#container {
+    height: 95%;
+    background-image: url("images/birdbackground.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#blueDiv #whiteDiv {
+    height: 100%;
+}
+
+#blueDiv {
+    color: white;
+    background-color:rgba(0, 153, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blueDiv #blueContent {
+    max-width: 440px;
+    padding: 16px;
+    /* background-color: rgba(100, 100, 100, 0.5); */
+}
+
+#whiteDiv {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#topStuff {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+
+#submitAll {
+    background-color: #fff;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+    height: 100%;
+}
+
+#footer {
+    height: 5%;
+}
+
+.icon_text {
+    display: inline-block;
+}
+
+.icons {
+    font-size: 38px;
+    margin: 20px;
+}
+
+.font_header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boxes {
+    width: 100%;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: rgb(232, 240, 254);
+    color: black;
+}
+
+.logIn {
+    margin: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+#forgot {
+    color: gray;
+    padding: 12px;
+ 
+}
+
+#forgot:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: auto;
+}
+
+#midStuff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    flex-wrap: wrap;
+}
+
+#lilBird {
+    margin: 16px;
+    height: 45px;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+.bottomThings {
+    width: 100%;
+}
+
+#birdPic {
+    width:100%;
+}
+
+.bottom {
+    margin: 15px;
+    padding: 12px;
+    width: 100%;
+}
+
+#signUpButton {
+    border-color: #1da1f2;
+    background-color: #1da1f2;
+    color: white;
+}
+
+#logInButton {
+    border-color: #1da1f2;
+    background-color: white;
+    color: #1da1f2;
+}
+
+a{
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#footer {
+    color: gray;
+
+}
