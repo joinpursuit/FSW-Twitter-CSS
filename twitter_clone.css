@@ -36,6 +36,13 @@ body {
     position: relative;
 }
 
+#forgot-password {
+    position: relative;
+    color: lightgrey;
+    left: 185px;
+    width: 200px;
+}
+
 #white-section-grid-gap {
     display: grid;
     grid-gap: 50px;
@@ -54,7 +61,7 @@ img {
 /* Class that is applied to all the input boxes in the white section */
 .input-box {
     height: 40px;
-    width: 150px;
+    width: 170px;
     font-size: 12px;
 }
 
@@ -70,6 +77,9 @@ img {
 
 #login-button {
     width: auto;
+    position: relative;
+    top: -60px;
+    left: 370px;
 }
 
 #white-section-signUp {
@@ -191,6 +201,6 @@ img {
     font-weight: 400;
 }
 
-.footer-item:hover {
+.hover-item:hover {
     text-decoration: underline;
 }
