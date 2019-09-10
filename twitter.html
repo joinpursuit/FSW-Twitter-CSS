@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title> Twitter. It's what's happening. </title>
     <link href='twitter.css' rel='stylesheet'>
-    <link href='twitter_reset.css' rel='stylesheet'>
-    <link href = "data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQ
+    <!-- <link href='twitter_reset.css' rel='stylesheet'> -->
+    <link href='https://use.fontawesome.com/releases/v5.0.7/css/all.css' rel='stylesheet'>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQ
     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     AAAAAAAAAAAAAAAAAAOGjUjzkplOb6KhU2eyrVPXtrFX77axV4e2rVbDqqlRd56hTBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     AANygUS7doVF736JRpuSmU/HqqVT/7axV/+6sVf/urFX/7qxV/+2rVd3qqVRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -21,117 +23,130 @@
     AAAAAAAAAAAAAAAAAAAAAAADcoFEI3aFRi9+iUe3folHx3qFRnNygURXcoFFT3KBRJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
     AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAMD/AADAPwAA8B8AAOAPAADABwAAwAcAAIADAACAAwAAwAM
-    AAIcDAACfAQAAvwEAAP+HAAD//wAA//8AAA==" rel = "icon" type = "image/x-icon"/>
-  </head>
-  <body class = 'grid-container'>
+    AAIcDAACfAQAAvwEAAP+HAAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
+</head>
 
-        <div class = 'blue'>
-            <img id = 'large' src = 'https://raw.githubusercontent.com/joinpursuit/Pursuit-Core-Web-Twitter-CSS-Assignment/master/images/birdbackground.png'>
-                You're one step away from shiny new Twitter.com
-                <br>
-                We've added tons of cool features, including ...
-                <br>
-                Explore
-                Get the lastest Tweets, news, and videos in one place.
-                <br> 
-                Bookmarks
-                Save that interesting Tweet for later.
-                <br>
-                Personalize
-                Choose from new themes and more dark mode options.
+<body>
+    <div id='container'>
+        <div id='left'>
+            <div id='blue_text'>
+                <h2>You're one step away from shiny new Twitter.com</h2>
+                <p> We've added tons of cool features, including ...</p>
+                <div id='first'>
+                    <i class="fas fa-hashtag"></i>
+                    <div class='paragraph'>
+                        <div class='heading'>Explore</div>
+                        <div class='description'>Get the lastest Tweets, news, and videos in one place.</div>
+                    </div>
+                </div>
+                <div id='second'>
+                        <i class="far fa-bookmark"></i>
+                    <div class='paragraph'>
+                        <div class='heading'>Bookmarks</div>
+                        <div class='description'>Save that interesting Tweet for later.</div>
+                    </div>
+                </div>
+                <div id='third'>
+                    <i class="far fa-edit"></i>
+                    <div class='paragraph'>
+                        <div class='heading'>Personalize</div>
+                        <div class='description'>Choose from new themes and more dark mode options.</div>
+                    </div>
+                </div>
             </div>
-      
-      
-      
-      <br>
-      <div class = 'white'>
-        <input type = 'text' placeholder = "Phone, email, or username"  required>
-        <input type = 'password' placeholder = "Password" minlength = '8' required> 
-        <input class = 'login_small' type = "submit" value = "Log in" >
-        <br> 
-        <a href = 'https://twitter.com/account/begin_password_reset'> Forgot password? </a> <br>
-        <img id = 'small' src = 'https://raw.githubusercontent.com/Bpmauge/Pursuit-Core-Web-Twitter-CSS-Assignment/master/images/birdlogo.png'>
 
-        <h1> See what's happening in the world right now </h1>
-        <h2> Join Twitter today.</h2> 
-        
-        <!-- <div class = 'main_buttons'> -->
-        <button  class = 'main' id = 'signup_big' onclick="window.location.href = 'https://twitter.com/login';">Sign Up</button><br>
-        <button class = 'main' id = 'login_big' onclick="window.location.href = 'https://twitter.com/login';">Log in</button>
-       <!-- </div> -->
-        <!-- <input type = "submit" value = "Log in"> -->
-        
-        <br>
-        
-        
-      </div>
+        </div>
+
+        <div id='right'>
+            <input type='text' placeholder="Phone, email, or username" required>
+            <input type='password' placeholder="Password" minlength='8' required>
+            <input class='login_small' type="submit" value="Log in">
+            <br>
+            <a href='https://twitter.com/account/begin_password_reset'> Forgot password? </a> <br>
+            <div id = 'white_box'> 
+                <div id='white_text'>
+  
+                <img id='small'
+                    src='https://raw.githubusercontent.com/Bpmauge/Pursuit-Core-Web-Twitter-CSS-Assignment/master/images/birdlogo.png'>
+
+                <h1> See what's happening in the world right now </h1>
+                <h2> Join Twitter today.</h2>
+
+                <!-- <div class = 'main_buttons'> -->
+
+                <button class='main' id='signup_big' onclick="window.location.href = 'https://twitter.com/login';">Sign
+                    Up</button><br>
+                <button class='main' id='login_big' onclick="window.location.href = 'https://twitter.com/login';">Log
+                    in</button>
+            </div>
+            <!-- </div> -->
+            <!-- <input type = "submit" value = "Log in"> -->
+</div>
+        </div>
+    </div>
 
 
+    <div id='footer'>
+        <ul>
+            <li class='links foot'>
+                <a href='https://about.twitter.com/'>About</a>
+            </li>
+            <li class='links foot'>
+                <a href='https://help.twitter.com/'> Help Center </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://blog.twitter.com/'> Blog </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://blog.twitter.com/'> Status </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://careers.twitter.com/'> Jobs </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://about.twitter.com/'> Terms </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://help.twitter.com/'> Privacy Policy </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://blog.twitter.com/'> Cookies </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://blog.twitter.com/'> Ads Info </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://careers.twitter.com/'> Brand </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://about.twitter.com/'> Apps </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://blog.twitter.com/'> Status </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://ads.twitter.com/login?ref=gl-tw-tw-twitter-advertise'> Advertise </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://marketing.twitter.com/na/en'> Marketing </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://business.twitter.com/'> Businesses </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://developer.twitter.com/'> Developers </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://twitter.com/i/directory/profiles'> Directory </a>
+            </li>
+            <li class='links foot'>
+                <a href='https://twitter.com/settings/personalization'> Settings </a>
+            </li>
+            <li class='foot'> © 2019 Twitter </li>
+        </ul>
 
+    </div>
 
-<br>
+</body>
 
-
-      <div class = 'footer'>
-          <ul>
-                <li class = 'links foot'>
-                    <a href = 'https://about.twitter.com/'>About</a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://help.twitter.com/'> Help Center </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://blog.twitter.com/'> Blog </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://blog.twitter.com/'> Status </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://careers.twitter.com/'> Jobs </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://about.twitter.com/'> Terms </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://help.twitter.com/'> Privacy Policy </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://blog.twitter.com/'> Cookies </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://blog.twitter.com/'> Ads Info </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://careers.twitter.com/'> Brand </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://about.twitter.com/'> Apps </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://blog.twitter.com/'> Status </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://ads.twitter.com/login?ref=gl-tw-tw-twitter-advertise'> Advertise </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://marketing.twitter.com/na/en'> Marketing </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://business.twitter.com/'> Businesses </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://developer.twitter.com/'> Developers </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://twitter.com/i/directory/profiles'> Directory </a>
-                </li>
-                <li class = 'links foot'>
-                    <a href = 'https://twitter.com/settings/personalization'> Settings </a>
-                </li>
-                <li class = 'foot'> © 2019 Twitter </li>
-          </ul>
-
-      </div>
-
-  </body>
 </html>
