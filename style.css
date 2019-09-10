@@ -150,13 +150,7 @@ a#forgot:link, a#forgot:visited {
   text-decoration: none;
 }
 
-a#forgot:hover {
-  color: #aab8c2;
-  text-decoration: underline;
-  outline: 0;
-}
-
-a#forgot:active {
+a#forgot:hover, a#forgot:active {
   color: #aab8c2;
   text-decoration: underline;
   outline: 0;
@@ -184,8 +178,6 @@ input[type="submit"] {
   font-size: 14px;
   font-weight: bold;
   line-height: 20px;
-  -webkit-writing-mode: horizontal-tb !important;
-  -webkit-rtl-ordering: logical;
   user-select: none;
   text-rendering: auto;
   letter-spacing: normal;
@@ -279,7 +271,7 @@ div#white-header > a input {
 }
 
 .Icon--editPencil:before {
-	content: "\f112"
+  content: "\f112"
 }
 
 div#white-half h2 {
@@ -439,7 +431,7 @@ ul#footer-list {
 
 li.foot-item {
   display: inline-block;
-  padding: 0 9px 0 9px;
+  padding: 0 9px;
   text-align: inherit;
 }
 
@@ -464,9 +456,6 @@ body {
 }
 
 @media (min-width: 800px) and (max-width: 1024px) {
-  /* ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px  */
-
   div#logincontainer {
     display:none;
   }
@@ -501,7 +490,7 @@ body {
   }
 
   div#logincontainer {
-    display:none;
+    display: none;
   }
 
   div#white-header > a#log-in-fakejs {
