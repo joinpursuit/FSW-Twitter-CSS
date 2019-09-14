@@ -1,0 +1,114 @@
+body {
+  height: 100vh;
+  /* background-color: #1da1f2; */
+}
+
+.container {
+  height: 100%;
+  background-image: url("./images/birdbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.white,
+.blue {
+  height: 100%;
+}
+
+.white {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#login {
+  border-radius: 10px;
+  border-color: #1da1f2;
+  display: inline-block;
+  padding: 5px;
+  width: fit-content;
+  color: #1da1f2;
+}
+
+#signup {
+  border-radius: 10px;
+  /* display: inline-block; */
+  padding: 5px;
+  border-color: #1da1f2;
+  background-color: #1da1f2;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* width: fit-content; */
+}
+
+#log {
+  border-radius: 10px;
+  border-color: #1da1f2;
+  padding: 5px;
+  color: #1da1f2;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#buttonContainer > img {
+  display: flex;
+  flex-direction: row;
+}
+
+.blue {
+  background-color: rgba(29, 161, 242, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* background-color: lightblue; */
+}
+
+.blue ul li {
+  list-style: none;
+}
+
+#l_content {
+  max-width: 440px;
+  padding: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  border-top: 1px solid #aab8c2;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  height: 42px;
+  background-color: white;
+}
+
+.footer > ul > a {
+  color: #aab8c2;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 4;
+}
+
+.footer ul {
+  padding: 5px;
+  color: #aab8c2;
+  font-size: 12px;
+}
+
+div img {
+  width: 35px;
+  height: 35px;
+}
