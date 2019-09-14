@@ -30,18 +30,32 @@ body {
 }
 
 #login {
-  border-radius: 10px;
+  border-radius: 100px;
   border-color: #1da1f2;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
   display: inline-block;
-  padding: 5px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
   width: fit-content;
   color: #1da1f2;
 }
 
+#login:hover {
+  background-color: rgba(29, 161, 242, 0.3);
+}
+
 #signup {
-  border-radius: 10px;
+  border-radius: 100px;
   /* display: inline-block; */
-  padding: 5px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
   border-color: #1da1f2;
   background-color: #1da1f2;
   color: white;
@@ -50,17 +64,31 @@ body {
   /* width: fit-content; */
 }
 
+#signup:hover {
+  background-color: RGB(0, 132, 180);
+}
+
 #log {
-  border-radius: 10px;
+  border-radius: 100px;
   border-color: #1da1f2;
   padding: 5px;
   color: #1da1f2;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+}
+
+#log:hover {
+  background-color: rgba(29, 161, 242, 0.3);
 }
 
 #buttonContainer {
   display: flex;
   flex-direction: row-reverse;
 }
+
 #buttonContainer > img {
   display: flex;
   flex-direction: row;
@@ -99,7 +127,12 @@ body {
   font-size: 12px;
   padding-left: 10px;
   padding-right: 10px;
+  text-decoration: none;
   z-index: 4;
+}
+
+.footer > ul > a:hover {
+  text-decoration: underline;
 }
 
 .footer ul {
@@ -109,6 +142,6 @@ body {
 }
 
 div img {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 45px;
 }
