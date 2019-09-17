@@ -13,11 +13,6 @@ body {
   grid-template-columns: 50% 50%;
 }
 
-.white,
-.blue {
-  height: 100%;
-}
-
 .white {
   background-color: white;
   display: flex;
@@ -27,6 +22,7 @@ body {
   padding: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  height: 100vh;
 }
 
 #login {
@@ -86,12 +82,8 @@ body {
 
 #buttonContainer {
   display: flex;
-  flex-direction: row-reverse;
-}
-
-#buttonContainer > img {
-  display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .blue {
@@ -100,6 +92,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  height: 100vh;
   /* background-color: lightblue; */
 }
 
@@ -142,6 +135,8 @@ body {
 }
 
 div img {
+  display: inline-block;
+  position: relative;
   width: 40px;
   height: 45px;
 }
