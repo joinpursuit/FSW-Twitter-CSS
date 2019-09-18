@@ -1,0 +1,140 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #fff;
+}
+
+.container {
+  height: 95%;
+  background-image: url("images/birdbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+#left, #right {
+  height: 100%;
+}
+
+#left #l_content {
+  max-width: 440px;
+  padding: 16px;
+}
+
+.icon_container{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.icon_text{
+  margin-left: 5%;
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#left {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 172, 237, 0.90);
+  color: white;
+}
+
+#right {
+  background-color: white;
+}
+
+#boxes {
+  display: inline-block;
+  position: absolute;
+  right: 6.5%;
+  top: 3%;
+}
+
+.input {
+  padding: 12px 12px;
+  margin-right: 8px;
+  border-color: lightgray;
+}
+
+#toplogin {
+  background-color: white;
+  padding: 16px 14px;
+  border-width: 1px;
+  border-radius: 28px;
+  border-color: rgb(0, 172, 237, 1);
+  color: rgb(0, 172, 237, 1);
+  font-weight: bold;
+}
+
+#toplogin:hover {
+  background-color: rgb(192, 222, 237, 1);
+}
+
+#signup {
+  background-color: rgb(0, 172, 237, 1);
+  padding: 10px 20px;
+  border-width: 1px;
+  border-radius: 16px;
+  border-color: rgb(0, 172, 237, 1);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+#signup:hover {
+  background-color: rgb(0, 132, 180, 1);
+}
+
+#centerlogin {
+  background-color: white;
+  padding: 10px 20px;
+  border-width: 1px;
+  border-radius: 16px;
+  border-color: rgb(0, 172, 237, 1);
+  color: rgb(0, 172, 237, 1);
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+#centerlogin:hover {
+  background-color: rgb(192, 222, 237, 1);
+}
+
+#center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 320px;
+  margin-top: 33%;
+  font-family:sans-serif;
+}
+
+#footer {
+  height: 3%;
+  padding-top: 0.5%;
+  padding-left: 18.5%;
+  padding-right: 18.5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: gray;
+}
+
+.hoverable:hover {
+  text-decoration: underline;
+}
