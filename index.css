@@ -1,0 +1,75 @@
+body{
+	height: 100vh;
+}
+
+#main-page{
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	background-image: url('./images/birdbackground.png');
+	background-repeat: no-repeat;
+	background-size: 60% 80%;
+	background-position: center;
+}
+
+
+
+#bird-logo{
+	height: 30px;
+}
+
+.blue-border{
+	flex: 1;
+	height: 50%;
+}
+
+li {
+	list-style-type: none;
+	flex: 1;
+	font-size: 25px;
+	text-align: center;
+}
+
+#talking-points{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	align-content: space-around;
+
+	
+}
+
+.blue-border{
+
+}
+
+.white-border{
+	display: flex;
+	flex: 1;
+	height: 100%;
+	z-index: 1;
+	background-color: white;
+	flex-wrap: wrap;	
+}
+
+.login-form {	
+	border: 1px solid black;
+	width: 100%;
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sign-in {
+	width: 100%;
+	display: flex;
+
+
+}
+
+.signup-form {
+	border: 1px solid blue;
+	height: calc( 100% - 300px);
+}
