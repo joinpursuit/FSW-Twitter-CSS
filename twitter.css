@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.left {
+    background-color:rgb(60, 185, 227);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+#bird-background {
+     width: 100%;
+ }
+
+ img title {
+     width: 30px;
+ }
+.reasons-list {
+    color: white;
+    list-style-type: none;
+    font-size: 22px;
+    line-height: 72px;
+    font-weight: bold;
+    margin: 25px;
+}
+#item1::before {
+    content: url("https://img.icons8.com/android/35/000000/search.png");
+}
+
+#item2::before {
+    content: url("https://img.icons8.com/ios-glyphs/30/000000/conference-call.png");
+}
+
+#item3::before {
+    content: url("https://img.icons8.com/ios/35/000000/speech-bubble.png");
+}
+.right {
+    grid-column: 2 / -1;
+}
+
+.login-setup {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: gainsboro;
+    font-size: 10px;
+    text-decoration-line: none;
+}
+.login-button {
+    border: 1px solid rgb(60, 185, 227);
+    color:  rgb(60, 185, 227);
+    border-radius: 35px;
+}
+
+#tinybird {
+    height: 50px; 
+    width: 50px;
+}
+.join {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-top: 200px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.signup {
+    border: 1px solid rgb(60, 185, 227);
+    border-radius: 70px;
+    width: 175px;
+    height: 25px;
+    margin-bottom: 15px; 
+}
+.signupbtn {
+    background:  rgb(60, 185, 227);
+    color: white;
+}
+.loginbtn {
+    color: rgb(60, 185, 227)
+}
+
+.footer {
+    grid-column: 1 / -1;
+}
+.footer {
+    color: gainsboro;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-content li{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.footerlist li:hover{
+    text-decoration-line: underline;
+}
+
+.btn:hover {
+    background-color: lightpink;
+}
