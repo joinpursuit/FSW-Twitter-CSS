@@ -53,9 +53,9 @@ It should have an html tag, a head tag, title, and empty body.
 </html>
 ```
 
-Add a title to the page that matches the homepage.
+<!-- Add a title to the page that matches the homepage. -->
 
-Follow this [link](https://www.favicon.cc/?action=icon&file_id=802027) and add the favicon in the appropriate location.
+<!-- Follow this [link](https://www.favicon.cc/?action=icon&file_id=802027) and add the favicon in the appropriate location. -->
 
 Your next task is get all the elements onto the page. Don't worry about any styling for now.
 
