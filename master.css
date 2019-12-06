@@ -1,0 +1,72 @@
+body{
+    line-height: 1;
+}
+h1{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+h3{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+#blueBird{
+    margin-left: 90px;
+    margin-right: 120px;
+}
+#mainDiv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* display: block;
+    align-items: center;
+    justify-content: center; */
+
+}
+#sectionOne{
+    background: white;
+    display: grid;
+
+}
+#sectionTwo{
+    background: #1da1f2;
+    display: grid;
+
+}
+#sectionThree{
+    grid-column: 1 / -1;
+    background: white;
+    display: grid;
+}
+.itemList{
+    list-style: none;
+    color: white;
+}
+#item1::before{
+    content: url("https://img.icons8.com/android/24/000000/search.png");
+}
+#item2::before{
+    content: url("https://img.icons8.com/dotty/24/000000/group-foreground-selected.png")
+}
+#item3::before{
+    content: url("https://img.icons8.com/windows/24/000000/speech-bubble.png")
+}
+#logIn1{
+    color: #1da1f2;
+}
+#signUp{
+    color: white;
+    background-color: #1da1f2;
+}
+#logIn2{
+    color: #1da1f2;
+}
+.footerList{
+    color: grey;
+    border-top: 1px solid;
+    border-top-color: gainsboro;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
