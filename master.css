@@ -4,26 +4,43 @@ body{
 #content-body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
     background-image: url('./images/birdbackground.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;
-    position: relative;
+    background-attachment: fixed;
 }
 #blue{
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background: #1DA1F2;
+    background-color: #1DA1F2;
     margin: 0;
+    border: 0;
+    c
     font-weight: bold;
     line-height: 60px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+#left-li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+}
+.icon{
+    height: 35px;
+    position: relative;
+    margin: 20px;
+    left: 160px;
+    border: 0px;
+    background: none;
+}
 
 #white{
     background-color: white;
+    background-position: 4;
 }
 .user{
     margin: 12px;
@@ -63,6 +80,9 @@ body{
     margin: 4px 2px;
     cursor: pointer;
 }
+#login:hover{
+    background-color: #EAF5FD;
+}
 #small{
     width: 100px;
     height: 50px;
@@ -84,6 +104,9 @@ body{
     border: 1px solid #1da1f2;
     color: #fff;
 }
+#sign-up:hover{
+    background-color: #096DBF;
+}
 #login-in{
     display: block;
     margin-bottom: 16px;
@@ -100,6 +123,10 @@ body{
     background-color: #fff;
     border: 1px solid #1da1f2;
     color: #1da1f2;
+}
+
+#login-in:hover{
+    background-color: #EAF5FD;
 }
 
 .Footer-Box{
