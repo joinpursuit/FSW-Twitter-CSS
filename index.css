@@ -1,0 +1,215 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ______________________________________________________________ */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	width: 100%;
+	position: absolute; 
+	background-image: url("./images/birdbackground.png");
+	background-repeat: no-repeat;
+	background-position: -50 top -50 left;
+	background-size: 75%;
+	/* z-index: 1; */
+}
+
+
+main {
+	display: grid;
+	background: rgba(29, 161, 242, .8);
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: minmax(2px, auto);
+	height: 100%;
+	width: 100%;
+}
+
+#blue {
+	display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#white {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+#content-list{
+	font-size: 22px;
+	line-height: 72px;
+	font-weight: bold;
+	color: white;
+}
+
+#item1::before {
+	content: url("https://img.icons8.com/android/35/000000/search.png");
+	margin-right: 20px;
+	-webkit-filter: invert(100%);
+}
+
+#item2::before {
+	content: url("https://img.icons8.com/ios-glyphs/30/000000/conference-call.png");
+	margin-right: 20px;
+	-webkit-filter: invert(100%);
+}
+
+#item3::before {
+	content: url("https://img.icons8.com/ios/35/000000/speech-bubble.png");
+	margin-right: 20px;
+	-webkit-filter: invert(100%);
+}
+
+#login-data{
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	margin-left: 50px;
+	margin-top: 25px;
+}
+
+a:link{
+	color: gainsboro;
+	text-decoration: none;
+}
+
+#forgotpassword{
+	font-size: 12px;
+	grid-area: 2 / 2;
+	text-decoration: none;
+}
+
+.input {
+	border: solid 1px rgba(128, 128, 128, 0.5);
+	height: 35px;
+	width: 175px;
+}
+
+#login{
+	border-radius: 50px;
+	height: 40px;
+	width: 70px;
+	color: rgb(29, 161, 242);
+	padding: 5px;
+}
+
+#logo-bird{
+	width: auto;
+	height: 65px;
+	margin-left: -10%;
+}
+
+#motto{
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#p1{
+	padding-top: 20px;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+#p2{
+	font-weight: bold;
+	font-size: large;
+}
+
+.join-white {
+	margin-top: 65px;
+	margin-left: 100px;
+}
+
+footer {
+	grid-column: 1 / -1;
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid	gainsboro;
+	padding-top: 25px;
+}
+
+footer ul {
+	display: flex;
+	font-size: small;
+	justify-content: space-between;
+	color: gainsboro;
+}
+
+.footerli:hover{
+	text-decoration-line: underline;
+}
+
+.button:hover, #login:hover{
+	background-color: rgb(29, 161, 242, .3);
+}
+
+.button {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid rgb(29, 161, 242);
+	border-radius: 50px;
+	width: 70px;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.joinbtn {
+	margin-top: 20px;
+	width: 300px;
+	height: 40px;
+	font-size: 14px;
+	padding: 10px;
+}
+
+#signup{
+	background-color: rgb(29, 161, 242);
+	color: white;
+}
+
+#login2{
+	color: rgb(29, 161, 242);
+}
+
