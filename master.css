@@ -1,37 +1,65 @@
-body{
+/* body{
     line-height: 1;
-}
-h1{
+} */
+/* h1{
     margin-left: 120px;
     margin-right: 120px;
 }
 h3{
     margin-left: 120px;
     margin-right: 120px;
-}
+} */
 #blueBird{
     margin-left: 90px;
     margin-right: 120px;
 }
-#mainDiv{
+.mainDiv{
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90vh 15vh;
     /* display: block;
     align-items: center;
     justify-content: center; */
 
 }
-#sectionOne{
-    background: white;
-    display: grid;
-
-}
-#sectionTwo{
+.sectionBlue{
     background: #1da1f2;
     display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 2;
 
 }
-#sectionThree{
+.sectionWhite{
+    background: white;
+    display: grid;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / -1;
+    padding: 0px 60px;
+
+}
+.topWhite{
+    /* display: grid;
+    flex-direction: row;
+    justify-content: space-between; */
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.middleWhite{
+    background-color: white;
+    padding: 0px 60px;
+    min-width: 300px;
+}
+.bottomWhite{
+    display: grid;
+    justify-content: space-between;
+}
+.sectionThree{
     grid-column: 1 / -1;
     background: white;
     display: grid;
@@ -39,6 +67,10 @@ h3{
 .itemList{
     list-style: none;
     color: white;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 50px 0;
+    font-weight: bold;
 }
 #item1::before{
     content: url("https://img.icons8.com/android/24/000000/search.png");
@@ -51,16 +83,62 @@ h3{
 }
 #logIn1{
     color: #1da1f2;
+    background-color: white;
+    display: flex;
+    border: 1px solid #1da1f2;
+    line-height: 10px;
+    padding: 15px 28px;
+    /* text-align: center; */
+    justify-content: center;
+    width: 65px;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 13px;
+    cursor: pointer;
 }
+#logIn1:hover {
+    background-color: rgb(235, 241, 255);
+  }
+  a {
+      color: rgb(195, 195, 195);
+      font-size: 15px;
+      text-decoration: none;
+  }
+  a:hover{
+      text-decoration: underline;
+  }
 #signUp{
     color: white;
     background-color: #1da1f2;
+    display: flex;
+    border: 1px solid #1da1f2;
+    line-height: 5px;
+    padding: 15px 28px;
+    justify-content: center;
+    width: 350px;    /*changes the spread of the button*/
+    border-radius: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#signUp:hover{
+    background-color: rgb(29, 60, 144);
 }
 #logIn2{
     color: #1da1f2;
+    display: block;
+    background-color: white;
+    display: flex;
+    border: 1px solid #1da1f2;
+    line-height: 5px;
+    padding: 15px 28px;
+    justify-content: center;
+    width: 350px;
+    border-radius: 40px;
+    font-size: 14px;
+    cursor: pointer;
 }
 .footerList{
-    color: grey;
+    color: #aab8c2;
     border-top: 1px solid;
     border-top-color: gainsboro;
     list-style: none;
