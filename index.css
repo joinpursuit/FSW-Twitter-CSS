@@ -1,0 +1,74 @@
+html, body{
+    margin: 0;
+    background-color: lightslategray;
+    height: 100%;
+}
+#main{
+background-color:rgb(14, 151, 241) ;
+background-image: url("https://github.com/DejaLFlynn/Pursuit-Core-Web-Twitter-CSS-Assignment/blob/master/images/birdbackground.png?raw=true");
+background-size: cover;
+background-position: center;
+background-repeat:no-repeat;
+overflow: hidden;
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+#left-side #right-side{
+    height: 100%;
+}
+#right-side{
+    background-color: white;
+    display: flex;
+    justify-content: center ;
+}
+#left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer{
+ 
+    background-color: white;
+    border-top:2px solid grey;
+    display: grid;
+    grid-row:5;
+    grid-column: 1/5;
+    text-align: center;
+    padding-top: 50% ;
+    padding-bottom: 0%;
+
+}
+.footer-links{
+    display: inline-block;
+    list-style:none;
+    padding: 0 10px 0 10px;
+    font-size: 10px;
+}
+a{
+    color:grey;
+    text-decoration: none;
+}
+#explore{
+display: flex;
+align-items: center;
+}
+#bookmark{
+display: flex;
+align-items: center;
+}
+#personalize{
+display: flex;
+align-items: center;  
+}
+.text-block{
+display: inline-block;
+}
+.heading{
+font-size: 24px;
+font-weight: bold;
+}
+#left-text{
+    color:white;
+}
