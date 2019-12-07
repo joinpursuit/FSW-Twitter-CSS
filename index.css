@@ -22,6 +22,10 @@ grid-template-columns: 1fr 1fr;
     display: flex;
     justify-content: center ;
 }
+#twitter{
+    display:relative;
+    top: 20px;
+}
 #left-side{
     display: flex;
     justify-content: center;
@@ -36,8 +40,8 @@ grid-template-columns: 1fr 1fr;
     grid-row:5;
     grid-column: 1/5;
     text-align: center;
-    padding-top: 50% ;
-    padding-bottom: 0%;
+    /* padding-top: 50% ; */
+    padding-bottom: 5%;
 
 }
 .footer-links{
@@ -45,6 +49,9 @@ grid-template-columns: 1fr 1fr;
     list-style:none;
     padding: 0 10px 0 10px;
     font-size: 10px;
+}
+div>a, ul>li{
+    padding-left: 250px;
 }
 a{
     color:grey;
@@ -71,4 +78,20 @@ font-weight: bold;
 }
 #left-text{
     color:white;
+    max-width: 440px;
+    padding: 16px;
+    align-items: center;
+}
+h1{
+    font-size: 30px;
+    line-height: 40px;
+}
+#white-area{
+    color: black;
+    padding:16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-emphasis: outline 1px; ;
 }
