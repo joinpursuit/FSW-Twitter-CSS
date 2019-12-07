@@ -1,6 +1,4 @@
-body{
-    position: relative;
-}
+
 #content-body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -12,34 +10,43 @@ body{
     background-attachment: fixed;
 }
 #blue{
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: relative; */
     background-color: #1DA1F2;
-    margin: 0;
-    border: 0;
+    /* margin: 0px;
+    border: 50px;
+    padding: 0px; */
     font-weight: bold;
     line-height: 60px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
 #left-li{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
+    grid-template-columns: 30% 70%;
+    grid-gap: 10px;
+    grid-auto-rows:minmax(100px,auto)
 }
+
 .icon{
+    width: 30px;
     height: 35px;
-    position: relative;
-    margin: 20px;
-    left: 160px;
-    border: 0px;
-    background: none;
 }
+
+/* .icon{ */
+    /* width: 30px;
+    height: 35px;
+    margin: 20px;
+    right: 0px;
+    border: 0px; */
+    /* background: none; */
+/* } */
 
 #white{
     background-color: white;
-    background-position: 4;
+    /* background-position: 4; */
 }
 .user{
     margin: 12px;
@@ -63,7 +70,6 @@ body{
     color: #14171a;
     font-size: 14px;
     line-height: 20px;
-    -webkit-font-smoothing: antialiased;
 }
 
 #login{
