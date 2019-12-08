@@ -1,4 +1,5 @@
 * {
+    /* font-family: "Helvetica Neue", sans-serif; */
     margin: 0;
     padding: 0;
   }
@@ -15,8 +16,9 @@ h3{
     margin-right: 120px;
 } */
 #blueBird{
-    margin-left: 90px;
+    margin-left: -35px;
     margin-right: 120px;
+    
 }
 .mainDiv{
     height: 100vh;
@@ -34,8 +36,13 @@ h3{
     justify-content: center;
     align-items: center;
     grid-column: 1 / 2;
-
+    height: 94vh;
+    background-image: url("images/birdbackground.png");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    
 }
+
 .sectionWhite{
     background: white;
     display: grid;
@@ -44,18 +51,31 @@ h3{
     align-items: center;
     grid-column: 2 / -1;
     padding: 0px 60px;
+    height: 94vh;
 
 }
 .topWhite{
-    /* display: grid;
-    flex-direction: row;
-    justify-content: space-between; */
-
+   position: relative;
+   top: -15px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    padding: 2px;
+    justify-content: space-evenly;
+    border-radius: 3px; 
+    height: 40px;
 }
+#phone, #passwordBox{
+    padding:11px;
+    width: 170px;
+    font-size: 13px;
+    border: 1px solid gainsboro;
+    border-radius: 2px;
+    color: grey;
+}
+.topMiddleWhite{
+    display: flex;
+    flex-direction: column;
+}
+
 .forgotPassword{
     align-items: stretch;
 }
@@ -68,29 +88,28 @@ h3{
 }
 #blueBird{
     justify-content: left;
-    /* padding-right: 40px; */
 }
 #joinT{
     display: grid;
     justify-content: left;
     align-items: left;
-    padding: 30px;
-    padding-top: 60px;
     padding-left: 5px;
+    margin-top: 20px;
+    position: relative;
+    top: 60px;
 }
 .bottomWhite{
     display: grid;
     justify-content: space-between;
     justify-content: center;
     align-items: center;
-    padding-top: 0px ;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
 }
 .sectionThree{
     grid-column: 1 / -1;
     background: white;
     display: grid;
-    /* padding-bottom: 80px; */
+    height: 0vh;
 }
 .itemList{
     list-style: none;
@@ -100,15 +119,24 @@ h3{
     margin: 50px 0;
     font-weight: bold;
 }
+#item1{
+    padding: 20px;
+}
 #item1::before{
     content: url("https://img.icons8.com/android/24/000000/search.png");
     padding: 15px;
     -webkit-filter: invert(100%);
 }
+#item2{
+    padding: 20px;
+}
 #item2::before{
     content: url("https://img.icons8.com/dotty/24/000000/group-foreground-selected.png");
     padding:15px;
     -webkit-filter: invert(150%);
+}
+#item3{
+    padding: 20px;
 }
 #item3::before{
     content: url("https://img.icons8.com/windows/24/000000/speech-bubble.png");
@@ -119,27 +147,25 @@ h3{
     color: #1da1f2;
     background-color: white;
     display: flex;
+    text-align: center;
     border: 1px solid #1da1f2;
-    line-height: 10px;
-    padding: 15px 28px;
-    /* text-align: center; */
+    border-radius: 30px;
     justify-content: center;
     width: 65px;
     text-decoration: none;
-    border-radius: 40px;
     font-size: 13px;
     cursor: pointer;
 }
-#logIn1:hover {
+.logIn1:hover {
     background-color: rgb(235, 241, 255);
   }
-  a {
-      color: rgb(195, 195, 195);
-      font-size: 15px;
-      text-decoration: none;
+a {
+    color: rgb(195, 195, 195);
+    font-size: 15px;
+    text-decoration: none;
   }
-  a:hover{
-      text-decoration: underline;
+a:hover{
+    text-decoration: underline;
   }
 #signUp{
     color: white;
@@ -149,7 +175,7 @@ h3{
     line-height: 5px;
     padding: 15px 28px;
     justify-content: center;
-    width: 350px;    /*changes the spread of the button*/
+    width: 350px;    /*changes the spread of the button */
     border-radius: 40px;
     font-size: 14px;
     cursor: pointer;
@@ -173,19 +199,22 @@ h3{
 }
 .footerList{
     color: #aab8c2;
-    border-top: 1px solid;
-    border-top-color: gainsboro;
+    /* border-top: 1px solid;
+    border-top-color: gainsboro; */
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /* align-items: center; */
     justify-content: space-evenly;
     padding-left: 150px;
     padding-right: 150px;
     padding-top: 45px;
     font-size: 13px;
-    height: 7px;
-
-    
+}
+.footerDiv{
+    justify-content: center;
+}
+#linkForgotPassword {
+    position: relative;
+    top: 5px;
 }
