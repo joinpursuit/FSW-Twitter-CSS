@@ -1,0 +1,18 @@
+.leftSide {
+    position: absolute;
+    left: 0%;
+    width: 50%;
+}
+
+.rightSide {
+    position: absolute;
+    right: 0%;
+    width: 50%;
+}
+
+#foot {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content:space-evenly;
+    list-style:none;
+}
