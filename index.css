@@ -1,18 +1,65 @@
+/* 
+html, body, header, nav, h1, a,
+ul, ol, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+} */
+
 html, body{
     margin: 0;
     background-color: lightslategray;
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #main{
 background-color:rgb(14, 151, 241) ;
-height: 97%;
+height: 100%;
 background-image: url("https://github.com/DejaLFlynn/Pursuit-Core-Web-Twitter-CSS-Assignment/blob/master/images/birdbackground.png?raw=true");
 background-size: cover;
 background-position: center;
 background-repeat:no-repeat;
 overflow: hidden;
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: repeat(2, 50%);
+
+
 
 }
 #left-side #right-side{
@@ -20,10 +67,14 @@ grid-template-columns: 1fr 1fr;
 }
 #right-side{
     background-color: white;
-    display: flex;
+    display: grid;
+
     justify-content: center ;
     height: 200%;
-    /* height: 100%; */
+    display: inline-block;
+    overflow: hidden;
+   
+    
 }
 @media only screen and (max-width: 557px){
     #right-text{
@@ -34,7 +85,13 @@ grid-template-columns: 1fr 1fr;
 }
 #twitter{
     display:relative;
-    top: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3,250px);
+    position: relative;
+    margin-top:20px ;
+    margin-left: 50px;
+
+  
 }
 #join{
     line-height: 24px;
@@ -45,24 +102,23 @@ grid-template-columns: 1fr 1fr;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 #footer{
     background-color: white;
     border-top: 0.5px solid grey;
     display: grid;
-    grid-row:6;
-    grid-column: 1/5;
+    grid-row:25;
+    grid-column: 1/6;
     text-align: center;
-    /* padding-top: 50% ; */
-    /* padding-bottom: 5%; */
 
 }
 .footer-links{
     display: inline-block;
     list-style:none;
     padding: 0 10px 0 10px;
-    font-size: 10px;
+    font-size: 12px;
 }
 .point{
     display: inline-block;
@@ -89,9 +145,7 @@ align-items: center;
 display: flex;
 align-items: center;  
 }
-.text-block{
-display: inline-block;
-}
+
 .heading{
 font-size: 24px;
 font-weight: bold;
@@ -99,8 +153,15 @@ font-weight: bold;
 #left-text{
     color:white;
     max-width: 440px;
+    display:grid;
+    grid-auto-columns: column;
     padding: 16px;
     align-items: center;
+    position: relative;
+    font-size: 12px;
+    justify-content: center;
+    padding-top: 30%;
+    
 }
 h1{
     font-size: 30px;
@@ -108,20 +169,24 @@ h1{
 }
 #white-area{
     color: black;
-    padding:16px;
-    display: flex;
+
+    display: grid;
+    grid-auto-flow: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    text-emphasis: outline 1px; ;
+    display: relative;
+
+    
+}
+#small-icon{
+    height: 40px;
 }
 #info{
     display: relative;
     top:20px;
 }
-.point{
-    display: inline-block;
-}
+
 #first-login{
     background-color:white;
     border:1px solid rgb(14, 151, 241);
@@ -138,15 +203,15 @@ h1{
     background: white;
     color: rgb(14, 151, 241);
 }
-#text{
-    width: 200px;
-    display: inline-block;
+#right-text{
+
     display:relative;
     padding:12px 24px;
     box-sizing: border-box;
     margin: 10px 20px;
     margin-right: 5px;
     margin-left: 40px;
+    align-items: center;
     border: 1px solid white;
     border-radius: 5px;
 }
@@ -161,6 +226,8 @@ h1{
     margin-right: 5px;
     margin-left: 5px;
     border-radius: 5px;
+    border-spacing: 15px;
+   justify-content: center;
 
 }
 #second-login{
@@ -178,19 +245,23 @@ h1{
 
 }
 #white-area{
-    display:flex;
+    display:grid;
     padding:16px;
     justify-content: center;
     align-items: center;
     top: 100px;
     position: relative;
+
+
+
 }
 #main-signup{
     background-color: rgb(14, 151, 241);
     color: white;
     border: 1px solid rgb(14, 151, 241);
     border-radius: 100px;
-    width: 300px;
+    width: 280px;
+    height: 32px;
     font-size: 14px;
     text-align: center;
     line-height: 20px;
@@ -198,6 +269,7 @@ h1{
     display: relative;
     margin-bottom: 16px;
     cursor: pointer;
+    display: inline-block;
 
 
 }
@@ -210,15 +282,43 @@ color: white;
     color:rgb(14, 151, 241);
     border: 1px solid rgb(14, 151, 241);
     border-radius: 100px;
-    width: 300px;
+    width: 280px;
+    height: 32px;
     font-size: 14px;
     text-align: center;
     line-height: 20px;
     padding: 8px 16px;
     display: relative;
     cursor: pointer;
+    display: inline-block;
 }
 #main-login:hover{
     background:midnightblue;
-    
+}
+#search{
+    width:20px;    
+}
+#bookmark{
+    width: 20px;
+}
+#hashtag{
+    width:20px;
+   
+}
+.boxes{
+    height: 40px;
+    border-spacing: 15px;
+    justify-content: center;
+
+}
+input[type="submit" i]{
+    border-spacing: 15px;
+    justify-content: center;
+}
+#forgot-password{
+    display:relative;
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+  
 }
