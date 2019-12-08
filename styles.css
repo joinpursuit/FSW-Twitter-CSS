@@ -1,0 +1,187 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+#Content {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+
+#Login {
+    background-color: #FFFFFF;
+    flex: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+#AboutTwitter {
+    background-color:#1da1f2;
+    overflow: hidden;
+    position: relative;
+    flex: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#HomeLeft {
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 48px auto;
+    color: #FFFFFF;
+}
+
+.LeftText {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 48px auto;
+    align-items: center;
+}
+
+.Icon {
+    filter: invert(100%);
+    margin-right: 16px;
+}
+
+#SignupHeader { 
+    max-width: 350px;
+}
+
+#BirdImageSmall img{
+    color: yellow;
+    height: 45px;
+}
+
+#TwitterText {
+    size: 27px;
+}
+
+#JoinTwitterText {
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 48px;
+}
+
+#JoinTwitterLink {
+    color: brown;
+}
+
+a {
+    color:  #aab8c2;
+    text-decoration: none;
+}
+
+#BigBird {
+    position: absolute;
+    height: 140vh;
+    right: -80vh;
+    top: -20vh;
+    max-width: none;
+}
+
+#login, #login:visited, #signup, #signup:visited {
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-bottom: 16px;
+    border: 1px solid #1da1f2;
+    text-decoration: none;
+}
+
+#signup, #signup:visited {
+    background-color: #1da1f2;
+    color: #fff;    
+    
+}
+
+#login, #login:visited {
+    color: #1da1f2;
+    background-color: #fff;    
+    
+}
+#signup:hover {
+    background-color: #006dbf;
+}
+
+#login:hover {
+    background-color: #eaf5fd;
+}
+
+footer  ul  {
+    color: #aab8c2;
+    font-size: 12px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0px 9px;
+    text-align: center;
+}
+
+#FooterDiv {
+    background-color: #ffffff;
+    border-top: 1px;
+    padding: 11x 0;
+}
+
+.form {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 20px;
+    font-size: 14px;;
+    top: 10px;
+    right: 10px;
+    width: 100%;
+}  
+
+a.forgot {
+    color:#aab8c2;
+}
+
+#form1, #form2 {
+    background: #FFFFFF;
+    margin: 12px 0px 0px;
+    padding: 12px;
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    color: inherit;
+    font: inherit
+}
+
+#button {
+    background-color: #fff;
+    border: 1px solid #1da1f2;
+    color: #1da1f2; 
+    border-radius: 100px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    padding: 12px;
+    width: auto;
+    box-sizing: border-box;
+    margin-top: 12px;
+}
