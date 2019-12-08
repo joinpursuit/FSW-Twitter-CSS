@@ -200,8 +200,8 @@ h1{
   
 }
 #first-login:hover{
-    background: white;
-    color: rgb(14, 151, 241);
+  
+    background-color: rgb(16, 84, 161);
 }
 #right-text{
 
@@ -239,7 +239,7 @@ h1{
     visibility: hidden;
 }
 #second-login:hover{
-    background: seashell;
+    background: rgb(47, 179, 240);
 
 }
 #white-area{
@@ -272,7 +272,7 @@ h1{
 
 }
 #main-signup:hover{
-background: midnightblue;
+background: rgb(16, 84, 161);
 color: white;
 }
 #main-login{
@@ -291,7 +291,7 @@ color: white;
     display: inline-block;
 }
 #main-login:hover{
-    background:midnightblue;
+    background:rgb(16, 82, 161);
 }
 
 .boxes{
