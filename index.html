@@ -4,37 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Twitter. It's what's happening!</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link
         href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOGjUjzkplOb6KhU2eyrVPXtrFX77axV4e2rVbDqqlRd56hTBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANygUS7doVF736JRpuSmU/HqqVT/7axV/+6sVf/urFX/7qxV/+2rVd3qqVRCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADnp1MO7KtUqO2sVf/urFX/7qxV/+6sVf/urFX/7axV/OqpVGIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkplMc66pUx+6sVf/urFX/7qxV/+6sVf/urFX/7qxV/+6sVf/tq1X856hTPQAAAAAAAAAAAAAAAAAAAAAAAAAA56hTx+2rVf/urFX/7qxV/+6sVf/urFX/7qxV/+6sVf/urFX/7qxV/+uqVN/kpVMJAAAAAAAAAAAAAAAA5KZTBuuqVI/trFX37qxV/+6sVf/urFX/7qxV/+6sVf/urFX/7qxV/+6sVf/tq1X/56dTZwAAAAAAAAAAAAAAAOeoU5ntq1X/7qxV/+6sVf/urFX/7qxV/+6sVf/urFX/7qxV/+6sVf/urFX/7qxV/+mpVM4AAAAAAAAAAN+iURLnp1P97atV/+6sVf/tq1X/7KtU/+qqVP/rqlT/7axV/+6sVf/urFX/7qxV/+6sVf/qqlT+4qRSEQAAAADfolET6KhUdu2rVfnrqlT/56hT/+SmU//ipFL/5KZT/+uqVP/urFX/7qxV/+6sVf/urFX/66pU/+SlUzYAAAAA4aNSBuioVOjpqVT/5KVT/9+iUdLdoVFu3KBRKeCjUi7pqVT/7axV/+6sVf/urFX/7qxV/+2rVf/np1NFAAAAAN+iUSnkpVP/4qRS9N6hUWzcoFEBAAAAAAAAAADeoVEX5KZT/uuqVP/trFX/7axV/+yrVP/qqVT/5aZT5d+iUSzcoFEX3qFR7NygUTAAAAAAAAAAAAAAAAAAAAAAAAAAAN+iUabkplP/56hT/+ioVP/lplP/4qRS/uCjUqneoVExAAAAANufUB0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADcoFEI3aFRi9+iUe3folHx3qFRnNygURXcoFFT3KBRJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAMD/AADAPwAA8B8AAOAPAADABwAAwAcAAIADAACAAwAAwAMAAIcDAACfAQAAvwEAAP+HAAD//wAA//8AAA=="
         rel="icon" type="image/x-icon" />
 </head>
+
 <body>
     <div id="main">
         <div id="left-side">
             <div id="left-text">
-                    <h2>You're one step away from shiny new Twitter </h2>
-                    <p> We've added tons of cool features, including ...</p>
-                    <div id="explore">
+                <h2>You're one step away from shiny new Twitter </h2>
+                <p> We've added tons of cool features, including ...</p>
+                <div id="explore">
                     <i class="hashtag-icon"></i>
                     <div class="text-block">
-                        <div class="heading">Explore</div>
+                        <div class="point">Explore</div>
                         <div class="description">Latest Tweets</div>
                     </div>
                 </div>
                 <div id="Bookmark">
                     <i class="bookmark-icon"></i>
                     <div class="text-block">
-                        <div class="heading">Bookmark</div>
+                        <div class="point">Bookmark</div>
                         <div class="description">Save interesting </div>
                     </div>
                 </div>
                 <div id="Personalize">
                     <i class="twitter-icon"></i>
                     <div class="text-block">
-                        <div class="heading">Personalize</div>
+                        <div class="point">Personalize</div>
                         <div class="description">Choose</div>
                     </div>
 
@@ -43,15 +44,15 @@
         </div>
         <div id="right-side">
             <div id="twitter">
-                <input type="type" placeholder="Phone, Email or Username" required>
-                <input type="password" placeholder="Password" minlength="8" required>
-                <input class="first-login" type="submit" value="Log In" required>
+                <input id="type" type="text" placeholder="Phone, Email or Username" required>
+                <input id="password" type="password" placeholder="Password" minlength="8" required>
+                <input id="first-login" type="submit" value="Log In" required>
                 <br>
                 <a id="forgot-password" href="https://twitter.com/account/begin_password_reset">Forgot Password?</a>
                 <div id="white-area">
                     <div id="right-text">
                         <i class="small-twitter"></i>
-                        <input type="submit" class="second-login" value="Log In">
+                        <input type="submit" id="second-login" value="Log In">
                         <h1>See what’s happening in the world right now</h1>
                         <h3 id="Join">Join Twitter today.</h3>
                         <button class="main" id="main-signup"
@@ -62,41 +63,40 @@
                 </div>
             </div>
         </div>
-    </div>
         <div id="footer">
             <ul>
                 <li class="footer-links">
-                    <a href="">About</a>
+                    <a href="https://about.twitter.com/">About</a>
                 </li>
                 <li class="footer-links">
-                    <a href="">Help</a>
+                    <a href="https://help.twitter.com/">Help</a>
                 </li>
                 <li class="footer-links">
-                    <a href="">Blog</a>
+                    <a href="https://blog.twitter.com/">Blog</a>
                 </li>
                 <li class="footer-links">
-                    <a href="">Status</a>
+                    <a href="https://status.twitterstat.us/">Status</a>
                 </li>
                 <li class="footer-links">
-                    <a href="">Jobs</a>
+                    <a href="https://careers.twitter.com/">Jobs</a>
                 </li>
                 <li class="footer-links">
-                    <a href="">Terms</a>
+                    <a href="https://twitter.com/en/tos">Terms</a>
                 </li>
                 <li class="footer-links">
-                    <a href="">Privacy Policy</a>
+                    <a href="https://twitter.com/en/privacy">Privacy Policy</a>
                 </li>
                 <li class="footer-links">
-                    <a href="">Cookies</a>
+                    <a href="https://help.twitter.com/en/rules-and-policies/twitter-cookies">Cookies</a>
                 </li>
                 <li class="footer-links">
-                    <a href="">Ads</a>
+                    <a href="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html">Ads</a>
                 </li>
                 <li class="footer-links">
-                    <a href="">Brand</a>
+                    <a href="https://about.twitter.com/en_us/company/brand-resources.html">Brand</a>
                 </li>
                 <li class="footer-links">
-                    <a href="">Status</a>
+                    <a href="https://about.twitter.com/">Apps</a>
                 </li>
                 <li class="footer-links">
                     <a href="">Marketing</a>
@@ -118,7 +118,9 @@
                 </li>
             </ul>
         </div>
-   
+    </div>
+
+
 
 
 </body>

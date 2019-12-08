@@ -5,6 +5,7 @@ html, body{
 }
 #main{
 background-color:rgb(14, 151, 241) ;
+height: 97%;
 background-image: url("https://github.com/DejaLFlynn/Pursuit-Core-Web-Twitter-CSS-Assignment/blob/master/images/birdbackground.png?raw=true");
 background-size: cover;
 background-position: center;
@@ -21,10 +22,24 @@ grid-template-columns: 1fr 1fr;
     background-color: white;
     display: flex;
     justify-content: center ;
+    height: 97%;
+    /* height: 100%; */
+}
+@media only screen and (max-width: 557px){
+    #right-text{
+        position: relative;
+        top:-220px;
+        left:35px;
+     }
 }
 #twitter{
     display:relative;
     top: 20px;
+}
+#join{
+    line-height: 24px;
+    font-size: 18px;
+    margin: 16px auto;
 }
 #left-side{
     display: flex;
@@ -33,15 +48,14 @@ grid-template-columns: 1fr 1fr;
 }
 
 #footer{
- 
     background-color: white;
-    border-top:2px solid grey;
+    border-top: 0.5px solid grey;
     display: grid;
     grid-row:5;
     grid-column: 1/5;
     text-align: center;
     /* padding-top: 50% ; */
-    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
 
 }
 .footer-links{
@@ -50,12 +64,18 @@ grid-template-columns: 1fr 1fr;
     padding: 0 10px 0 10px;
     font-size: 10px;
 }
+.point{
+    display: inline-block;
+}
 div>a, ul>li{
     padding-left: 250px;
 }
 a{
     color:grey;
     text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 #explore{
 display: flex;
@@ -94,4 +114,111 @@ h1{
     align-items: center;
     position: relative;
     text-emphasis: outline 1px; ;
+}
+#info{
+    display: relative;
+    top:20px;
+}
+.point{
+    display: inline-block;
+}
+#first-login{
+    background-color:white;
+    border:1px solid rgb(14, 151, 241);
+    border-radius: 100px;
+    color:rgb(14, 151, 241);
+    display: relative;
+    padding:12px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+#first-login:hover{
+    background: white;
+    color: rgb(14, 151, 241);
+}
+#text{
+    width: 200px;
+    display: inline-block;
+    display:relative;
+    padding:12px 24px;
+    box-sizing: border-box;
+    margin: 10px 20px;
+    margin-right: 5px;
+    margin-left: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.input{
+    display: inline-block;
+    display: relative;
+    width: 200px;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    margin:8px 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+
+}
+#second-login{
+    background-color: white;
+    color: rgb(14, 151, 241) ;
+    border: 1px solid rgb(14, 151, 241);
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 5px;
+    float: right;
+    visibility: hidden;
+}
+#second-login:hover{
+    background: seashell;
+
+}
+#white-area{
+    display:flex;
+    padding:16px;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    position: relative;
+}
+#main-signup{
+    background-color: rgb(14, 151, 241);
+    color: white;
+    border: 1px solid rgb(14, 151, 241);
+    border-radius: 100px;
+    width: 300px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    padding: 8px 16px;
+    display: relative;
+    margin-bottom: 16px;
+    cursor: pointer;
+
+
+}
+#main-signup:hover{
+background: midnightblue;
+color: white;
+}
+#main-login{
+    background-color: white;
+    color:rgb(14, 151, 241);
+    border: 1px solid rgb(14, 151, 241);
+    border-radius: 100px;
+    width: 300px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    padding: 8px 16px;
+    display: relative;
+    cursor: pointer;
+}
+#main-login:hover{
+    background:midnightblue;
+    
 }
