@@ -121,9 +121,9 @@ grid-template-columns: repeat(2, 50%);
 .point{
     display: inline-block;
 }
-div>a, ul>li{
+/* div>a, ul>li{
     padding-left: 250px;
-}
+} */
 a{
     color:grey;
     text-decoration: none;
@@ -206,14 +206,12 @@ h1{
 #right-text{
 
     display:relative;
-    padding:12px 24px;
+    padding:10px 20px;
     box-sizing: border-box;
-    margin: 10px 20px;
-    margin-right: 5px;
-    margin-left: 40px;
     align-items: center;
     border: 1px solid white;
     border-radius: 5px;
+    margin-left: 250px;
 }
 
 .input{
@@ -310,7 +308,9 @@ input[type="submit" i]{
 #forgot-password{
     display:relative;
     display: grid;
-    grid-column: 1;
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 10px;
    
   
 }
