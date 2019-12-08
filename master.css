@@ -5,14 +5,6 @@
 body{
     font-family: "Helvetica Neue", sans-serif;
 }
-/* h1{
-    margin-left: 120px;
-    margin-right: 120px;
-}
-h3{
-    margin-left: 120px;
-    margin-right: 120px;
-} */
 .mainDiv{
     height: 100vh;
     display: grid;
@@ -28,26 +20,17 @@ h3{
     align-items: center;
     grid-column: 1 / 2;
     height: 95vh;
-    /* background-image: url("images/birdbackground.png");
-    background-repeat: no-repeat;
-    background-size: 1150px;
-    background-position: -18%; */
 }
 .twitterIcon-bird{
     z-index: 0;
     height: 95vh;
     width: 50vw;
     position: absolute;
-    /* height: 95vh; */
-    /* right: -60vh;
-    top: -20vh; */
-    /* max-width: none; */
 }
 
 .sectionWhite{
     background: white;
     display: grid;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     grid-column: 2 / -1;
@@ -83,7 +66,6 @@ h3{
 .middleWhite{
     background-color: white;
     padding: 0px 130px;
-    /* min-width: 300px; */ 
     justify-content: center;
     align-items: center;
 }
@@ -128,7 +110,6 @@ h3{
     list-style: none;
     color: white;
     font-size: 18px;
-    /* line-height: 24px; */
     margin: 50px 0;
     font-weight: bold;
     position: relative;
@@ -235,8 +216,6 @@ a:hover{
     text-decoration: underline;
 }
 .footerDiv{
-    /* border-top: 1px solid;
-    border-top-color: gainsboro; */
     justify-content: center;
 }
 #linkForgotPassword {
