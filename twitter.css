@@ -1,0 +1,251 @@
+.left {
+    left: 0;
+    background-color:#1DA1F2 ;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 40px;
+    /* background-image:url("./Pursuit-Core-Web-Twitter-CSS-Assignment/images/birdbackground.png");  */
+    right: 10%;
+    
+  }
+  
+
+  .right {
+    right: 0;
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  
+  /* .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  } */
+  
+ 
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  #world{
+    color: black;
+    text-align:center;
+    justify-content: space-around;
+    text-emphasis: font;
+    font-weight: bolder;
+    font-family: "helvetica neue";
+    overflow-y: scroll;
+    font-size: 27px;
+    text-align: left;
+    text-indent: 200px;
+    margin:5px;
+    margin-top: 100px;
+    
+    
+    
+    
+    
+    
+  }
+  #now{
+    color: black;
+    font-size: 27px;
+    text-indent: 225px;
+    font-family: "helvetica neue";
+    margin:-20px;
+    margin-bottom: 50px;
+    
+  }
+  image{
+      height: 200%;
+  }
+  
+  #birdbackground{
+      height: 130%;
+      width: 94%;
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 40px;
+      top: -150px;
+      color: rgb(29, 161, 242);
+      opacity: 0.3;
+      
+  }
+  #follow{
+      color: white;
+      text-align:center;
+      /* justify-content: space-around; */
+      text-emphasis: font;
+      padding-top: 250px;
+      font-weight: bolder;
+      font-family: "helvetica neue";
+      overflow-y: scroll;
+      font-size: 18px;
+      
+      
+
+      
+  }
+  #hear{
+    color: white;
+    text-align:center;
+    /* justify-content: space-around; */
+    text-emphasis: font;
+    padding-top: 40px;
+    font-weight: bolder;
+    font-family: "helvetica neue";
+    overflow-y: scroll;
+    font-size: 18px;
+    
+    
+    
+    
+  }
+  #join{
+    color: white;
+    text-align:center;
+    /* justify-content: space-around; */
+    text-emphasis: font;
+    padding-top: 40px;
+    font-weight: bolder;
+    font-family: "helvetica neue",;
+    overflow-y: scroll;
+    font-size: 18px;
+    align-items: center;
+    
+
+  }
+  #joinToday{
+      text-align: center;
+      align-items: center;
+      text-align: left;
+      text-indent: 200px;
+      /* padding-top: 50px; */
+  }
+  #signUp{
+        position: relative;
+        left: 200px;
+        width: 45%;
+        padding: 6px 16px;
+        border-radius: 25px;
+        background-color:#1DA1F2;
+        color: white;
+        cursor: pointer;   
+  }
+  #logIn{
+    position: relative;
+    left: 180px;
+    width: 45%;
+    padding: 6px 16px;
+    border-radius: 25px;
+    margin: 20px; 
+    border-color: #1DA1F2;
+    color: #1DA1F2;
+    cursor: pointer;
+    
+
+
+  }
+  #birdlogo{
+      position: relative;
+      justify-content: left;
+      width: 40px;
+      height: 30px;
+      display: block;
+      font-family: "edgeicons";
+      font-weight: normal;
+      font-style: normal;
+      text-align: right;
+      margin-top:80px;
+      margin-left: 200px;
+      bottom: -80px;
+      opacity: .7;
+     
+    
+  }
+  #dupButton {
+      height: 50px;
+      width: 80px;
+      border-radius: 30px;
+      position: relative;
+      justify-content: right;
+      margin-left: 100px;
+      border-color:#1DA1F2;
+      color: #1da1f2;  
+      margin: 12px 0px 0px;
+      text-align: center;
+      bottom: 0px;
+      box-sizing: border-box;
+      margin-top: 12px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  
+  #info{
+      margin-left: 700px;
+      margin: 12px 0px 0px;
+      padding: 12px;
+      width: 150px;
+      
+      
+
+  }
+  #password{
+      
+      margin-left: 300px;
+      margin: 12px 0px 0px;
+      padding: 12px;
+      text;
+      
+  } 
+  #header{
+    
+    align-content: center;
+    align-items: center;
+    text-indent: inherit;
+    margin-left: 200px;
+
+  }
+  #glass{
+      /* margin-left:100px; */
+  }
+  .iconify{
+      margin-right: 10px;
+    
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    
+    
+  }
+  .footer > ul{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style: none;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+  }
