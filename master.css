@@ -1,12 +1,10 @@
 * {
-    /* font-family: "Helvetica Neue", sans-serif; */
     margin: 0;
     padding: 0;
-  }
-
-/* body{
-    line-height: 1;
-} */
+}
+body{
+    font-family: "Helvetica Neue", sans-serif;
+}
 /* h1{
     margin-left: 120px;
     margin-right: 120px;
@@ -15,19 +13,12 @@ h3{
     margin-left: 120px;
     margin-right: 120px;
 } */
-#blueBird{
-    margin-left: -35px;
-    margin-right: 120px;
-    
-}
 .mainDiv{
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 90vh 15vh;
-    /* display: block;
-    align-items: center;
-    justify-content: center; */
+    grid-template-rows: 90vh 10vh;
+    
 
 }
 .sectionBlue{
@@ -36,11 +27,21 @@ h3{
     justify-content: center;
     align-items: center;
     grid-column: 1 / 2;
-    height: 94vh;
-    background-image: url("images/birdbackground.png");
+    height: 95vh;
+    /* background-image: url("images/birdbackground.png");
     background-repeat: no-repeat;
-    background-size: 1000px;
-    
+    background-size: 1150px;
+    background-position: -18%; */
+}
+.twitterIcon-bird{
+    z-index: 0;
+    height: 95vh;
+    width: 50vw;
+    position: absolute;
+    /* height: 95vh; */
+    /* right: -60vh;
+    top: -20vh; */
+    /* max-width: none; */
 }
 
 .sectionWhite{
@@ -51,7 +52,7 @@ h3{
     align-items: center;
     grid-column: 2 / -1;
     padding: 0px 60px;
-    height: 94vh;
+    height: 95vh;
 
 }
 .topWhite{
@@ -87,7 +88,19 @@ h3{
     align-items: center;
 }
 #blueBird{
+    margin-left: -35px;
+    margin-right: 120px;
     justify-content: left;
+    position: relative;
+    top: 30px
+}
+#heyWorld{
+    display:grid;
+    justify-content: left;
+    align-items: left;
+    padding: -5px;
+    position: relative;
+    top: 20px;
 }
 #joinT{
     display: grid;
@@ -96,14 +109,14 @@ h3{
     padding-left: 5px;
     margin-top: 20px;
     position: relative;
-    top: 60px;
+    top: 50px;
 }
 .bottomWhite{
     display: grid;
     justify-content: space-between;
     justify-content: center;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 .sectionThree{
     grid-column: 1 / -1;
@@ -115,9 +128,10 @@ h3{
     list-style: none;
     color: white;
     font-size: 18px;
-    line-height: 24px;
+    /* line-height: 24px; */
     margin: 50px 0;
     font-weight: bold;
+    position: relative;
 }
 #item1{
     padding: 20px;
@@ -156,9 +170,12 @@ h3{
     font-size: 13px;
     cursor: pointer;
 }
-.logIn1:hover {
+#logIn1:hover {
     background-color: rgb(235, 241, 255);
   }
+#logIn2:hover {
+    background-color:  rgb(235, 241, 255);
+}
 a {
     color: rgb(195, 195, 195);
     font-size: 15px;
@@ -199,8 +216,8 @@ a:hover{
 }
 .footerList{
     color: #aab8c2;
-    /* border-top: 1px solid;
-    border-top-color: gainsboro; */
+    border-top: 1px solid;
+    border-top-color: gainsboro;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -208,10 +225,18 @@ a:hover{
     justify-content: space-evenly;
     padding-left: 150px;
     padding-right: 150px;
-    padding-top: 45px;
+    padding-top: 8px;
     font-size: 13px;
+    position: relative;
+    top: 35px;
+
+}
+.footerList:hover{
+    text-decoration: underline;
 }
 .footerDiv{
+    /* border-top: 1px solid;
+    border-top-color: gainsboro; */
     justify-content: center;
 }
 #linkForgotPassword {
