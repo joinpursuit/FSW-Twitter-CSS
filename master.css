@@ -1,0 +1,13 @@
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#blue {
+    background: #00aced;
+    color: white;
+}
+
+#white {
+
+}
