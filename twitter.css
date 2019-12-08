@@ -473,9 +473,23 @@ textarea {
 /* twitter css code */
 /* body {
     /* background-color: #1DA1F2; */
-/* } */ */
+/* } */
 
-.flex-container {
+body {
+    background-image: url('/Users/marializamartinez/Documents/UnitII/Pursuit-Core-Web-Twitter-CSS-Assignment/images/birdbackground.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* .flex-container {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -487,8 +501,6 @@ textarea {
     display: grid;
     size: 100%;
     /* z-index: 2 */
-}
-
 
 
 
@@ -502,26 +514,106 @@ textarea {
     content: "";
     display: table;
     clear: both;
-  } */
+} */
 #leftScreen {
-display: flex;
-background-color: #1DA1F2;
-width: 50%;
-align-self: stretch;
-order: 0;
+    display: flex;
+    background-color: #1DA1F2;
+    width: 50%;
+    height: 100%;
+    opacity: 75%;
+    /* align-self: stretch;
+    position: fixed;
+    z-index: 0; */
 
 }
-#img {
-display: grid;
-grid-area: span right;
-/* align-items: flex-end; */
-position: relative;
-background-color: transparent;
-align-self: stretch;
-grid-column: 2;
-grid-row: 1 / 3;
-order: 1;
+
+#rightScreen {
+    display: flex;
+    /* flex-flow: wrap; */
+    width: 50%;
+    height: 100%;
+    /* orientation: left;
+    position: fixed;
+    z-index: 2; */
+    background: white;
+
 }
+
+.img {
+    /* display: flex; */
+    /* flex-flow: nowrap; */
+    object-fit: cover;
+    /* width: 2000px; */
+    /* height: auto; */
+    /* align-content: 300px; */
+    /* right: 25%; */
+    /* background-size: contain; */
+    /* image-orientation: initial; */
+    /* align-items: flex-end; */
+    /* position: fixed; */
+    /* background-color: transparent; */
+    /* align-self: auto; */
+    /* order: 1; */
+}
+
+.section {
+    display: flex;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    ;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    size: 50%;
+    width: 50%;
+    z-index: 1;
+    letter-spacing: 1pt;
+    word-spacing: 2pt;
+    POSITION: absolute;
+    top: 50%;
+    width: 50%;
+    align-items: center;
+    /* list-style-position: inside; */
+    left: 0%;
+    right: 80%;
+    flex-direction: row;
+    flex-flow: wrap;
+    background-color: transparent;
+    text-align: center;
+
+
+    /* order: 2; */
+}
+
+
+#littleBird {
+    display: flex;
+    flex-direction: row;
+    left: 90%;
+    height: 10%;
+    width: 10%;
+    position: static;
+
+    /* width: 300px; */
+    padding: 10px;
+    background: transparent;
+    z-index: 3;
+}
+
+input {
+    display: grid;
+    list-style-position: outside;
+    width: 210px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #e6ecf0;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 5px;
+}
+
+
 /* .row {
     display: flex;
   }
@@ -540,7 +632,8 @@ ul {
     /* text-align: center; */
     /* text-align-last: flex; */
     display: flex;
-    list-style: none;
+    justify-content: baseline;
+    /* list-style: none; */
     padding-left: 0%;
     position: fixed;
     padding-top: 1%;
@@ -548,8 +641,8 @@ ul {
     left: 0%;
     right: 0%;
     bottom: 0;
-    /* margin-right: auto;
-    margin-left: auto; */
+    margin-right: auto;
+    margin-left: auto;
     width: 100%;
     color: grey;
     /* align-items: stretch; */
@@ -560,11 +653,12 @@ ul {
 li {
     display: grid;
     justify-content: space-around;
-    grid-area: auto;
+    grid-area: span;
     word-spacing: -.4ch;
     flex: 0 1 100%;
     list-style-type: none;
     align-content: center;
-    align-self: flex-end;
-    align-items: baseline;
+    align-self: baseline;
+    align-items: stretch;
+    text-align-last: center;
 }
