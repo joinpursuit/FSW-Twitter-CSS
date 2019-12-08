@@ -208,10 +208,9 @@ hr{
     width: auto;
     text-align: center;
 }
-.link{
-    text-decoration: underline;
-}
+
 .link:hover{
+    text-decoration: underline;
     cursor: pointer;
 }
 
