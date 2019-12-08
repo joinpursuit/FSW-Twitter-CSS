@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    position: absolute;
 }
 
 #Home {
@@ -161,6 +162,7 @@ a.forgot {
     font: inherit;
     border: 1px solid #e6ecf0;
     border-radius: 3px;
+    color: #8996a1;
 }
 
 #button {
@@ -184,7 +186,6 @@ a.forgot {
     padding: 11x 0;
     height: 5vh;
     width: 100vw;
-    margin-left: 80px;
     font-size: 12px;
     border-top: 1px solid #e6ecf0;
     font-family: Arial, Helvetica, sans-serif;
@@ -199,10 +200,16 @@ footer  ul  {
     justify-content: space-around;
     list-style-type: none;
     padding: 0px 9px;
-    /* text-align: center; */
+    text-align: center;
     width: 80%;
+    margin-left: 80px           ;
     }
 
 #forgot {
     margin-left: 177px;
+}
+
+footer ul:hover {
+    text-decoration: underline;
+
 }
