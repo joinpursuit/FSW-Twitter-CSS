@@ -5,10 +5,15 @@
 body {
     margin: 0;
 }
+
+#Home {
+    height: 100vh;
+}
+
 #Content {
     display: flex;
     flex-direction: row-reverse;
-    height: 100vh;
+    height: 95vh;
 }
 
 #Login {
@@ -63,7 +68,8 @@ body {
 }
 
 #TwitterText {
-    size: 27px;
+    font-size: 27px;
+    line-height: 32px;
 }
 
 #JoinTwitterText {
@@ -123,38 +129,21 @@ a {
     background-color: #eaf5fd;
 }
 
-footer  ul  {
-    color: #aab8c2;
-    font-size: 12px;    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding: 0px 9px;
-    text-align: center;
-}
-
-#FooterDiv {
-    background-color: #ffffff;
-    border-top: 1px;
-    padding: 11x 0;
-}
 
 .form {
     display: flex;
     position: absolute;
     flex-direction: row;
-    justify-content: flex-end;
-    padding-left: 20px;
+    justify-content: center;
     padding-right: 20px;
     line-height: 20px;
     font-size: 14px;;
     top: 10px;
     right: 10px;
-    width: 100%;
+    margin-right: 150px;
 }  
 
-a.forgot {
+a.forgot {  
     color:#aab8c2;
 }
 
@@ -169,7 +158,9 @@ a.forgot {
     box-sizing: border-box;
     margin-top: 12px;
     color: inherit;
-    font: inherit
+    font: inherit;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
 }
 
 #button {
@@ -184,4 +175,34 @@ a.forgot {
     width: auto;
     box-sizing: border-box;
     margin-top: 12px;
+    padding: 12px;
+}
+
+#FooterDiv {
+    background-color: #ffffff;
+    border-top: 1px;
+    padding: 11x 0;
+    height: 5vh;
+    width: 100vw;
+    margin-left: 80px;
+    font-size: 12px;
+    border-top: 1px solid #e6ecf0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer  ul  {
+    color: #aab8c2;
+    font-size: 12px;    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0px 9px;
+    /* text-align: center; */
+    width: 80%;
+    }
+
+#forgot {
+    margin-left: 177px;
 }
