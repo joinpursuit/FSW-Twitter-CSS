@@ -41,22 +41,20 @@ table {
 	border-spacing: 0;
 }
 /* ______________________________________________________________ */
-body {
+html body {
 	font-family: Arial, Helvetica, sans-serif;
-	height: 100%;
-	width: 100%;
+	overflow-y: hidden;
 }
 
 
 main {
 	display: grid;
-	background: rgba(29, 161, 242, .7);
-	grid-template-columns: repeat(2, 1fr);
+	background: rgba(29, 161, 242);
+	grid-template-columns: repeat(2, 50%);
 	grid-template-rows: minmax(2px, auto);
 	position: absolute; 
 	background-image: url("./images/birdbackground.png");
 	background-repeat: no-repeat;
-	background-position: -50 top -50 left;
 	background-size: 75%;
 	height: 100%;
 	width: 100%;
@@ -67,21 +65,28 @@ main {
    flex-direction: column;
    justify-content: center;
 	align-items: center;
+	height:100%;
+	width: 100%;
 }
 
 #white {
-	display: flex;
-	flex-direction: column;
 	background-color: white;
-	/* justify-content: center; */
-	/* align-items: center; */
+	height: 100%;
+	width: 100%;
 }
 
 #content-list{
-	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	font-size: x-large;
 	line-height: 72px;
 	font-weight: bold;
 	color: white;
+}
+
+section ul li{
+	align-items: center;
+	justify-content: center;
 }
 
 #item1::before {
@@ -104,8 +109,9 @@ main {
 
 #login-data{
 	display: grid;
-	grid-template-columns: repeat(3, 200px);
-	margin-left: 50px;
+	grid-template-columns: repeat(3, 225px);
+	position: relative;
+	margin-left: 100px;
 	margin-top: 25px;
 }
 
@@ -115,35 +121,53 @@ a:link{
 }
 
 #forgotpassword{
-	font-size: 12px;
+	font-size: 14px;
 	grid-area: 2 / 2;
 	text-decoration: none;
 }
 
 .input {
-	border: solid 1px rgba(128, 128, 128, 0.5);
-	height: 35px;
-	width: 175px;
+	border: solid 1px rgba(128, 128, 128, 0.2);
+	border-radius: 3px;
+	margin-top: 15px;
+	padding-left: 10px;
+	height: 50px;
+	width: 200px;
+	font-size: small;
+}
+
+#input1 {
+	grid-area: 1 / 1;
+}
+
+#input2{
+	grid-area: 1 / 2;
 }
 
 #login{
+	grid-area: 1 / 3;
 	border-radius: 50px;
-	height: 40px;
-	width: 70px;
+	height: 60px;
+	width: 75px;
+	font-size: 14px;
 	color: rgb(29, 161, 242);
-	padding: 5px;
+	margin-top: 15px;
 }
+
 
 #logo-bird{
 	width: auto;
 	height: 65px;
-	margin-left: -10%;
 }
 
-#motto{
-	width: 50%;
+img {
+	grid-area: 1 / 1;
+}
+
+#motto{	
 	display: flex;
 	flex-wrap: wrap;
+	width: 50%;
 }
 
 #p1{
@@ -159,26 +183,27 @@ a:link{
 
 .join-white {
 	margin-top: 65px;
-	margin-left: 100px;
+	margin-left: 150px;
 }
 
 footer {
 	grid-column: 1 / -1;
 	background-color: white;
+	border-top: 1px solid	gainsboro;
+	color: gainsboro;
+	font-size: 14px;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-top: 1px solid	gainsboro;
-	padding-top: 25px;
 }
 
-footer ul {
-	display: flex;
-	font-size: small;
-	justify-content: space-between;
-	color: gainsboro;
+footer ul li{
+	list-style-type: none;
+   display: inline;
+   margin: 8px;
 }
 
-.footerli:hover{
+.footerli:hover a:hover {
 	text-decoration-line: underline;
 }
 
@@ -188,7 +213,7 @@ footer ul {
 }
 
 #signup:hover{
-	background-color: rgba(7, 46, 71, 0.925);
+	background-color: rgba(29, 161, 242, .9);
 }
 
 .button {
@@ -200,6 +225,7 @@ footer ul {
 	align-items: center;
 	justify-content: center;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .joinbtn {
