@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -45,5 +45,177 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+  border-spacing: 0;
 }
+
+/*  css styling */
+html {
+  /* background: pink; */
+  display: flex;
+  flex-flow: column;
+  min-height: 100%;
+}
+
+body {
+  /* font-size: 14; */
+  height: 96vh;
+  width: 100%;
+}
+
+#birdback{
+  /* background-image:url("./images/birdbackground.png"); */
+  /* background-size: contain; */
+  background-repeat:no-repeat;
+  /* align-items: center; */
+  position: absolute;
+  width:80%;
+  height: 100%;
+  /* background-position: center;  */
+  margin-left: 7%;
+  margin-bottom: 20%;
+  z-index: 0;
+}
+
+#birdback img{
+  height: 110vh;
+  right: -80vh;
+  top: -50vh
+}
+
+#wholePage {
+
+  width: 100%;
+  min-height: 100%;
+  /* min-height: 800px; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  /* overflow: scroll; */
+  /* z-index: 1; */
+}
+
+#blue {
+  background: #1DA1F2; 
+  opacity: 0.80;
+  width: 50%;
+  min-height: 100%;
+  /* overflow: hidden; */
+  /* position: relative; */
+  align-items: center;
+  /* width: 100%; */
+  float: left;
+  z-index: 1; 
+}
+
+#white {
+  background: white;
+  width: 50%;
+  float: right;
+  /* position: relative;  */
+  min-height: 100%;
+  z-index: 1;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100;
+  height: 5%;
+  z-index:2;
+  color: #FFFFFF;
+}
+
+#userLogin {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#user {
+  display: relative;
+  display: inline-block;
+  width: 20px;
+  height: 40px; 
+  padding: 20px;
+  justify-content: center;
+}
+
+#logIn {
+  border-radius: 20px;
+  border: 1px solid #1da1f2;
+}
+
+
+#logo2 {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 60px;
+  align-items: center;
+}
+
+#middle {
+  width: 80%;
+  position: relative;
+  right: 10%;
+  left: 10%;
+  margin-bottom: 10%;
+}
+
+.signUp { 
+  height: 20px;
+  width: 400px;
+  text-align: center;
+  padding-top: 20px 20px;
+  border-radius: 20px;
+}
+.logIn2 { 
+  height: 200px;
+  width: 400px;
+  text-align: center;
+  padding-top: 20px 20px;
+  border-radius: 20px;
+}
+
+/* #LogIn {
+
+} */
+.footer_li{
+  background: white;
+  border-top: 0.7px solid grey;
+  display:grid;
+  grid-row: 20;
+  grid-column: 1/6;
+  text-align: center;
+  justify-content: space-evenly;
+  font-size: small;
+}
+
+.footer_li:hover { 
+  text-decoration-line: underline;
+}
+
+#copyright:hover {
+  text-decoration-line: none;
+} 
+
+#intro {
+  display: inline-block;
+  width: 80%;
+  font-weight: bold;
+}
+ 
+/* .Footer_list {
+  display: flex;
+  /* height: 20%; */
+  /* text-align: center;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 40px;
+} */ 
+
+/* #birdback {
+  position: absolute; */
+  /* z-index: 0; */
+/* } */
+

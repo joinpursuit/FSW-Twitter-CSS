@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 <body> 
-  <img id="birdback" src="./images/birdbackground.png" alt="">
-  
-  <div id="wholePage">
 
-    <left id="blue">
+  
+<div id="wholePage">
+  <div id="birdback">
+  <img  src="./images/birdbackground.png" alt="">
+  </div>
+  <left id="blue">
       <section id="follow">
         <ul>
           <li>Follow your interests</li>
@@ -22,92 +24,106 @@
       </section>
     </left>
 
-
-
-
 <right id="white">
 
-     <section id="userLogin">
-      <input type="text" name="userInformation" placeholder="Phone, email, or username">
-      <input type="text" name="Password" placeholder="Password">
+<section id="userLogin">
+  <div id="user">
+      <input class="input" type="text" name="userInformation" placeholder="Phone, email, or username">
+  </div>
+  <div id="password">
+      <input class="input" type="text" name="Password" placeholder="Password">
+  </div>
+  <div id="button">
       <button class="logIn">Log in</button>
+  </div> 
+  <div>   
       <a class="pw-recovery" href="https://twitter.com/account/begin_password_reset">Forgot account?</a>
-    </section>
+  </div>
+</section>
 
 <section id="middle">
 
+  <smallLogo>
   <img src="./images/birdlogo.png" alt="" id="logo2">
-  <intro>
+  </smallLogo>
+
+  <intro id="intro">
     <h2>See what's happening in the world right now</h2>
   </intro>
+
 </section>
 
 <login>
-  <h5> Join Twitter today</h5>
-  <a href="https://twitter.com/i/flow/signup"></a>
-  <a href="https://twitter.com/login"></a> 
+<h5> Join Twitter today</h5>
+<div class="signUp">
+ <input  type="text" name=""  placeholder=" Sign up">
+</div>
+ <br>
+ <div class="logIn2">
+ <input type="text" id="LogIn"
+ placeholder="Log in">
+</div>
 </login>
 
 </right>
-
-<footer>
-    <ul class= "Footer_list">
-            
-        <li class= "Footer_list">
-        <a href= "https://about.twitter.com/">About </li>
-      
-        <li class= "Footer_list">
-        <a href = "https://help.twitter.com/">Help Center</li>
-        
-        <li class= "Footer_list">
-        <a href= "https://blog.twitter.com/"> Blog</li>
-        
-        <li class= "Footer_list"> 
-        <a href = "https://status.twitterstat.us/"> Status</li>
-
-        <li class= "Footer_list">
-        <a href = "https://careers.twitter.com/">Jobs</li>
-        <li class= "Footer_list">
-        <a href = "https://twitter.com/en/tos">Terms</li>
-        
-        <li class= "Footer_list"> 
-        <a href ="https://twitter.com/en/privacy">Privacy Policy</li>
-        
-        <li class= "Footer_list">
-        <a href= "https://help.twitter.com/en/rules-and-policies/twitter-cookies">Cookies</li>
-        
-        <li class= "Footer_list">
-       <a href ="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html">Ads info</li>
-        
-       <li class= "Footer_list">
-        <a href ="https://about.twitter.com/en_us/company/brand-resources.html">Brand</li>
-        
-        <li class= "Footer_list">
-       <a href = "https://about.twitter.com/">Apps</li>
-        
-       <li class= "Footer_list">
-       <a href = "https://ads.twitter.com/login?ref=gl-tw-tw-twitter-advertise">Advertise</li>
-        
-       <li class= "Footer_list">
-        <a href = "https://marketing.twitter.com/na/en">Marketing</li>
-
-        <li class= "Footer_list"> 
-        <a href = "https://business.twitter.com/">Businesses</li>
-
-        <li class= "Footer_list">
-        <a href = "https://developer.twitter.com/">Developers</li>
-
-        <li class= "Footer_list">
-        <a href = "https://twitter.com/i/directory/profiles">Directory</li>
-
-        <li class= "Footer_list"> 
-        <a href = "https://twitter.com/settings/personalization">Settings</li>
-
-        <li class= "Footer_list"> ©2019 Twitter</li>
-    </ul>
-</footer>
-
 </div>
+  <footer id="footer">
+      <ul class="footerList">
+              
+          <li class="footer_li">
+          <a href="https://about.twitter.com/">About </li>
+        
+          <li class="footer_li">
+          <a href ="https://help.twitter.com/">Help Center</li>
+          
+          <li class="footer_li">
+          <a href="https://blog.twitter.com/"> Blog</li>
+          
+          <li class="footer_li"> 
+          <a href ="https://status.twitterstat.us/"> Status</li>
+  
+          <li class="footer_li">
+          <a href ="https://careers.twitter.com/">Jobs</li>
+          <li class="footer_li">
+          <a href ="https://twitter.com/en/tos">Terms</li>
+          
+          <li class="footer_li"> 
+          <a href ="https://twitter.com/en/privacy">Privacy Policy</li>
+          
+          <li class="footer_li">
+          <a href= "https://help.twitter.com/en/rules-and-policies/twitter-cookies">Cookies</li>
+          
+          <li class="footer_li">
+         <a href ="https://business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html">Ads info</li>
+          
+         <li class="footer_li">
+          <a href ="https://about.twitter.com/en_us/company/brand-resources.html">Brand</li>
+          
+          <li class="footer_li">
+         <a href ="https://about.twitter.com/">Apps</li>
+          
+         <li class="footer_li">
+         <a href ="https://ads.twitter.com/login?ref=gl-tw-tw-twitter-advertise">Advertise</li>
+          
+         <li class="footer_li">
+          <a href ="https://marketing.twitter.com/na/en">Marketing</li>
+  
+          <li class= "footer_li"> 
+          <a href ="https://business.twitter.com/">Businesses</li>
+  
+          <li class="footer_li">
+          <a href ="https://developer.twitter.com/">Developers</li>
+  
+          <li class="footer_li">
+          <a href ="https://twitter.com/i/directory/profiles">Directory</li>
+  
+          <li > 
+          <a href ="https://twitter.com/settings/personalization">Settings</li>
+  
+          <li class="footer_li"> ©2019 Twitter</li>
+      </ul>
+  </footer>
+
 
 </body>
 </html>
