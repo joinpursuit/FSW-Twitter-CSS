@@ -46,3 +46,84 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+body {
+    display: flex;
+    flex: wrap;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#container {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%, 50px;
+}
+
+#blue {
+    background: #1da1f2;
+  }
+
+.list {
+    display: inline-flex;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#birdlogo {
+    height: 80px;
+    width: 25%;
+}
+
+/* #text {
+
+} */
+
+#birdbackground {
+    grid-row: 2/6;
+    grid-column: 3/6;
+}
+
+button {
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    /* border-radius: 25px; */
+}
+#search ::before{
+    content:url("https://img.icons8.com/ios/25/000000/search--v1.png");
+}
+#signup{
+    background-color: #1da1f2;
+    color: white;
+}
+.login {
+    background-color: white;
+    color:#1da1f2;
+}
+
+#text {
+    text-align: center;
+}
+
+#footer {
+    display: inline;
+}
+
+.line {
+    align-content: center;
+}
+
+#ul li{
+    float: left;
+}
+
+form {
+    
+}
