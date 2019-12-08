@@ -1,0 +1,133 @@
+
+.container .birdImg {
+    display: flex;
+    justify-items: right;
+    float: right;
+    height: 25px;
+    width: 25px;
+}
+.container .left {
+   float: right;
+}
+.container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-column-end: auto;
+} 
+
+.container .left .inputBoxes {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 25px;
+}
+
+.container .left .inputBoxes .login_info {
+    height: 25px;
+    width: 150px;
+}
+.container .left .inputBoxes .password {
+    height: 25px;
+    width: 150px;
+}
+button.logInButton {
+    border-radius: 25px;
+    height: 35px;
+    color: #38A1F3;
+    border-color: #38A1F3;
+}
+
+button.logInButton:hover {
+    background-color: #38A1F3;
+    color: white;
+    opacity: 1;
+}
+
+button.SignUp {
+    border-radius: 25px;
+    background-color: #38A1F3;
+    border-color: #38A1F3;
+    width: 75%;
+    color: white;
+}
+
+button.SignUp:hover {
+    background-color: white;
+    color: #38A1F3;
+}
+
+
+button.LogIn2 {
+    border-radius: 25px;
+    background-color: #38A1F3;
+    border-color: #38A1F3;
+    width: 75%;
+    color: white;  
+}
+
+button.LogIn2:hover {
+    background-color: white;
+    color: #38A1F3;
+}
+.container .left .information {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .left .information h1 {
+    flex-wrap: wrap;
+}
+
+.container .left .miscInfo {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.container .left .buttons1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.container .left .buttons2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+
+.footerDiv .footer ul {
+    color: #38A1F3;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.footerDiv .footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.footerDiv .footer ul, link {
+    justify-content: space-around;
+}
+
+.container .right {
+    background-image: url(/Users/marvinthompson/Desktop/UNIT2/Pursuit-Core-Web-Twitter-CSS-Assignment/images/birdbackground.png);
+    background-repeat: no-repeat;
+}
+
+.container .right .content ul {
+    padding-top: 50px;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .right .content ul li {
+    color: white;
+}
