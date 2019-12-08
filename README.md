@@ -45,7 +45,7 @@ It should have an html tag, a head tag, title, and empty body.
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>T</title>
   </head>
   <body>
 
