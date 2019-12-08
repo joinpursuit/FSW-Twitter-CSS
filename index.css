@@ -322,3 +322,18 @@ input[type="submit" i]{
     grid-row: 1;
   
 }
+#follow::before{
+content: url("https://img.icons8.com/ios-filled/25/000000/search.png");
+margin-right: 20px;
+-webkit-filter: invert(100%);
+}
+#hear::before{
+content:url("https://img.icons8.com/wired/25/000000/conference-call.png");
+margin-right: 20px;
+-webkit-filter: invert(100%);
+}
+#join::before{
+content:url("https://img.icons8.com/windows/25/000000/speech-bubble.png");
+margin-right: 20px;
+-webkit-filter: invert(100%);
+}
