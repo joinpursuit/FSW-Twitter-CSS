@@ -18,28 +18,35 @@
     
   <body>
     <section id="lsector">
-        <ul class="info">
-          <li>Follow Your Interests.</li>
-          <li>Hear what people are talking about.</li>
-          <li>Join the conversation.</li>
-        </ul>
+      <div>
+      <ul class="info">
+        <li>Follow Your Interests.</li>
+        <li>Hear what people are talking about.</li>
+        <li>Join the conversation.</li>
+      </ul>
+      <img src="./images/birdbackground.png">
+      </div>
     </section>
     <section id="rsector">
       <div>
-        <form>
-          <div></div>
+        <form id="form">
+          <div>
             <input class="username" type="text" name="user"" autocomplete="on" value="" placeholder="Phone, email or username">
-            <div>
-              <input class="password" type="password" name="session[password]" placeholder="Password">
-              <a class="forgot" href="https://twitter.com/account/begin_password_reset" rel="noopener">Forgot password?</a>
-            </div>
-            <input type="submit" class="Login" value="Log In">
+          </div>
+          <div>
+            <input class="password" type="password" name="password" placeholder="Password">
+          </div>
+          <div>
+            <a id="forgotpw" class="forgotpw" href="https://twitter.com/account/begin_password_reset" rel="noopener">Forgot password?</a>
+          </div>
+          <div>
+            <input class="login" type="submit" value="login">
           </div>
         </form>
       </div>
       <div>
-        <h1 class="rsectortitle">See what’s happening in the world right now</h1>
-        <h2 class="rsectorsubtitle">Join Twitter today.</h2>
+        <p class="rsectortitle">See what’s happening in the world right now</p>
+        <p class="rsectorsubtitle">Join Twitter today.</p>
       </div>
       
     </section>
@@ -64,7 +71,7 @@
             <li class="ftlink"><a href="https://dev.twitter.com/">Developers</a></li>
             <li class="ftlink"><a href="https://twitter.com/i/directory/profiles">Directory</a></li>
             <li class="ftlink"><a href="https://twitter.com/settings/personalization">Settings</a></li>
-            <li>© 2019 Twitter</li>
+            <li class="ftlink">&copy 2019 Twitter</li>
         </ul>
 
 

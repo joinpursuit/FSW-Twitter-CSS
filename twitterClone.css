@@ -5,7 +5,7 @@ a{text-decoration:none; color:inherit; cursor:pointer;}
 button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
 figure{margin:0;}
 input::-moz-focus-inner {border:0; padding:0; margin:0;}
-ul, ol, dd{margin:0; padding:0; list-style:none;}
+ul, ol, dd, li {margin:0; padding:0; list-style:none;}
 h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
 p{margin:0;}
 cite {font-style:normal;}
@@ -34,25 +34,74 @@ body {
 
 #lsector {
     grid-area: lsector;
-    background-image: url("./images/birdbackground.png");
-    background-repeat: no-repeat;
     background-color: #39A2F2;
+    z-index: 1
+    /* overflow: hidden; */
 }
+
+img {
+    opacity: 0.5;
+    overflow: hidden;
+    height: 140vh;
+    right: 40vh;
+    top: -20vh;
+    position: absolute;
+    z-index: -1;
+}
+
 
 #rsector {
     grid-area: rsector;
     background-color:white;
 }
 
+form {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "bx1 bx2 bx3"
+        "bx4 bx5 bx6"
+}
+.username {
+    grid-area: bx1
+}
+.password {
+    grid-area: bx2
+}
+.login {
+    grid-area: bx3
+}
+.forgotpw {
+    grid-area: bx5
+}
+
+
 footer {
-    grid-area: footer
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    z-index: 1
 }
 
 .footerUL {
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-content: center;
-    list-style-type:none
+    justify-content: space-evenly;
+    list-style-type:none;
+    z-index: 1
 }
 
+.ftlink {
+    color: #aab8c2;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
