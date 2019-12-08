@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Helvetica Neue", sans-serif;
+}
+.mainDiv{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90vh 10vh;
+    
+
+}
+.sectionBlue{
+    background: #1da1f2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 2;
+    height: 95vh;
+}
+.twitterIcon-bird{
+    z-index: 0;
+    height: 95vh;
+    width: 50vw;
+    position: absolute;
+}
+
+.sectionWhite{
+    background: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / -1;
+    padding: 0px 60px;
+    height: 95vh;
+
+}
+.topWhite{
+   position: relative;
+   top: -15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 3px; 
+    height: 40px;
+}
+#phone, #passwordBox{
+    padding:11px;
+    width: 170px;
+    font-size: 13px;
+    border: 1px solid gainsboro;
+    border-radius: 2px;
+    color: grey;
+}
+.topMiddleWhite{
+    display: flex;
+    flex-direction: column;
+}
+
+.forgotPassword{
+    align-items: stretch;
+}
+.middleWhite{
+    background-color: white;
+    padding: 0px 130px;
+    justify-content: center;
+    align-items: center;
+}
+#blueBird{
+    margin-left: -35px;
+    margin-right: 120px;
+    justify-content: left;
+    position: relative;
+    top: 30px
+}
+#heyWorld{
+    display:grid;
+    justify-content: left;
+    align-items: left;
+    padding: -5px;
+    position: relative;
+    top: 20px;
+}
+#joinT{
+    display: grid;
+    justify-content: left;
+    align-items: left;
+    padding-left: 5px;
+    margin-top: 20px;
+    position: relative;
+    top: 50px;
+}
+.bottomWhite{
+    display: grid;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+}
+.sectionThree{
+    grid-column: 1 / -1;
+    background: white;
+    display: grid;
+    height: 0vh;
+}
+.itemList{
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    margin: 50px 0;
+    font-weight: bold;
+    position: relative;
+}
+#item1{
+    padding: 20px;
+}
+#item1::before{
+    content: url("https://img.icons8.com/android/24/000000/search.png");
+    padding: 15px;
+    -webkit-filter: invert(100%);
+}
+#item2{
+    padding: 20px;
+}
+#item2::before{
+    content: url("https://img.icons8.com/dotty/24/000000/group-foreground-selected.png");
+    padding:15px;
+    -webkit-filter: invert(150%);
+}
+#item3{
+    padding: 20px;
+}
+#item3::before{
+    content: url("https://img.icons8.com/windows/24/000000/speech-bubble.png");
+    padding: 15px;
+    -webkit-filter: invert(100%);
+}
+#logIn1{
+    color: #1da1f2;
+    background-color: white;
+    display: flex;
+    text-align: center;
+    border: 1px solid #1da1f2;
+    border-radius: 30px;
+    justify-content: center;
+    width: 65px;
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+#logIn1:hover {
+    background-color: rgb(235, 241, 255);
+  }
+#logIn2:hover {
+    background-color:  rgb(235, 241, 255);
+}
+a {
+    color: rgb(195, 195, 195);
+    font-size: 15px;
+    text-decoration: none;
+  }
+a:hover{
+    text-decoration: underline;
+  }
+#signUp{
+    color: white;
+    background-color: #1da1f2;
+    display: flex;
+    border: 1px solid #1da1f2;
+    line-height: 5px;
+    padding: 15px 28px;
+    justify-content: center;
+    width: 350px;    /*changes the spread of the button */
+    border-radius: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#signUp:hover{
+    background-color: rgb(29, 60, 144);
+}
+#logIn2{
+    color: #1da1f2;
+    display: block;
+    background-color: white;
+    display: flex;
+    border: 1px solid #1da1f2;
+    line-height: 5px;
+    padding: 15px 28px;
+    justify-content: center;
+    width: 350px;
+    border-radius: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.footerList{
+    color: #aab8c2;
+    border-top: 1px solid;
+    border-top-color: gainsboro;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 8px;
+    font-size: 13px;
+    position: relative;
+    top: 35px;
+
+}
+.footerList:hover{
+    text-decoration: underline;
+}
+.footerDiv{
+    justify-content: center;
+}
+#linkForgotPassword {
+    position: relative;
+    top: 5px;
+}
