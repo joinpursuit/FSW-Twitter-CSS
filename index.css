@@ -22,7 +22,7 @@ grid-template-columns: 1fr 1fr;
     background-color: white;
     display: flex;
     justify-content: center ;
-    height: 97%;
+    height: 200%;
     /* height: 100%; */
 }
 @media only screen and (max-width: 557px){
@@ -51,7 +51,7 @@ grid-template-columns: 1fr 1fr;
     background-color: white;
     border-top: 0.5px solid grey;
     display: grid;
-    grid-row:5;
+    grid-row:6;
     grid-column: 1/5;
     text-align: center;
     /* padding-top: 50% ; */
