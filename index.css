@@ -1,0 +1,39 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0 ;
+    background-color: white;
+}
+.container{
+    height: 95%;
+    background-image: url("images/birdbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-areas: 50% 100% 50%;
+  }
+  #left {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 172, 237, 0.90);
+    color: white;
+  }
+  
+  #right {
+    background-color: white;
+  }
+  /* #left{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  #right{
+      height: 100%;
+      display: flex;
+       */
+
+  }
