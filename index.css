@@ -1,21 +1,19 @@
-.split{
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+body {
+    font-family: "Helvetica Neue", Helvetica,Arial, sans-serif;
 }
 
-.right {
-    right: 0;
-    background: white;
+#main{
+    display: flex;
+    flex-direction: row;
 }
 
-.left {
-    left: 0;
-    background: rgb(29,161,242,1);
+#blue {
+    background: rgb(29, 161, 242, 1);
+    
+}
+
+#white {
+    
 }
 
 .footer {
@@ -39,6 +37,7 @@
     text-align: center;
     list-style: none;
     padding: 0;
+    
 }
 
 ul {
@@ -49,4 +48,11 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+}
+
+#birdLogo {
+    display: block;
+    text-align: center;
+    height: 70px;
+    
 }
