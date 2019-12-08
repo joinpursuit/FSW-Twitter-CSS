@@ -51,20 +51,27 @@ body {
     flex: wrap;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-#container {
+/* #container {
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: repeat(2, 50%)
-}
+} */
 
-#blue {
+#left {
     background: #1da1f2;
-    grid-column: 1/2;
+    float: left;
+    width: 50%;
+    /* grid-column: 1/2; */
   }
 
-#white {
+#right {
+    /* display: block; */
+    float: right;
+    width: 50%;
+    align-items: right;
     background: white;
-    grid-column-end: 2/3;
+    /* grid-column-end: 2/3; */
+    /* max-width: 350px; */
 }
 .list {
     display: inline-flex;
@@ -76,13 +83,10 @@ body {
 }
 
 #birdlogo {
-    height: 80px;
-    width: 25%;
+    height: 65px;
+    width: auto;
 }
 
-h1 {
-    font-size: larger;
-}
 
 button {
     border-radius: 100px;
@@ -95,36 +99,84 @@ button {
     text-align: center;
     /* border-radius: 25px; */
 }
+
+input {
+    height: 30px;
+    width: auto;
+}
 #search ::before{
     content:url("https://img.icons8.com/ios/25/000000/search--v1.png");
 }
 #signup{
     background-color: #1da1f2;
     color: white;
+    width: 300px;
 }
 .login {
     background-color: white;
     color:#1da1f2;
 }
-
-#text {
+#login2 {
+    width: 300px;
+}
+#login {
+    width: 50px;
+}
+form {
+    margin-top: 30px;
+    padding: 10px;
     text-align: center;
 }
-
+#text {
+    text-align: left;
+    font-weight: bold;
+}
+h1{
+    line-height: 32px;
+    font-size: 27px;
+}
+h2 {
+    font-size: 18px;
+}
 /* #footer {
     display: inline;
 } */
 
 .line {
-    align-content: center;
+    display: inline;
+    align-items: center;
 }
 
 #ul{
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
+    bottom: 0;
+    word-spacing: 10%;
     color: grey;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+}
+
+.links{
+    display: grid;
+    justify-content: space-around;
+    align-self: baseline;
+    align-items: stretch;
+    align-content: center;
+    text-decoration: none;
 }
 
 .links:visited{
     color: grey;
+}
+.links:hover{
+    text-decoration: underline;
+}
+.line button{
+    font: 14px;
+}
+
+#birdbackground {
+    opacity: 0.5;
 }
