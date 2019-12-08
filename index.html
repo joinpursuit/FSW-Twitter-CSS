@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html>
  <head> 
-  <title> Twitter </title> 
+  <title> Twitter Clone </title> 
   <link rel="icon" type="imge/png" href="images/birdbackground.png" /> 
   <link rel="stylesheet" href="./master.css" /> 
  </head> 
+ 
  <body> 
   <div class="home-container"> 
    <div id="blue"> 
-    <ul>
-      <img src="images/birdbackground.png" alt="bird"> 
-     <li id="fyi"> Follow your interests. </li> 
-     <li id="hpt"> Hear what peaple are talking about. </li> 
-     <li id="jtc"> Join the conversation. </li> 
+     <div id="overSizedBird">
+       <!-- <img src="images/birdbackground.png" alt="twitter bird"> -->
+     </div>
+    <ul> 
+     <li class="bluelis" id="fyi"> Follow your interests. </li> 
+     <li class="bluelis" id="hpt"> Hear what people are talking about. </li> 
+     <li class="bluelis" id="jtc"> Join the conversation. </li> 
     </ul> 
    </div> 
+   
    <div id="white"> 
     <header> 
-      <form action=""> 
-        <input type="text" value="Phone, email, or username" />
+      <form class="topbuttons" action=""> 
+       <input type="text" value="Phone, email, or username" />
         <br /> 
         <input type="password" value="Password" />
-        <br /> 
-        <input id="headLogin" type="submit" value="Log in" /> 
+        <br />
+        <button id="headLogin" type="button"> Log In </button>
      </form> 
     </header> 
-    <!-- <img src="images/birdlogo.png" alt="twitter logo"> --> 
+    
+    <div id="whiteLogoDiv">
+    <img id="whiteLogo" src="images/birdlogo.png" alt="twitter logo"> 
+    </div>
+    
+    <div id="joinTwitter">
     <h1> See what's happening in the world right now </h1> 
     <h3> Join Twitter today. </h3> 
-    <button id="largeLogin" type="button"> Log in </button> 
-    <button id="signUp" type="button"> Sign up </button> 
-   </div> 
+    </div>
+   
+    <div id="buttonsLogSign">
+    <button class="btn large" id="largeLogin" type="button"> Log in </button> 
+    <button class="btn large" id="signUp" type="button"> Sign up </button> 
+   </div>
   </div> 
+   </div> 
+
   <footer> 
    <ul id="footerEl"> 
     <li><a href=""> About </a></li> 

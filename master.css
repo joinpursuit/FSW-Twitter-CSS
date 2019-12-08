@@ -1,25 +1,132 @@
-html {
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
     font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
 }
 
-.home-container{
+.home-container {
     height: 95vh;
-    /* background-color: red; */
     display: flex;
     flex-direction: row; /* check back later */
+    width: 100%;
+    position: fixed;
+
 }
 
-#blue{
+
+#blue {
     background-color: #1da1f2;
     height: 100%;
     width: 100%;
-    padding: 50px;
+    overflow: hidden;
+    background-image: url("images/birdbackground.png");
+    background-repeat: no-repeat;
+    background-size: 145%, 135%;
+    background-blend-mode: soft-light;
 }
 
-#white{
+.bluelis {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#fyi::before{
+    content: url("https://img.icons8.com/android/24/000000/search.png");
+
+}
+
+#overSizedBird img {
+    width: 200%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#white {
     background-color: white;
     height: 100%;
     width: 100%;
     padding: 50px;
+    overflow: hidden;
+   
 }
 
+#whiteLogoDiv {
+    width: 200px;
+    height: 120px;
+    display: flex;
+    text-align: center;
+}
+
+#whiteLogo {
+    width: 100%;
+    height: auto;
+}
+
+#jointTwitter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 27px;
+    line-height: 32px;
+}
+
+.topbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+input {
+    width: 28%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: #fff;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+}
+
+#headLogin {
+    background-color: #fff;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+    border-radius: 100px;
+    padding: 20px;
+}
+
+.btn {
+    padding: 6px 16px;
+    border-radius: 100px;
+    line-height: 20px;
+}
+
+.btn.large {
+    width: 100%;
+}
+
+footer {
+    background-color: white;
+    height:2 px;
+    padding: 0px;
+}
+
+#footerEl {
+    list-style-type: none;
+    border-top: 1px solid;
+    border-top-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    text-align: inherit;
+    position: relative;
+    /* position: fixed; to remove space in footer but messes with the white and blue sections */
+}
