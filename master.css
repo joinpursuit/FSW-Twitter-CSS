@@ -1,20 +1,24 @@
 
 #content-body{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    background-image: url('./images/birdbackground.png');
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    
+    align-items: stretch;
+    background-image: url('./images/bkg-bird.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 90%;
+    background-size: 100%;
     background-attachment: fixed;
 }
+
+
 #blue{
     /* display: flex;
     align-items: center;
     justify-content: center;
     position: relative; */
-    background-color: #1DA1F2;
+    /* background-color: #1DA1F2; */
     /* margin: 0px;
     border: 50px;
     padding: 0px; */
@@ -23,12 +27,13 @@
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-#left-li{
+/* #left-li{
     display: grid;
     grid-template-columns: 30% 70%;
     grid-gap: 10px;
     grid-auto-rows:minmax(100px,auto)
-}
+} */
+
 
 .icon{
     width: 30px;
