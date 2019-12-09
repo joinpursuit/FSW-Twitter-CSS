@@ -479,7 +479,7 @@ body {
     background-image: url('/Users/marializamartinez/Documents/UnitII/Pursuit-Core-Web-Twitter-CSS-Assignment/images/birdbackground.png');
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
 }
 
 #content {
@@ -488,6 +488,8 @@ body {
     display: flex;
     flex-direction: row;
 }
+
+
 
 /* .flex-container {
     padding: 0;
@@ -515,23 +517,28 @@ body {
     display: table;
     clear: both;
 } */
+
 #leftScreen {
     display: flex;
-    background-color: #1DA1F2;
+    background-color: rgba(29, 161, 242, .5);
     width: 50%;
-    height: 90%;
-    opacity: 75%;
+    height: 100%;
+    /* opacity: 75%; */
     /* align-self: stretch; */
-    /* position: fixed;
-    z-index: 0;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 0;
 
 }
 
 #rightScreen {
-    /* display: flex; */
-    /* flex-flow: wrap; */
+    /* display: flex;  */
+    /* flex-flow: column; */
     width: 50%;
-    height: 90%;
+    height: 100%;
+    align-content: center;
     /* orientation: left;
     */
     /* position: fixed;
@@ -557,8 +564,34 @@ body {
     /* order: 1; */
 }
 
+#section {
+    z-index: 4;
+}
 .section {
-    display: flex;
+    /* display: flex; */
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    color: white;
+    font-size: 16pt;
+    /* margin: 25%; */
+    font-weight: bold;
+    /* width: 45%; */
+    /* letter-spacing: 1pt; */
+    /* word-spacing: normal; */
+    /* POSITION: absolute; */
+    align-items: center;
+    /* list-style-position: inside; */
+    left: 0%;
+    flex-direction: row;
+    /* flex-flow: wrap; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* z-index: 2; */
+    /* order: 2; */
+}
+
+/* display: flex;
     list-style: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
     ;
@@ -572,29 +605,32 @@ body {
     POSITION: absolute;
     align-items: center;
     /* list-style-position: inside; */
-    left: 0%;
+/* left: 0%;
     flex-direction: row;
     flex-flow: wrap;
     background-color: transparent;
     text-align: center;
-    /* z-index: 4; */
+    z-index: 4; */
 
 
-    /* order: 2; */
-}
+/* order: 2; */
+
 
 
 #littleBird {
-    height: 10%;
-    width: 12%;
+    /* height: 100px; */
+    width: 115px;
     padding: 10px;
     background: transparent;
-    z-index: 3;
+    /* z-index: 3; */
 }
 
 input {
-    display: grid;
+    display: inline-block;
+    flex-direction: column;
+    
     list-style-position: inside;
+    font-size: small;
     width: 210px;
     height: 5%;
     padding: 12px 20px;
@@ -605,7 +641,12 @@ input {
     margin-left: 40px;
     margin-right: 5px;
 }
-
+#login {
+    display: inline-block;
+    border-radius: 100px;
+    background: white;
+    padding: 12px;
+}
 
 /* .row {
     display: flex;
@@ -619,10 +660,10 @@ footer {
     display: flex;
     flex-direction: row;
     flex-flow: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     background-color: white;
     width: 100%;
-    height: 15%;
+    /* height: 15%; */
     /* text-align: center; */
     /* text-align-last: flex; */
     justify-content: baseline;
@@ -641,21 +682,42 @@ footer {
     /* justify-content: center; */
     padding-bottom: 1%;
     /* z-index: 3; */
-}
-
-#foot {
-    display: inline;
+    /* } */
+    /* #foot { */
+    /* display: inline; */
+    min-width: fit-content;
+    justify-content: space-around;
     word-spacing: 10%;
     flex-direction: row;
     font-family: Helvetica;
     font-size: small;
     color: grey;
-    /* grid-area: span; */
     word-spacing: 10%;
+    flex: 0 1 100%;
+    list-style-type: none;
+    /* align-content: center; */
+    /* align-self: baseline; */
+    /* align-items: stretch; */
+    text-align-last: center;
+}
+
+#foot {
+    display: inline-block;
+    padding: 0 9px 0 9px;
+
+}
+
+/* word-spacing: 10%;
+    flex-direction: row;
+    font-family: Helvetica;
+    font-size: small;
+    color: grey; */
+/* grid-area: span; */
+/* word-spacing: 10%;
     flex: 0 1 100%;
     list-style-type: none;
     align-content: center;
     align-self: baseline;
     align-items: stretch;
     text-align-last: center;
-}
+    */
