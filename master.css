@@ -1,65 +1,117 @@
-
 #container {
-    height: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    /* display: grid; 
-    grid-template-columns: 1fr, 1fr; */
-    /* grid-template-rows: 40px auto 40px;  */
-    grid-template-areas: 
-    ". h h h h h h h h h h ."
-    ". c c c c c c c c c c ."
-    ". f f f f f f f f f f ."
+
 }
+
 #white {
+    background-color: white;
+    height: 100%;
+    width: 50%;
     text-align: center;
-    grid-area: h;
+    float: right;
+    top: 0;
+    padding-top: 20px;
+    position: relative;
+    overflow-x: hidden;
 }
 #blue {
-    background-color: rgb(1, 154, 255);
+    height: 100%;
+    width: 50%;
+    background-color: rgb(28, 161, 242);
+    background-image: url("./images/birdbackground.png");
+    background-repeat: no-repeat;
     color: white;
-    text-align: center;
-    grid-area: c;
+    float: left;
+    margin-top: 0px;
+    position: fixed;
+
 }
-#footer ul li {
-    list-style-type:none;
+#links {
+    list-style-type: none;
     display: flex;
-    flex-wrap: flex-end;
-
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: 0;
 
 }
+
+
 #signUp {
-    border-radius: 25px;
-    background-color: rgb(1, 154, 255);
+    border-radius: 100px;
+    background-color: rgb(28, 161, 242);
     color:white;
     width: 250px;
-    height: 22px;
+    line-height: 20px;
+    padding: 6px, 16px;
+    position: relative;
+    white-space: wrap;
     
 }
 #login {
-    border-radius: 25px;
-    border: rgb(1, 154, 255);
+    border-radius: 100px;
+    width: 250px;
+    line-height: 20px;
+    padding: 6px, 16px;
+    position: relative;
+
 }
 #log {
     border-radius: 25px;
-}
-#container {
-    position: relative;
+    width: 50px;
+    height: 35px; 
 }
 
 #footer { 
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 100px;
-    margin: 0;
+    align-items: center;
+    color: grey;
 }
 #whiteBird {
-    height: 75px;
+    height: 100px;
     width: auto;
-    grid-area:f;
+    padding: 0px;
+    position: relative;
+    text-align: left;
+    /* justify-content: center; */
+    margin-top: 20px;
+    margin-right: 250px;
 }
-#birdBackground {
+#content-wrap {
+    padding-bottom: 2.5rem;
 
 }
 
+#list {
+    margin-top: 200px;
+    list-style-type: none; 
+    align-content: center;
+    text-align: center; 
+
+}
+#happening {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "helvetica neue"
+}
+#joinTwitter {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-right: 165px;
+    font-size: 20px;
+}
+    
+}
+#email {
+    height: 100px;
+    width: 150px; 
+
+}
+.iconify {
+    height: 30px;
+    width: auto;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
