@@ -470,10 +470,8 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* twitter css code */
-/* body {
-    /* background-color: #1DA1F2; */
-/* } */
+/*<<<<<<<<<<<<<<<<<<<<<<< twitter css code >>>>>>>>>>>>>>>>>>>>>>*/
+
 
 body {
     background-image: url('/Users/marializamartinez/Documents/UnitII/Pursuit-Core-Web-Twitter-CSS-Assignment/images/birdbackground.png');
@@ -492,40 +490,13 @@ body {
 
 
 
-/* .flex-container {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    height: 50%;
-    display: flex;
-}
 
-.flex-container.img {
-    display: grid;
-    size: 100%;
-    /* z-index: 2 */
-
-
-
-/* .column {
-    float: left;
-    width: 50%;
-  }
-  
-  /* Clear floats after the columns */
-/*.row:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
 
 #leftScreen {
     display: flex;
     background-color: rgba(29, 161, 242, .5);
     width: 50%;
     height: 100%;
-    /* opacity: 75%; */
-    /* align-self: stretch; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -535,34 +506,17 @@ body {
 }
 
 #rightScreen {
-    /* display: flex;  */
-    /* flex-flow: column; */
     width: 50%;
     height: 100%;
     align-content: center;
-    /* orientation: left;
-    */
-    /* position: fixed;
-    z-index: 2;  */
     background: white;
 
 }
 
 .img {
-    /* display: flex; */
-    /* flex-flow: nowrap; */
+    width: 50%;
+    height: 50%;
     object-fit: cover;
-    /* width: 2000px; */
-    /* height: auto; */
-    /* align-content: 300px; */
-    /* right: 25%; */
-    /* background-size: contain; */
-    /* image-orientation: initial; */
-    /* align-items: flex-end; */
-    /* position: fixed; */
-    /* background-color: transparent; */
-    /* align-self: auto; */
-    /* order: 1; */
 }
 
 #section {
@@ -570,75 +524,44 @@ body {
 }
 
 .section {
-    /* display: flex; */
     list-style: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
     color: white;
     font-size: 16pt;
-    /* margin: 25%; */
     font-weight: bold;
-    /* width: 45%; */
-    /* letter-spacing: 1pt; */
-    /* word-spacing: normal; */
-    /* POSITION: absolute; */
     align-items: center;
-    /* list-style-position: inside; */
     left: 0%;
     flex-direction: row;
-    /* flex-flow: wrap; */
     text-align: left;
     align-items: center;
     justify-content: center;
     padding: 15px 0px
-        /* z-index: 2; */
-        /* order: 2; */
 }
 
 
-#glass::before{
+#glass::before {
     content: url("https://img.icons8.com/ios/25/000000/search--v1.png");
     padding: 10px;
     font-size: 20pt;
     -webkit-filter: invert(100%);
-    
+
 
 }
-#peeps::before{
-    content:url("https://img.icons8.com/dotty/25/000000/conference-foreground-selected.png");
-    padding: 10px;
-    font-size: 20pt;
-    -webkit-filter: invert(100%);   
-}
-#talk::before{
-    content:url("https://img.icons8.com/dotty/25/000000/thinking-bubble.png");
+
+#peeps::before {
+    content: url("https://img.icons8.com/dotty/25/000000/conference-foreground-selected.png");
     padding: 10px;
     font-size: 20pt;
     -webkit-filter: invert(100%);
 }
 
-/* display: flex;
-    list-style: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-    ;
-    color: white;
-    font-size: 16pt;
-    margin: 25%;
-    font-weight: bold;
-    width: 45%;
-    letter-spacing: 1pt;
-    word-spacing: normal;
-    POSITION: absolute;
-    align-items: center;
-    /* list-style-position: inside; */
-/* left: 0%;
-    flex-direction: row;
-    flex-flow: wrap;
-    background-color: transparent;
-    text-align: center;
-    z-index: 4; */
+#talk::before {
+    content: url("https://img.icons8.com/dotty/25/000000/thinking-bubble.png");
+    padding: 10px;
+    font-size: 20pt;
+    -webkit-filter: invert(100%);
+}
 
-
-/* order: 2; */
 form {
     display: flex;
     flex-wrap: nowrap;
@@ -649,16 +572,9 @@ form {
 input {
     display: inline-block;
     flex-direction: column;
-    /* justify-items: center;
-    list-style-position: inside; */
-    /* font-size: small; */
     width: 210px;
-    /* height: 5%; */
     padding: 12px 20px;
     margin: 12px 0;
-    /* box-sizing: border-box; */
-    /* border: 1px solid #e6ecf0;
-    border-radius: 10px; */
     margin-left: 20px;
     margin-right: 10px;
 }
@@ -670,10 +586,11 @@ input {
     color: #1da1f2;
     background-color: whitesmoke;
     border-top-color: none;
-    border-left-color:none;
+    border-left-color: none;
     border-right-color: none;
     border-bottom-color: #1da1f2;
 }
+
 #word {
     font-size: small;
     text-align: start;
@@ -681,11 +598,12 @@ input {
     color: grey;
     background-color: whitesmoke;
     border-top-color: none;
-    border-left-color:none;
+    border-left-color: none;
     border-right-color: none;
     border-bottom-color: grey;
-    
+
 }
+
 p {
     display: flex;
     flex-direction: column;
@@ -701,7 +619,6 @@ p {
     width: 75px;
     height: 40px;
     display: flex;
-    /* align-content: inherit; */
     border-radius: 20px;
     background: white;
     padding: 10px 10px 10px 12px;
@@ -713,13 +630,12 @@ p {
 }
 
 #littleBird {
-    /* height: 100px; */
     align-self: center;
     width: 115px;
     padding: 20% 0% 0pt 5%;
     background: transparent;
-    /* z-index: 3; */
 }
+
 #main {
     display: flex;
     flex-direction: row;
@@ -728,6 +644,7 @@ p {
     text-justify: distribute;
     min-width: 15%;
 }
+
 #happening {
     justify-items: flex-start;
     display: flex;
@@ -737,6 +654,7 @@ p {
     font-weight: bold;
     font-size: 18pt;
 }
+
 #join {
     display: flex;
     justify-content: flex-start;
@@ -747,6 +665,7 @@ p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
 }
+
 #signUp {
     display: flex;
     justify-self: stretch;
@@ -775,7 +694,7 @@ p {
     border-top-right-radius: 9999px;
 }
 
-    #log {
+#log {
     display: flex;
     justify-self: stretch;
     justify-content: center;
@@ -789,7 +708,7 @@ p {
     height: 0px;
     padding-left: 1em;
     padding-right: 1em;
-    border-color:  rgb(29, 161, 242);
+    border-color: rgb(29, 161, 242);
     border-bottom-width: 1px;
     border-left-width: 1px;
     border-right-width: 1px;
@@ -803,26 +722,17 @@ p {
     border-top-left-radius: 9999px;
     border-top-right-radius: 9999px;
 }
-/* .row {
-    display: flex;
-  }
-  
-  .column {
-    flex: 50%;
-  } */
 
 footer {
     display: flex;
     flex-direction: row;
     flex-flow: row;
-    /* justify-content: space-around; */
+
     background-color: white;
     width: 100%;
-    /* height: 15%; */
-    /* text-align: center; */
-    /* text-align-last: flex; */
+
     justify-content: baseline;
-    /* list-style: none; */
+
     padding-left: 0%;
     position: fixed;
     padding-top: 1%;
@@ -833,13 +743,8 @@ footer {
     margin-right: auto;
     margin-left: auto;
     flex: 0 1 100%;
-    /* align-items: stretch; */
-    /* justify-content: center; */
+
     padding-bottom: 1%;
-    /* z-index: 3; */
-    /* } */
-    /* #foot { */
-    /* display: inline; */
     min-width: fit-content;
     justify-content: space-around;
     word-spacing: 10%;
@@ -850,9 +755,7 @@ footer {
     word-spacing: 10%;
     flex: 0 1 100%;
     list-style-type: none;
-    /* align-content: center; */
-    /* align-self: baseline; */
-    /* align-items: stretch; */
+
     text-align-last: center;
 }
 
@@ -861,28 +764,3 @@ footer {
     padding: 0 9px 0 9px;
 
 }
-
-/* word-spacing: 10%;
-    flex-direction: row;
-    font-family: Helvetica;
-    font-size: small;
-    color: grey; */
-/* grid-area: span; */
-/* word-spacing: 10%;
-    flex: 0 1 100%;
-    list-style-type: none;
-    align-content: center;
-    align-self: baseline;
-    align-items: stretch;
-    text-align-last: center;
-    */
-/* background-color: #1da1f2;
-    border-radius: 100px;
-    border: none;
-    box-shadow: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 20px;
-    padding: 6px 16px; */
