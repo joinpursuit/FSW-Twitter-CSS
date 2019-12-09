@@ -100,11 +100,6 @@ form {
     max-width: 600px;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-orient: horizontal;
-    -moz-box-direction: normal;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-
 }
 .username {
     grid-area: bx1
