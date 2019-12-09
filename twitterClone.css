@@ -71,8 +71,17 @@ img {
 }
 
 #rsector {
+    display: flex;
     grid-area: rsector;
+    flex-direction: column;
     background-color:white;
+    align-items: center;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    justify-content: center;
+    position: relative;
     z-index: 1
 }
 
@@ -82,7 +91,20 @@ form {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
         "bx1 bx2 bx3"
-        "bx4 bx5 bx6"
+        "bx4 bx5 bx6";
+    left: 0;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+
 }
 .username {
     grid-area: bx1
