@@ -26,6 +26,7 @@ body {
         "footer footer";
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16rem;
     font-weight: 400;
@@ -34,9 +35,9 @@ body {
 
 #lsector {
     grid-area: lsector;
-    display: grid;
-    grid-template-rows: 1fr 44px;
-    grid-template-columns: repeat(2, 1fr);
+    display: block;
+    /* grid-template-rows: ;
+    grid-template-columns: repeat(, 1fr); */
     background-color: #39A2F2;
     z-index: 1
 }
