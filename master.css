@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Reset  */
+body {
+    /* margin: 0;
+    position: absolute; */
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pageContent {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    flex-direction: row;
+}
+#backgroundImage{
+    z-index: -100;
+    width: 100%;
+}
+#blue {
+    background: #1DA1F2;
+    background-image: url("images/birdbackground.png");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+}
+#left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+#white {
+    width:50%;
+}
+#blue {
+    width:50%;
+}
+
+#li1::before {
+    content: url("https://img.icons8.com/ios-filled/30/000000/search.png");
+    margin-right: 20px;
+    -webkit-filter: invert(100%);
+}
+
+#li2::before {
+    content: url("https://img.icons8.com/windows/32/000000/user-group-man-man--v1.png");
+    margin-right: 20px;
+    -webkit-filter: invert(100%);
+}
+
+#li3::before {
+    content: url("https://img.icons8.com/material-outlined/24/000000/filled-topic.png");
+    margin-right: 20px;
+    -webkit-filter: invert(100%);
+}
+#userContent ul {
+    color: white;
+}
+
+#right {
+    
+}
+
+ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    color: grey;
+}
+
+
+.images {
+    height: 25px;
+    width: 25px;    
+}
+
+#birdIcon {
+    height: 40px;
+    width: 40px;
+}
+
+#logIn1 {
+    border: 2px solid rgb(0, 145, 255);
+    color: rgb(0, 145, 255);
+    border-radius: 30px 30px 30px 30px;
+}
+
+.buttons {
+    border: 2px solid rgb(0, 145, 255);
+    border-radius: 50px 50px 50px 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#signIn {
+    background: rgb(0, 145, 255);
+    color: white;
+}
+
+#signIn:hover {
+    cursor: pointer;
+    background: darkblue;
+    color: white;
+}
+
+#logIn2 {
+    border: 2px solid rgb(0, 145, 255);
+    color: rgb(0, 145, 255);
+}
+
+#logIn2:hover {
+    cursor: pointer;
+    background: lightblue;
+}
+
+#logIn1:hover {
+    cursor: pointer;
+    background: lightblue;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#signIn {
+    margin-bottom: 20px;
+}
+
+#userSignIn {
+    width: 100%;
+    height: 100%;
+    margin-top: 7%;
+    margin-left: 2%;
+}
+
+#userSignIn > input {
+    width: 185px;
+    height: 45px;
+    border-radius: 3px;
+}
+
+#userSignIn > button {
+    height: 50px;
+    width: 75px;
+}
+
+#userSignIn > a {
+    margin-left: 30%;
+}
+
+#userGreeting {
+    width: 70%;
+    margin: auto;
+    margin-top: 25%;
+}
