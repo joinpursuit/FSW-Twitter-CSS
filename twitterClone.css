@@ -96,15 +96,6 @@ form {
     grid-area: bx5
 }
 
-.Icon:before {
-    display: block;
-    font-family: "edgeicons";
-    font-weight: normal;
-    font-style: normal;
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-}
-
 .button {
     background-color: #1da1f2;
     border: 1px solid #1da1f2;
