@@ -42,7 +42,15 @@ body {
 }
 
 .info {
+    display: block;
+    color: #fff;
+    max-width: 440px;
+    padding: 0 16px;
     position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 48px auto;
 }
 
 img {
