@@ -117,6 +117,11 @@ img{
 	font-size: 20px;
 	margin-bottom: 10px;
 }
+#signUp button:hover{
+
+	background: #026CBF;
+}
+
 #logIn{
 	width: 100%;
 	color: #1ca1f2;
@@ -158,11 +163,17 @@ p{
 }
 footer{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	width: 100%;
 	color: #ACB9C3;
+}
+footer a:hover{
+	
+	text-decoration: underline;
+	
 }
 form{
 	height: 5vh;
 	width: 14vh;
 }
+/* et-footer-nav li a:hover { text-decoration: underline;} */
