@@ -48,7 +48,7 @@ table {
     display: flex;
     align-items: stretch;
     justify-content: space-evenly; 
-    
+
     width: 100%;
     height: 760px;
     row-gap: 111px;
@@ -224,11 +224,25 @@ table {
     /* width: auto; */
     justify-content: space-evenly;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
 }
 #Footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+	align-items: center;
+    position: fixed;
+    text-align: center;
+	background-color: white;
+	border-top: 1px solid	gainsboro;
+	color: gainsboro;
+    width: 100%;
+    bottom: 0%;
+    padding: 0;
     font-size: 14px;
     line-height: 20px;
-    -webkit-font-smoothing: antialiased;
+    justify-content: space-evenly;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 
