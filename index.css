@@ -1,6 +1,16 @@
 * {
   font-family: "Helvetica Neue";
 }
+body {
+  background-image: url(images/birdbackground.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+#birdbackground {
+  display: block;
+}
 .split {
   height: 100%;
   width: 50%;
@@ -10,9 +20,28 @@
   overflow-x: hidden;
   padding-top: 20px;
 }
+#leftList {
+  justify-content: center;
+}
+
+#leftList li {
+  color: white;
+  margin: 48px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  white-space: nowrap;
+  list-style-type: none;
+
+}
 .blue {
+  opacity: 0.8;
   left: 0;
   background-color: #1DA1F2;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex: 1;
 }
 .white {
   right: 0;
@@ -22,7 +51,10 @@
   display: flex;
   flex: 1;
 }
-#logBox {
+#leftBox {
+  max-width: 440px;
+}
+#rightBox {
   max-width: 350px;
 }
 #birdDiv {
@@ -54,22 +86,56 @@ button{
   position: relative;
   text-align: center;
   white-space: nowrap;
-  width: 100%;
 }
 #signUp {
   background-color: #1DA1F2;
   color: white;
   margin-bottom: 16px;
+  width: 100%
 }
 #logIn {
   background-color: white;
   border-color: #1DA1F2;
   color: #1DA1F2;
   margin-bottom: 16px;
+  width: 100%
 }
 #smallLogIn {
   background-color: white;
   border-color: #1DA1F2;
   color: #1DA1F2;
-  width: 25%;
+}
+#search::before {
+content: url("https://img.icons8.com/ios-filled/25/000000/search.png");
+margin-right: 5px;
+-webkit-filter: invert(100%);
+}
+#people::before {
+content: url("https://img.icons8.com/ios-filled/28/000000/group-foreground-selected.png");
+margin-right: 4px;
+-webkit-filter: invert(100%);
+}
+#reply::before {
+content: url("https://img.icons8.com/ios/28/000000/speech-bubble-with-dots.png");
+margin-right: 5px;
+-webkit-filter: invert(100%);
+}
+footer{
+  border-top: 1px solid #e6ecf0;
+  padding: 11px 0;
+  position: fixed;
+  background-color: white;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+}
+footer ul li {
+  display: inline;
+  font-size: 12px;
+  padding: 11px;
+  color:#aab8c2;
+}
+.footerList:hover {
+  text-decoration: underline;
 }
