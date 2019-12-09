@@ -50,6 +50,8 @@ body {
 }
 
 .info {
+    display: flex;
+    display: block;
     color: #fff;
     max-width: 440px;
     padding: 0 16px;
