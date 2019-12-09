@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html>
- <head> 
-  <title> Twitter Clone </title> 
-  <link rel="icon" type="imge/png" href="images/birdbackground.png" /> 
-  <link rel="stylesheet" href="./master.css" /> 
- </head> 
- 
- <body> 
-  <div class="home-container"> 
-   <div id="blue"> 
-     <div id="overSizedBird">
-       <!-- <img src="images/birdbackground.png" alt="twitter bird"> -->
-     </div>
-    <ul> 
-     <li class="bluelis" id="fyi"> Follow your interests. </li> 
-     <li class="bluelis" id="hpt"> Hear what people are talking about. </li> 
-     <li class="bluelis" id="jtc"> Join the conversation. </li> 
-    </ul> 
-   </div> 
-   
-   <div id="white"> 
-    <header> 
-      <form class="topbuttons" action=""> 
-       <input type="text" value="Phone, email, or username" />
-        <br /> 
-        <input type="password" value="Password" />
-        <br />
-        <button id="headLogin" type="button"> Log In </button>
-     </form> 
-    </header> 
-    
-    <div id="whiteLogoDiv">
-    <img id="whiteLogo" src="images/birdlogo.png" alt="twitter logo"> 
-    </div>
-    
-    <div id="joinTwitter">
-    <h1> See what's happening in the world right now </h1> 
-    <h3> Join Twitter today. </h3> 
-    </div>
-   
-    <div id="buttonsLogSign">
-    <button class="btn large" id="largeLogin" type="button"> Log in </button> 
-    <button class="btn large" id="signUp" type="button"> Sign up </button> 
-   </div>
-  </div> 
-   </div> 
 
-  <footer> 
-   <ul id="footerEl"> 
-    <li><a href=""> About </a></li> 
-    <li><a href=""> Help Center </a></li> 
-    <li> <a href=""> Blog </a></li> 
-    <li><a href=""> Status </a></li> 
-    <li><a href=""> Jobs </a></li> 
-    <li> <a href=""> Terms </a></li> 
-    <li><a href=""> Privacy Policy </a></li> 
-    <li><a href=""> Cookies</a></li> 
-    <li><a href=""> Ads info </a></li> 
-    <li><a href=""> Brand </a></li> 
-    <li><a href=""> Apps </a></li> 
-    <li><a href=""> Advertise </a></li> 
-    <li><a href=""> Marketing </a></li> 
-    <li><a href=""> Businesses </a></li> 
-    <li><a href=""> Developers </a></li> 
-    <li><a href=""> Directory </a></li> 
-    <li><a href=""> Settings </a></li> 
-    <li id="copyright"> &copy; Copyright 2019 DRC Twitter Clone </li> 
-   </ul> 
-  </footer>  
- </body>
+<head>
+  <title> Twitter Clone </title>
+  <link rel="icon" type="imge/png" href="images/favicon.ico" />
+  <link rel="stylesheet" href="./master.css" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="home-container">
+    <div id="blue">
+      <div></div>
+      <ul class="mid-blue-el">
+        <li class="bluelis"> <i class="fa fa-search" aria-hidden="true"></i> Follow your interests. </li>
+        <li class="bluelis"> <i class="fa fa-users" aria-hidden="true"></i> Hear what people are talking about. </li>
+        <li class="bluelis"> <i class="fa fa-comment-o" aria-hidden="true"></i> Join the conversation. </li>
+      </ul>
+      <div></div>
+    </div>
+    <div id="white">
+      <header>
+        <form class="topbuttons" action="">
+          <input type="text" value="Phone, email, or username" />
+          <br />
+          <div class="forgotP">
+            <input type="password" value="Password" />
+            <a href="" class="forgotPassword">Forgot Password</a>
+          </div>
+          <br />
+          <button id="headLogin" type="button"> Log In </button>
+        </form>
+      </header>
+
+      <div class="mid-section">
+        <div id="whiteLogoDiv">
+          <img id="whiteLogo" src="images/birdlogo.png" alt="twitter logo">
+        </div>
+
+        <div class="joinTwitter">
+          <h1> See what's happening in the world right now </h1>
+          <h3> Join Twitter today. </h3>
+        </div>
+
+        <div id="buttonsLogSign">
+          <button class="btn large" id="largeLogin" type="button">Sign Up </button>
+          <button class="btn large secondary" id="signUp" type="button"> Log In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <ul id="footerEl">
+      <li><a href=""> About </a></li>
+      <li><a href=""> Help Center </a></li>
+      <li> <a href=""> Blog </a></li>
+      <li><a href=""> Status </a></li>
+      <li><a href=""> Jobs </a></li>
+      <li> <a href=""> Terms </a></li>
+      <li><a href=""> Privacy Policy </a></li>
+      <li><a href=""> Cookies</a></li>
+      <li><a href=""> Ads info </a></li>
+      <li><a href=""> Brand </a></li>
+      <li><a href=""> Apps </a></li>
+      <li><a href=""> Advertise </a></li>
+      <li><a href=""> Marketing </a></li>
+      <li><a href=""> Businesses </a></li>
+      <li><a href=""> Developers </a></li>
+      <li><a href=""> Directory </a></li>
+      <li><a href=""> Settings </a></li>
+      <li id="copyright"> &copy;2019 Twitter Clone </li>
+    </ul>
+  </footer>
+</body>
 </html>
