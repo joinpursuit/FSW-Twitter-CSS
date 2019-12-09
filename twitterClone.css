@@ -41,6 +41,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #39A2F2;
+    position:relative;
 }
 
 #info {
@@ -60,14 +61,19 @@ body {
     margin: 48px auto;
 }
 
+.imgwrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
 
 img {
-    display:block;
     opacity: 0.25;
-    height: 140vh;
-    right: 40vh;
-    top: -20vh;
     position: absolute;
+    height: 140vh;
+    right: -80vh;
+    top: -20vh;
     z-index: 0;
 }
 
@@ -82,6 +88,7 @@ img {
 }
 
 form {
+    display: flex;
     display: grid;
     grid-template-rows: 3fr 1fr;
     grid-template-columns: repeat(3, 1fr);
@@ -91,10 +98,9 @@ form {
     left: 0;
     top: 20px;
     width: 100%;
+    justify-content: center;
     margin: 0 auto;
     max-width: 600px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 input {
