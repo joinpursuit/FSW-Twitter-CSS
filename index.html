@@ -5,31 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon"  href="./images/favicon.ico">
+    <script src="https://kit.fontawesome.com/53015bbcfb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="master.css">
+    
     <title>Twitter. It's what's happening </title>
 </head>
 <body>
     <section id="Main">
+           
+           
 
-        <section id="explore">
-            <ul>
-                <li>Follow your Interest.</li>
-                <li>Hear what people are talking about. </li>
-                <li>Join the conversation.</li>       
-            </ul>
+        <div id="explore">
+               
+                <!-- <svg class="twitterIcon-bird" viewBox="1 1 1208 982" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                 Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+                    <!-- <title>bird</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs></defs>
+                    <g id="Final-Horizon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Artboard" transform="translate(-286.000000, -117.000000)" fill-rule="nonzero" fill="#1B95E0">
+                            <path d="M1493.75308,233.195911 C1449.31783,252.922544 1401.56126,266.207828 1351.43951,272.19627 C1402.61804,241.549536 1441.92034,192.987798 1460.3889,135.116296 C1412.53168,163.498493 1359.49119,184.130942 1303.02874,195.252335 C1257.88897,147.093181 1193.42514,117 1122.16771,117 C962.190754,117 844.636121,266.258151 880.768067,421.202806 C674.896491,410.886582 492.324484,312.253414 370.089808,162.341063 C305.17308,273.705962 336.423691,419.391176 446.731805,493.16476 C406.171431,491.856361 367.925917,480.734968 334.561738,462.165765 C331.844294,576.95263 414.122472,684.342008 533.287442,708.245454 C498.413572,717.706186 460.218381,719.9204 421.368991,712.47259 C452.871217,810.904465 544.358512,882.514158 652.854997,884.52708 C548.686294,966.201382 417.443793,1002.68559 286,987.186091 C395.653915,1057.48739 525.940278,1098.50067 665.838342,1098.50067 C1125.89162,1098.50067 1385.81015,709.956437 1370.10936,361.469352 C1418.52012,326.494836 1460.53987,282.864756 1493.75308,233.195911 Z" id="bird"></path>
+                        </g>
+                    </g>
+                </svg> -->
+                
+            <div id="exploreDiv">
 
-        </section>
+                   
+               
+
+
+                <ul id="exploreUl">
+                    <li> <img src="./images/magnifytool.png" class="icons"> Follow your Interest.</li>
+                    <li> <img src="./images/people.png" id="peopleIcon"  class="icons"> Hear what people are talking about. </li>
+                    <li> <img src="./images/chat.png"  class="icons"> Join the conversation.</li>       
+                </ul>
+
+            </div>
+
+        </div>
+
+
     
         <section id="account">
-            <input type="user" placeholder="Phone, email, or username">
-            <input type="password" placeholder="Password">
-            <button>Log in</button>
-            <p>forgot password?</p>
-            <img src="./images/birdlogo.png" alt="" srcset="">
-            <h1>  See what’s happening in the world right now</h1>
-            <h3>Join Twitter today.</h3>
-            <button>Sign up</button>
-            <button>Log in</button>
+            <div id="formDiv">
+                <form action="" id="accountInfo" >
+                    <div>
+                        <input type="user" placeholder="Phone, email, or username">
+
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Password">    
+                    </div>
+                    <div>
+                        <a id="forgot" href="https://twitter.com/account/begin_password_reset">forgot password?</a>
+                    </div>
+                    <div>
+                        <button id="log">Log in</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            
+            <div id="joinDiv">
+                <img src="./images/birdlogo.png" id="birdIcon">
+                <h1>  See what’s happening in <br> world right now</h1>
+                <br>
+
+                <h3>Join Twitter today.</h3>
+                <button id="signup" class="btn">Sign up</button>
+                <button id="login" class="btn">Log in</button>
+
+            </div>
 
         </section>
 
@@ -38,7 +88,7 @@
 
    
     <footer>
-        <ul id="footer ul">
+        <ul id="footerUl">
             <li><a href="https://about.twitter.com/">About</a></li>
             <li><a href="https://help.twitter.com/">Help Center</a></li>
             <li><a href="https://blog.twitter.com/">Blog</a></li>
