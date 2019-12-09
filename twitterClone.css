@@ -45,17 +45,16 @@ body {
 }
 
 #info {
-    display: block; 
+    display: flex;
+    flex-direction: flex-start;
+    position: relative;
+    padding: 0 16px;
     /* remove */
 }
 
 .info {
-    display: flex;
-    display: block;
     color: #fff;
     max-width: 440px;
-    padding: 0 16px;
-    position: relative;
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;
@@ -65,7 +64,7 @@ body {
 img {
     opacity: 0.25;
     height: 140vh;
-    right: 20vh;
+    right: 10vh;
     top: -20vh;
     position: absolute;
     z-index: 0;
