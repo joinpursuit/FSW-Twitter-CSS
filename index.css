@@ -110,7 +110,7 @@ body {
 
 #follow ul li {
   color: white;
-  padding-top: 10px;
+  padding-top: 5pxpx;
   padding-bottom: 1%;
   margin-top: 2%;
   margin-bottom: 4%;
@@ -156,9 +156,8 @@ i {
   min-height: 100%;
   display: grid;
   justify-content: center;
-  align-items: center;
+  padding: 10px;
   grid-column: 2 / -1;
-  padding: 0px 50px;
   z-index: 1;
 
 }
@@ -222,9 +221,16 @@ form {
   position: relative;
   right: 10%;
   left: 10%;
-  margin-bottom: 10%;
-  font-size: 16px
+  /* margin-bottom: 2%; */
+  font-size: 16px;
 }
+
+#lastSection {
+  margin-left: 100px;
+  margin-top: 0px;
+  align-items: center;
+}
+
 h5 {
   font-size: 21px;
   margin-left: 60px;
@@ -232,22 +238,22 @@ h5 {
   margin-bottom: 10px;
 }
 
-.signUp { 
-  height: 20px;
-  width: 400px;
+.signUp input { 
+  background-color: #1DA1F2;
+  height: 25px;
+  width: 60%;
   text-align: center;
-  padding-top: 20px 20px;
-  border-radius: 20px;
-  background-color: #FFFFFF;
-
+  border: rgb(41, 167, 245) 2px solid;
+  border-radius: 30px;
+  font-size: 16px;
 }
-.logIn2 { 
-  color: #1DA1F2;
-  height: 200px;
-  width: 400px;
+
+.logIn2 input{ 
+  height: 25px;
+  width: 60%;
   text-align: center;
-  padding-top: 20px 20px;
-  border-radius: 20px;
+  border-radius: 30px;
+  font-size: 16px;
 }
 
 #footer {
