@@ -49,10 +49,11 @@ h3{
 }
 
 .blueList {
-    color: rgb(255, 255, 255);
+    color: black;
     font-size: 18px;
     font-weight: bold;
     font-family: "Segoe UI",Arial,sans-serif;
+    -webkit-filter: invert(100%);
 }
 
 .blueListItem1{
