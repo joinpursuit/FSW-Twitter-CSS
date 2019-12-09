@@ -193,6 +193,9 @@ form {
   width: 74px;
   font-size: 16px;
 }
+.pw-recovery {
+
+}
 
 #intro {
   display: inline-block;
@@ -221,6 +224,12 @@ form {
   left: 10%;
   margin-bottom: 10%;
   font-size: 16px
+}
+h5 {
+  font-size: 21px;
+  margin-left: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .signUp { 
