@@ -36,11 +36,13 @@ body {
 
 #lsector {
     grid-area: lsector;
-    display: block;
     /* grid-template-rows: ;
     grid-template-columns: repeat(, 1fr); */
     background-color: #39A2F2;
-    z-index: 1
+}
+
+.info {
+    position: relative;
 }
 
 img {
