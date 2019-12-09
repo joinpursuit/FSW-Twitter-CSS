@@ -34,25 +34,35 @@ body {
 
 #lsector {
     grid-area: lsector;
+    display: grid;
+    grid-template-rows: 1fr 44px;
+    grid-template-columns: repeat(2, 1fr);
     background-color: #39A2F2;
     z-index: 1
-    /* overflow: hidden; */
+}
+
+.image {
+    width: 100%;
+    height: 100%
 }
 
 img {
-    opacity: 0.5;
-    overflow: hidden;
+    opacity: 0.25;
+    background-size: cover;
     height: 140vh;
     right: 40vh;
     top: -20vh;
+    object-fit: cover;
     position: absolute;
-    z-index: -1;
+    overflow: hidden;
+    z-index: 0;
 }
 
 
 #rsector {
     grid-area: rsector;
     background-color:white;
+    z-index: 1
 }
 
 form {
@@ -79,6 +89,7 @@ form {
 
 footer {
     grid-area: footer;
+    background: white;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -94,7 +105,6 @@ footer {
     align-content: center;
     justify-content: space-evenly;
     list-style-type:none;
-    z-index: 1
 }
 
 .ftlink {
