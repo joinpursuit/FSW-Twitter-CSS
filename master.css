@@ -105,8 +105,8 @@ body {
     color: white;
 }
 
-#right {
-    
+.highlight {
+    padding-top: 20px;
 }
 
 ol {
