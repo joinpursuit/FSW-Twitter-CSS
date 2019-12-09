@@ -36,13 +36,20 @@ body {
 
 #lsector {
     grid-area: lsector;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* grid-template-rows: ;
     grid-template-columns: repeat(, 1fr); */
     background-color: #39A2F2;
 }
 
+#info {
+    display: block; 
+    /* remove */
+}
+
 .info {
-    display: block;
     color: #fff;
     max-width: 440px;
     padding: 0 16px;
