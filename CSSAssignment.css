@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+:root {
+    --main-color: #1da1f2;
+    --dark-color: #14171a;
+    --footer-link-color: #aab8c2;
+    --footer-top-border-color: #e6ecf0;
+}
+
+*,*::after*,*::before {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+  .container {
+      height: 100vh;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 94vh 6vh;
+  }
+
+  .leftside {
+      background-color: var(--main-color);
+      background-image: url(images/birdbackground.png);
+      background-repeat: no-repeat;
+      background-size: 175%;
+      height: 94vh;
+      grid-column: 1 / 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .lb {
+      list-style-type: none;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 50px 0;
+      font-weight: bold;
+      color: white;
+  }
+
+  .logo {
+      content: url(images/birdlogo.png);
+      height: 3em;
+      width: 5em;
+  }
+
+  .rightside {
+      background-color: white;
+      height: 94vh;
+      grid-column: 2 / -1;
+      grid-row: 1;
+      align-items:center;
+      display:flex;
+      flex-basis:0%;
+      flex-grow:1;
+      flex-shrink:1;
+      height:724px;
+      justify-content:center;
+      line-height:20px;
+      position:relative;
+      text-size-adjust:100%;
+      width:442.5px;
+        
+  }
+
+  h1 {
+    font-size: 27px;
+    line-height: 32px;
+    color: var(--dark-color);
+  }
+
+  .jt {
+      font-size: 16px;
+      font-weight: bold;
+      color: var(--dark-color);
+  }
+
+  .head {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .card {
+      min-width: 300px;
+      padding: 0 60px;
+  }
+
+     .inputs { 
+        margin: 0;
+        padding: 40px;
+    }
+
+    .midmid {
+      margin: 0;
+      padding: 0;
+    }
+
+    .botmid {
+       margin: 0;
+       padding: 0;
+    }  
+
+  .botb {
+      text-align: center;
+      grid-column: span;
+  }
+
+  .botb li {
+      display: inline-block;
+      margin: 0 5px;
+  }
+
+a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--footer-link-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fp {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--footer-link-color);
+}
+
+.fp:hover {
+    text-decoration: underline;
+}
+
+.container .footer {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--footer-top-border-color);
+}
+
+  .search::before {
+    content: url("https://img.icons8.com/android/24/000000/search.png");
+    padding: 15px;
+    -webkit-filter: invert(100%);
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.users::before {
+    content: url("https://img.icons8.com/dotty/24/000000/group-foreground-selected.png");
+    padding: 15px;
+    -webkit-filter: invert(100%);
+    font-size: 22px;
+    margin-right: 10px;
+}
+.bubble::before {
+    content: url("https://img.icons8.com/windows/24/000000/speech-bubble.png");
+    padding: 15px;
+    -webkit-filter: invert(100%);
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.btn {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+.block {
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+.primary {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.outline {
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
