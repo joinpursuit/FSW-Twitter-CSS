@@ -66,6 +66,9 @@ body{
 	background-image: url("images/birdbackground.png");
 	background-repeat: no-repeat;
 	align-items: center;
+	background-size: 1700px;
+	background-position-x: -75px;
+	background-position-y: -150px;
 
 }
 img{
@@ -106,15 +109,16 @@ img{
 }
 
 #signUp{
-	width: 50%;
+	width: 100%;
 	color: white;
 	background-color: #1CA1F2;
 	border-radius: 100px;
 	line-height: 20px;
 	font-size: 20px;
+	margin-bottom: 10px;
 }
 #logIn{
-	width: 50%;
+	width: 100%;
 	color: #1ca1f2;
 	background-color: white;
 	border-radius: 100px;
@@ -123,7 +127,7 @@ img{
 
 }
 #button{
-	padding-bottom: 10%;
+	
 }
 
 header{
@@ -138,9 +142,27 @@ p{
 	font-size: 15px;
 	padding-top:10%;
 }
+#inputs{
+	/* display: flex;
+	justify-content: space-evenly;
+	flex-direction: rows; */
+	margin-top: -350px;
+	margin-bottom:250px;
+    /* width: 210px;
+    padding: 4px;
+    margin: 0;
+    outline: 0; */
+    background-color: #fff;
+    
+    
+}
 footer{
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
 	color: #ACB9C3;
+}
+form{
+	height: 5vh;
+	width: 14vh;
 }
