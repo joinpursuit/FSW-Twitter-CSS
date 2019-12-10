@@ -19,7 +19,6 @@ html {
 }
 
 body {
-    display: flex;
     display: grid;
     grid-template-rows: 1fr 44px;
     grid-template-columns: repeat(2, 1fr);
@@ -37,7 +36,6 @@ body {
 
 #lsector {
     grid-area: lsector;
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,11 +82,11 @@ img {
     background-color:white;
     align-items: center;
     justify-content: center;
+    position: relative;
     z-index: 1
 }
 
 #form {
-    grid-area: rsector;
     display: flex;
     display: grid;
     grid-template-rows: 3fr 1fr;
