@@ -88,12 +88,6 @@ img {
 
 #form {
     display: flex;
-    display: grid;
-    grid-template-rows: 3fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-        "bx1 bx2 bx3"
-        "bx4 bx5 bx6";
     left: 0;
     top: 20px;
     width: 100%;
@@ -104,29 +98,22 @@ img {
 }
 
 .username {
-    grid-area: bx1;
+    margin-right: 12px;
 }
 .password {
-    grid-area: bx2
+    margin-right: 12px;
 }
 
 #username, #password {
     font-size: 14px;
     line-height: 20px;
     padding: 12px;
-    margin-right: 12px;
-    width: 210px;
     box-sizing: border-box;
     margin-top: 12px;
     width: 100%;
 }
 
-.login {
-    grid-area: bx3;
-}
-
 #login {
-    height: 100%;
     padding: 12px;
     width: auto;
     box-sizing: border-box;
@@ -134,11 +121,6 @@ img {
     background-color: #fff;
     border: 1px solid #1da1f2;
     color: #1da1f2;
-}
-
-.forgotpw {
-    grid-area: bx5
-    
 }
 
 #forgotpw {
