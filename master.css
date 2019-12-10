@@ -61,6 +61,7 @@ body {
     background: #1da1f2;
     float: left;
     width: 50%;
+    text-align: center;
     /* grid-column: 1/2; */
   }
 
@@ -80,6 +81,7 @@ body {
     color: white;
     font-size: 14px;
     font-weight: bold;
+    /* margin-top: 300px; */
 }
 
 #birdlogo {
@@ -104,6 +106,7 @@ input {
     height: 30px;
     width: auto;
 }
+
 #search ::before{
     content:url("https://img.icons8.com/ios/25/000000/search--v1.png");
 }
@@ -166,17 +169,31 @@ h2 {
     align-content: center;
     text-decoration: none;
 }
-
-.links:visited{
+#forgotPassword {
+    text-decoration: none;
+}
+#forgotPassword, .links:visited{
     color: grey;
 }
-.links:hover{
+#forgotPassword, .links:hover{
     text-decoration: underline;
 }
 .line button{
     font: 14px;
 }
 
-#birdbackground {
+/* #birdbackground {
     opacity: 0.5;
+} */
+
+.iconify {
+    height: 50px;
+    width: auto;
+}
+
+.itemList {
+    display: block;
+    left: 50%;
+    top: 50%;
+    /* transform: translate(-50%, -50%); */
 }
