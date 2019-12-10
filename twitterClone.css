@@ -103,22 +103,47 @@ img {
     z-index: 2
 }
 
-input {
-    padding: 12px
-}
 .username {
     grid-area: bx1;
-    margin-right: 12px;
-    width: 210px;
 }
 .password {
     grid-area: bx2
 }
-.login {
-    grid-area: bx3
+
+#username, #password {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px;
+    margin-right: 12px;
+    width: 210px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    width: 100%;
 }
+
+.login {
+    grid-area: bx3;
+}
+
+#login {
+    height: 100%;
+    padding: 12px;
+    width: auto;
+    box-sizing: border-box;
+    margin-top: 12px;
+    background-color: #fff;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+}
+
 .forgotpw {
     grid-area: bx5
+    
+}
+
+#forgotpw {
+    color: #aab8c2;
+    font-size: 14px;
 }
 
 .signupblock {
@@ -185,10 +210,6 @@ a.loginbutton:hover{
     text-decoration: none;
 }
 
-.button:hover {
-    color: blue
-}
-
 footer {
     grid-area: footer;
     background: white;
@@ -196,6 +217,7 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: center;
+    border-top: 1px solid #e6ecf0;
     z-index: 1
 }
 
