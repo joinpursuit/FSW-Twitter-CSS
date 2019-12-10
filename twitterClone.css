@@ -37,6 +37,7 @@ body {
 
 #lsector {
     grid-area: lsector;
+    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,8 +70,7 @@ body {
 }
 
 img {
-    opacity: 0.25;
-    position: absolute;
+    opacity: 0.25;;
     height: 140vh;
     right: -80vh;
     top: -20vh;
@@ -87,7 +87,9 @@ img {
     z-index: 1
 }
 
-form {
+
+
+#form {
     display: flex;
     display: grid;
     grid-template-rows: 3fr 1fr;
