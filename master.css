@@ -18,19 +18,22 @@
     width: 50%;
     background-color: rgb(28, 161, 242);
     background-image: url("./images/birdbackground.png");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;  
     color: white;
     float: left;
     margin-top: 0px;
     position: fixed;
-
+    background-size: 900px;
+    text-align: center;
 }
 #links {
     list-style-type: none;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     bottom: 0;
+    font-size: 14px;
+    color: lightgray;
+    text-decoration: none;
 
 }
 
@@ -39,25 +42,28 @@
     border-radius: 100px;
     background-color: rgb(28, 161, 242);
     color:white;
-    width: 250px;
-    line-height: 20px;
+    width: 345px;
+    line-height: 29px;
     padding: 6px, 16px;
     position: relative;
     white-space: wrap;
+    font-weight: bold; 
     
 }
 #login {
+    color: rgb(28, 161, 242); 
     border-radius: 100px;
-    width: 250px;
-    line-height: 20px;
+    width: 345px;
+    line-height: 29px;
     padding: 6px, 16px;
     position: relative;
+    font-weight: bold;
 
 }
 #log {
     border-radius: 25px;
-    width: 50px;
-    height: 35px; 
+    width: 65px;
+    height: 45px; 
 }
 
 #footer { 
@@ -66,16 +72,17 @@
     width: 100%;
     align-items: center;
     color: grey;
+    background-color: white;
 }
 #whiteBird {
-    height: 100px;
+    height: 75px;
     width: auto;
     padding: 0px;
     position: relative;
     text-align: left;
     /* justify-content: center; */
-    margin-top: 20px;
-    margin-right: 250px;
+    margin-top: 40px;
+    margin-right: 275px;
 }
 #content-wrap {
     padding-bottom: 2.5rem;
@@ -85,8 +92,13 @@
 #list {
     margin-top: 200px;
     list-style-type: none; 
-    align-content: center;
-    text-align: center; 
+    text-align: left;
+    font-size: 20px;
+    font-family: "helvetica neue";
+    font-weight: bold; 
+    margin-bottom: 30px;
+    text-align: center;
+    
 
 }
 #happening {
@@ -94,7 +106,8 @@
     text-align: left;
     justify-content: center;
     font-size: 25px;
-    font-family: "helvetica neue"
+    font-family: "helvetica neue";
+    margin-top: 0px;
 }
 #joinTwitter {
     display: flex;
@@ -104,14 +117,12 @@
     font-size: 20px;
 }
     
-}
-#email {
-    height: 100px;
-    width: 150px; 
+#email , #password {
+    height: 45px;
+    width: 220px; 
 
 }
 .iconify {
     height: 30px;
     width: auto;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
