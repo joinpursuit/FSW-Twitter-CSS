@@ -1,4 +1,4 @@
-# Unit 2 Assignment: CSS
+# Twitter Homepage CSS
 
 Your task is to recreate the homepage of [Twitter](https://twitter.com/?lang=en) using only HTML and CSS.
 
@@ -83,9 +83,9 @@ Next create a css file. For today, we'll do all of our styling in one file, but 
 
 You've probably noticed that your browser has already assigned some default styles to your elements. An easy example of this to spot is the * before each li. This is not something that we want. We want to retain 100% control of every style that takes place on our page.
 
-At the top of your css file add a [CSS Reset](https://cssreset.com/scripts/eric-meyer-reset-css/). This will remove all those pesky unwanted styles.
+At the top of your css file add a [CSS Reset](https://cssreset.com/scripts/eric-meyer-reset-css/). This will remove all those pesky unwanted default styles.
 
-When you begin to style it's best to take a mobile first approach. Set twitters home screen to be as small as possible and set your screen to match (if you're truly doing mobile first you should set the view in your inspect to be the smallest screen possible, but for now lets just do the smallest possible size on desktop) Then begin styling.
+When you begin to style it's best to take a mobile first approach. Open your dev tools and drag the browser to be about ~320px wide. Then begin styling. Most phones run from 320-400px in width.
 
 ### Make the UI responsive
 
