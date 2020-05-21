@@ -28,9 +28,14 @@ Footer Section:
 
 Page should have correct title and favicon.  The UI should be responsive.
 
-## Rubric
+> Note: Twitter's homepage has changed significantly since these screenshots were taken, so you'll have to just rely on them instead of being able to look at the site.
 
-![cssAssignmentRubric](./images/cssAssignmentRubric.png)
+## Submission requirements
+
+* Create a new repository on your github. Follow the setup instructions, including adding a README.
+* Complete your project, and push your commits to github.
+* Create a new issue on this repo with your name as the title of the issue. In the body, include a link to your repository.
+* In the README of your repo, write a description of the project and the things you struggled with, and learned during the process. 
 
 ## Scaffold
 
@@ -90,3 +95,7 @@ When you begin to style it's best to take a mobile first approach. Open your dev
 ### Make the UI responsive
 
 After you've completed your replica at the smaller screen, slowly expand Twitter's screen and identify the breakpoints. These are the points where things move, appear / disappear, or change in size. Style for each breakpoint at the bottom of your css file to have a fully responsive site.
+
+## Rubric
+
+![cssAssignmentRubric](./images/cssAssignmentRubric.png)
