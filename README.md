@@ -22,8 +22,8 @@ Blue Section:
 * Tooltip title of bird.
 
 Footer Section:
-* ul with lis. Lis contain a tags.
-* Should wrap, be centerd, correct colors / size.
+* ul with lis. li tags contain `<a>` tags.
+* Should wrap, be centered, correct colors / size.
 * Hover effect should underline. But not on copyright.
 
 Page should have correct title and favicon.  The UI should be responsive.
