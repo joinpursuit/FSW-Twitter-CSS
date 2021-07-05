@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after{box-sizing:border-box;}
+a{text-decoration:none; color:inherit; cursor:pointer;}
+button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
+figure{margin:0;}
+input::-moz-focus-inner {border:0; padding:0; margin:0;}
+ul, ol, dd, li {margin:0; padding:0; list-style:none;}
+h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
+p{margin:0;}
+cite {font-style:normal;}
+fieldset{border-width:0; padding:0; margin:0;}
+/* CSS Reset code provided by Elad Shechter */
+
+html { 
+    font-size: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 44px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "lsector rsector"
+        "footer footer";
+    height: 100vh;
+    width: 100vw;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 1.3; 
+    overflow-y: scroll;
+}
+
+#lsector {
+    grid-area: lsector;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #39A2F2;
+    position:relative;
+}
+
+#info {
+    display: flex;
+    flex-direction: flex-start;
+    position: relative;
+    padding: 0 16px;
+    /* remove */
+}
+
+.info {
+    color: #fff;
+    max-width: 440px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 48px auto;
+}
+
+.imgwrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+img {
+    opacity: 0.25;;
+    height: 140vh;
+    right: -80vh;
+    top: -20vh;
+    z-index: 0;
+}
+
+#rsector {
+    grid-area: rsector;
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1
+}
+
+#form {
+    display: flex;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 600px;
+    z-index: 2
+}
+
+.username {
+    margin-right: 12px;
+}
+.password {
+    margin-right: 12px;
+}
+
+#username, #password {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    width: 100%;
+}
+
+#login {
+    padding: 12px;
+    width: auto;
+    box-sizing: border-box;
+    margin-top: 12px;
+    background-color: #fff;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+}
+
+#forgotpw {
+    color: #aab8c2;
+    font-size: 14px;
+}
+
+.signupblock {
+    max-width: 350px;
+}
+
+.rsectortitle {
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.rsectorsubtitle {
+    margin-top: 48px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.signupbutton {
+    width: 100%;
+    display: block;
+    margin-bottom: 16px;
+    background-color: #1da1f2;
+    border: 1px solid #1da1f2;
+    color: #fff;
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+
+a.signupbutton:hover{
+    text-decoration: none;
+}
+
+.loginbutton {
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+    margin-bottom: 16px;
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+
+a.loginbutton:hover{
+    text-decoration: none;
+}
+
+footer {
+    grid-area: footer;
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    border-top: 1px solid #e6ecf0;
+    z-index: 1
+}
+
+.footerUL {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    list-style-type:none;
+}
+
+.ftlink {
+    color: #aab8c2;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
