@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Quicksand&display=swap');
+* {
+/*     border: 1px solid black; */
+}
+#root {
+    background: url('images/birdbackground.png') fixed no-repeat;
+    background-color: #1da1f2;
+    background-size: 100vw 100%;
+    background-position: fixed;
+    font-size: 14px;
+/*     height: 600px; */
+    font-family: 'Lexend Deca', sans-serif;
+}
+#white {
+    height: 326px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid rgb(230, 228, 228);
+}
+#login-container {
+    width: 350px;
+/*     border: 1px solid black; */
+}
+.logIn-small {
+    color: #1da1f2;
+    padding: 0px 12px;
+    border-radius: 35px;
+    border: 1px solid #1da1f2;
+    font-weight: 550;
+    font-size: .85em;
+    height: 40px;
+    background: white;
+}
+#header {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+/*     border: 1px solid black; */
+    margin: 16px 0 12px;
+}
+#bird-logo {
+    background: red;
+    background-image: url('images/birdlogo.png');
+    background-size: 275%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45px;
+    width: 45px;
+}
+.header-large {
+    font-size: 1.85em;
+    font-weight: 900;
+    line-height: 1.2;
+}
+.header-medium {
+    font-size: .95em;
+}
+#blue {
+    height: 600px;
+}
+#LogIn-form {
+    font-size: 1.3em;
+/*     background: red; */
+    margin: 45px 0 10px 0;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.btn-login-medium {
+    padding: 7.5px;
+    font-size: .75em;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #1da1f2;
+    font-weight: 600;
+}
+.sign-up {
+    color: white;
+    background: #1da1f2;
+}
+.log-in {
+    color: #1da1f2;
+    background: white;
+}
+
+/* BLUE PART */
+
+#blue {
+/*     background: url('images/birdbackground.png') fixed no-repeat; */
+/*     background: scroll; */
+    background-position: 50px -13px;
+/*     background-size: 775px; */
+/*     background-size: contain; */
+    color: white;
+    height: 412px;
+    display: flex;
+    justify-content: center;
+}
+#content-container {
+    padding: 30px 10px;
+    width: 440px;
+}
+#content-container > h1 {
+    padding-bottom: 20px;
+}
+#content-container > h2 {
+    font-size: 1.28em;
+    padding-bottom: 35px;
+}
+.item {
+    padding: 18px 0;
+}
+.icon {
+    padding-right: 10px;
+    width: 50px;
+}
+i {
+    font-size: 2.4em;
+}
+.item-text {
+    display: inline-block;
+}
+.item-title {
+    display: inline-block;
+    font-size: 1.25em;
+}
+.item-description {
+/*     display: inline-block; */ 
+    padding: 5px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* FOOTER */
+#footer-container {
+    height: 88px;
+    background-color: white;
+}
+#footer-list {
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: #adbac4;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .84em;
+}
+li {
+    padding: 0 9px;
+}
+#copyright {
+    color: #adbac4;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .84em;
+}
+#login-form {
+    display: none;
+}
+@media only screen and (min-width: 800px) {
+
+    #footer {
+        grid-area: footer;
+        height: 100%;
+    }
+    #footer-container {
+        height: 65px;
+    }
+    #white {
+        grid-area: white;
+        height: calc(100vh - 65px);
+        display: flex;
+        align-items: center;
+        width: 50vw;
+    }
+    #blue {
+        grid-area: blue;
+        height: calc(100vh - 65px);
+        display: flex;
+        align-items: center;
+        width: 50vw;
+    }
+    
+    #root {
+        display: grid;
+        grid-template: 'blue white' 'footer footer';
+
+    }
+    #content-container {
+        height: 412px;
+        padding-top: 70px;
+    }
+    #login-container {
+        height: 326px;
+    }
+    #content-container {
+        font-size: .95em;
+        padding-bottom: 0;
+        margin: 0;
+    }
+}
+@media only screen and (min-width:1138px) {
+    #login-form {
+        display: block;
+        position: absolute;
+        top: 30px;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+    #login-form input[type='text'] {
+        box-sizing: border-box;
+        padding: 15px 0 15px 15px;
+        width: 230px;
+        font-size: 1.1em;
+        border: 1px solid rgb(237, 237, 237);
+        border-radius: 3px;
+        margin-right: 13px;
+        height: 50px;
+    }
+    .logIn-small {
+        font-size: 1.1em;
+        font-weight: 500;
+        padding: 5px 15px;
+        height: 50px;
+    }
+    #login-hide {
+        display: none;
+    }
+    #forgot-password {
+        margin-top: 5px;
+        font-size: 1.25em;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #login-container {
+        font-size: 1.25em;
+    }
+    #login-container h1 {
+        margin-top: 10px;
+    }
+    #bird-logo {
+        height: 50px;
+        width: 50px;
+    }
+    #header {
+        margin: 0 0 0 0;
+    }
+    #LogIn-form {
+        margin-top: 65px;
+    }
+}
