@@ -1,0 +1,316 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  display: flex;
+  flex-flow: column;
+  min-height: 100%;
+}
+
+body {
+  height: 93vh;
+  width: 100%;
+}
+
+#birdback{
+  background-repeat:no-repeat;
+  position: absolute;
+  width:80%;
+  height: 100%;
+  margin-left: 7%;
+  margin-bottom: 20%;
+  z-index: 0;
+}
+
+#birdback img{
+  height: 110vh;
+  right: -80vh;
+  top: -50vh
+}
+
+#wholePage {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+}
+
+#blue {
+  display: flex;
+  background: #1DA1F2; 
+  opacity: 0.80;
+  width: 67%;
+  min-height: 100%;
+  float: left;
+  z-index: 1; 
+}
+#follow {
+    align-items: center;
+    justify-content: center;
+    margin-top: 35%;
+    width: 357px;
+    height: 146px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 25%;
+   
+}
+
+#follow ul li {
+  color: white;
+  padding-top: 5pxpx;
+  padding-bottom: 1%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#followInterest::before {
+    content: url("https://img.icons8.com/android/24/000000/search.png");
+    margin-right: 15px;
+    -webkit-filter: invert(100%);
+   
+
+}
+
+#talk::before{
+    content: url("https://img.icons8.com/dotty/24/000000/group-foreground-selected.png");
+    margin-right:15px;
+    -webkit-filter: invert(150%);
+  
+}
+
+#conversation::before{
+  content: url("https://img.icons8.com/windows/24/000000/speech-bubble.png");
+  margin-right: 15px;
+  -webkit-filter: invert(100%);
+
+}
+
+#follow li:hover {
+  cursor: pointer;
+}
+
+i {
+  width: 25px;
+  padding-left: 0;
+}
+
+#white {
+  background: white;
+  width: 50%;
+  float: right;
+  min-height: 100%;
+  display: grid;
+  justify-content: center;
+  padding: 10px;
+  grid-column: 2 / -1;
+  z-index: 1;
+
+}
+
+form {
+  padding: 0 20px 0 20px;
+  display: grid;
+  grid-template-columns: 4fr 4fr 1fr;
+  grid-template-rows: 3fr 2fr;
+}
+
+.input {
+  margin: 6px 3px 0px 2px;
+  border: solid lightgray 1px;
+  font-size: 16px
+}
+
+.userLogin {
+  padding-top: 5px;
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+
+.logIn {
+  border-radius: 25px;
+  border: #1da1f2 2px solid;
+  background-color: white;
+  color: #1da1f2;
+  text-align: center;
+  padding: 0 5px;
+  width: 74px;
+  font-size: 16px;
+}
+.pw-recovery {
+
+}
+
+#intro {
+  display: inline-block;
+  width: 78%;
+  font-weight: bold;
+  font-size: 34px;
+  padding-top: 25px;
+}
+
+
+
+#logo2 {
+  
+  display: inline-block;
+  margin: -46px;
+  margin-bottom: -28px;
+  width: 150px;
+  height: 60px;
+  margin-left: 19px;
+}
+
+#middle {
+  width: 80%;
+  position: relative;
+  right: 10%;
+  left: 10%;
+  /* margin-bottom: 2%; */
+  font-size: 16px;
+}
+
+#lastSection {
+  margin-left: 100px;
+  margin-top: 0px;
+  align-items: center;
+}
+
+h5 {
+  font-size: 21px;
+  margin-left: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.signUp input { 
+  background-color: #1DA1F2;
+  height: 25px;
+  width: 60%;
+  text-align: center;
+  border: rgb(41, 167, 245) 2px solid;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.logIn2 input{ 
+  height: 25px;
+  width: 60%;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.signUp:hover, .logIn2:hover {
+  background-color: rgb(9, 130, 206);
+  border-color: rgb(9, 130, 206);
+  cursor: pointer;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 7%;
+  background: #FFFFFF;
+  border-top: 0.7px solid grey;
+  display: flex;
+} 
+
+#footer .footerList {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: small;
+}
+
+.footerList {
+  /* width: 90%;
+  margin-left: 5%;
+  justify-items: space-around; */
+  list-style-type: none;
+}
+
+.footer_li {
+  /* font-size: small;
+  display: inline;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: darkgrey; */
+
+  padding: 2px;
+  
+}
+
+.footer_li a{
+ text-decoration: none; 
+  color: darkgrey;
+}
+
+
+
+.footer_li:hover { 
+   text-decoration: underline; 
+}
+
+#copyright:hover {
+  text-decoration-line: none;
+} 
+
+
+
