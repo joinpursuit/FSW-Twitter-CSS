@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+#container{
+  height: 85%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.Footer {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  padding: 0 9px 0 9px;
+  font-size: 12px;
+  color: gray;
+}
+
+.Footer_list{
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #fff;
+  border-top: 1px solid #e6ecf0;
+  padding: 4px;
+} 
+ ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: small;
+
+} 
+.Footer_list:hover{
+  text-decoration: underline;
+}
+
+.leftside {
+  height: 100%;
+  /* justify-content: center; */
+  float: left;
+  width: 50%;
+  position: relative;
+  background-image: url("/Users/bsihame/Desktop/core/unit2/unit2Assignment_css/Pursuit-Core-Web-Twitter-CSS-Assignment/birdbackground copy.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  background-color: #1DA1F2;
+}
+.rightside{
+  background-color: white;
+  width: 50%;
+  position: relative;
+} 
