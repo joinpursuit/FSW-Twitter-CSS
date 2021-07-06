@@ -1,0 +1,81 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90% 10%;
+    height: 100%;
+}
+
+#white-side {
+    position: static;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 100px;
+    top: 0;
+    bottom: 5%;
+    left: 50%;
+    grid-row: 1;
+    grid-column: 2;
+    background-color: white;
+}
+
+button {
+    padding: 5px 175px;
+    font-size: medium;
+    border-radius: 15px;
+    border: 1px solid blue;
+    background-color: white;
+}
+
+.item {
+    display: block;
+}
+
+#blue-side {
+    text-align: left;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 5%;
+    right: 50%;
+    grid-row: 1;
+    grid-column: 1;
+    background-color: rgb(169, 169, 255);
+    background-image: url(./images/birdbackground.png);
+    background-size: cover;
+    color: white;
+}
+
+.item-top {
+    display: inline-block;
+}
+
+#blue-content-block {
+    padding: 50px;
+
+}
+
+.listyMcMistface {
+    display: inline-flex;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    grid-column: 1 / 3;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+li {
+    padding: 5px;
+    color: grey;
+}
+
+#small-bird-logo {
+    width: 75px;
+}
