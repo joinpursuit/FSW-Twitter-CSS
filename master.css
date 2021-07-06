@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#split{
+	display: flex;
+	flex-direction: row;
+	vertical-align: bottom;
+	justify-content: center;
+
+}
+.left{
+	display: flex;
+	justify-content: center;
+	flex-flow: row;
+	width: 50%;
+	height:95vh;
+	background-color:#1CA1F2;
+	background-image: url("images/birdbackground.png");
+	background-repeat: no-repeat;
+	align-items: center;
+	background-size: 1700px;
+	background-position-x: -75px;
+	background-position-y: -150px;
+
+}
+img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75px;
+}
+.right{
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+	/* background-image: url("images/birdlogo.png"); */
+	background-repeat: no-repeat;
+	justify-content: center;
+	width: 50%;
+	height:95vh;
+}
+
+
+#list li{
+
+ color: white;
+ padding-bottom: 10%
+
+ }
+
+ #smallLogIn{
+	display: flex;
+	justify-content: right;
+	background-color: white;
+	color: #1CA1F2;
+	border-radius: 25px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 16px;
+	
+}
+
+#signUp{
+	width: 100%;
+	color: white;
+	background-color: #1CA1F2;
+	border-radius: 100px;
+	line-height: 20px;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+#signUp button:hover{
+
+	background: #026CBF;
+}
+
+#logIn{
+	width: 100%;
+	color: #1ca1f2;
+	background-color: white;
+	border-radius: 100px;
+	line-height: 20px;
+	font-size: 20px;
+
+}
+#button{
+	
+}
+
+header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+p{
+	font-weight: bold;
+	font-size: 15px;
+	padding-top:10%;
+}
+#inputs{
+	/* display: flex;
+	justify-content: space-evenly;
+	flex-direction: rows; */
+	margin-top: -350px;
+	margin-bottom:250px;
+    /* width: 210px;
+    padding: 4px;
+    margin: 0;
+    outline: 0; */
+    background-color: #fff;
+    
+    
+}
+footer{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	color: #ACB9C3;
+}
+footer a:hover{
+	
+	text-decoration: underline;
+	
+}
+form{
+	height: 5vh;
+	width: 14vh;
+}
+/* et-footer-nav li a:hover { text-decoration: underline;} */
