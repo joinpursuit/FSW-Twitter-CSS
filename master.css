@@ -1,0 +1,255 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+
+body {
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Reset */
+
+body{
+
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* grid-template-rows:  2; */
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#Main{
+    /* grid-row-start: 1; */
+    /* grid-template-columns: 2; */
+    
+    /* flex-direction: column; */
+    display: flex;
+    /* flex-direction: column; */
+
+}
+#birdIcon{
+    height: 10%;
+    width: 10%;
+}
+
+
+
+.icons{
+    filter: invert(100%);
+    width: 5%;
+    
+}
+#exploreDiv{
+    /* justify-content: center; */
+    /* max-width: 350px; */
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    
+    
+}
+
+#exploreUl li{
+    /* text-align: left; */
+}
+.twitterIcon-bird{
+
+    height: 140vh;
+    right: -80vh;
+    top: -20vh;
+    max-width: none;
+    z-index: 0;
+    /* position: absolute; */
+}
+#exploreUl{
+    /* text-align: center;  */
+    /* align-items: center;  */
+    /* margin: 150px; */
+    /* justify-content: ; */
+    /* z-index: 2; */
+    
+    
+}
+
+#explore {
+    display: flex;
+    align-items: center;
+    background-color: #1da1f2;
+    color: white;
+    background-image: url("./images/birdbackground.png");
+    
+    background-repeat: no-repeat;
+    background-position-x: 300%;
+    /* background-position: right; */
+    height: 95vh;
+    width: 50%;
+ 
+}
+
+input{
+    width: 150px;
+    height: 25px;
+    
+    
+}
+#log{
+    
+}
+
+#account{
+    font-weight: bold;
+    /* grid-column-start: 2; */
+    align-items: center;
+    width: 50%;
+    height: 95vh;
+    display: flex;
+    position: relative;
+    
+    
+}
+#formDiv{
+   
+   
+
+}
+form{
+/* 
+    display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    display: flex;
+    flex-direction: row;
+    left: 0%;
+    top: 20%;
+    position: absolute;
+    width: 100%;
+}
+/* form a {
+    margin: 5px 45%;
+    white-space: nowrap;
+    font-size: 13px;
+    color: #AAB8C2;
+} */
+
+#forgot{
+    text-decoration: none;
+    font-size: 10px;
+    color: #aab8c2;
+}
+#log{
+    color: #1DA1F2;
+    border-radius: 14px;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid #1DA1F2;
+    width: auto;
+
+}
+
+#joinDiv{
+   /* background: crimson; */
+   justify-content: space-around;
+   max-width: 350px;
+   /* display: flex; */
+  /* justify-items: center; */
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  
+  
+  
+
+}
+#joinDiv p {
+    margin: 16px;
+}
+#signup{
+    color:white;
+    background:#1DA1F2 ;
+    margin-bottom: 16px;
+    display: block;
+ 
+}
+#login{
+    color: #1DA1F2;
+
+   
+}
+
+.btn{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 24px;
+    border: 1px solid #1DA1F2;
+}
+
+.btn :hover{
+
+}
+
+footer{
+    
+    /* grid-row-start: 2; */
+    justify-content: space-around;
+    height: 10%;
+}
+
+
+#footerUl{
+    font-size: small;
+    display: flex;
+    justify-content: space-around;
+    color: #aab8c2;
+    
+}
+footer ul a {
+    color: #aab8c2;
+    text-decoration: none;
+
+}
