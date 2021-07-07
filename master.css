@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    display: flex;
+    flex: wrap;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/* #container {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 50%)
+} */
+
+#left {
+    background: #1da1f2;
+    float: left;
+    width: 50%;
+    text-align: center;
+    /* grid-column: 1/2; */
+  }
+
+#right {
+    /* display: block; */
+    float: right;
+    width: 50%;
+    align-items: right;
+    background: white;
+    /* grid-column-end: 2/3; */
+    /* max-width: 350px; */
+}
+.list {
+    display: inline-flex;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    /* margin-top: 300px; */
+}
+
+#birdlogo {
+    height: 65px;
+    width: auto;
+}
+
+
+button {
+    border-radius: 100px;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    /* border-radius: 25px; */
+}
+
+input {
+    height: 30px;
+    width: auto;
+}
+
+#search ::before{
+    content:url("https://img.icons8.com/ios/25/000000/search--v1.png");
+}
+#signup{
+    background-color: #1da1f2;
+    color: white;
+    width: 300px;
+}
+.login {
+    background-color: white;
+    color:#1da1f2;
+}
+#login2 {
+    width: 300px;
+}
+#login {
+    width: 50px;
+}
+form {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+}
+#text {
+    text-align: left;
+    font-weight: bold;
+}
+h1{
+    line-height: 32px;
+    font-size: 27px;
+}
+h2 {
+    font-size: 18px;
+}
+/* #footer {
+    display: inline;
+} */
+
+.line {
+    display: inline;
+    align-items: center;
+}
+
+#ul{
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    word-spacing: 10%;
+    color: grey;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+}
+
+.links{
+    display: grid;
+    justify-content: space-around;
+    align-self: baseline;
+    align-items: stretch;
+    align-content: center;
+    text-decoration: none;
+}
+#forgotPassword {
+    text-decoration: none;
+}
+#forgotPassword, .links:visited{
+    color: grey;
+}
+#forgotPassword, .links:hover{
+    text-decoration: underline;
+}
+.line button{
+    font: 14px;
+}
+
+/* #birdbackground {
+    opacity: 0.5;
+} */
+
+.iconify {
+    height: 50px;
+    width: auto;
+}
+
+.itemList {
+    display: block;
+    left: 50%;
+    top: 50%;
+    /* transform: translate(-50%, -50%); */
+}
