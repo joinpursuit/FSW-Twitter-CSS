@@ -1,0 +1,159 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(600px,auto);
+    bottom: 0%;
+}
+h1{
+    font-size: 27px;
+    line-height: 32px;
+    margin-top: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-left: 50px;
+    padding-right: 90px;
+    margin-bottom: 0;
+}
+h3{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #14171a;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 16px auto;
+    margin-top: 48px;
+    margin-left: 50px;
+
+}
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-top: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  ul {
+      padding-inline-start: 0px; 
+  }
+  
+  li {
+      list-style: none;
+  }
+  
+#blue{
+    background-image: url("./images/birdbackground.png" );
+    background-color: rgb(28,161,242);
+    background-repeat: no-repeat;
+    background-position: 10% 10% ;
+    background-size: 195%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#blue ul li {
+    font: bold;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 10%;
+}
+
+#white{
+    grid-column: 2/2;
+    grid-row: 1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#white #white1{
+   padding-bottom: 80px;
+   text-align: center;
+}
+
+img{
+
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 25%;
+    padding-bottom: 0%;
+}
+.copyright :hover{
+    list-style : none;
+    text-decoration: none;
+}
+footer ul :hover {
+   text-decoration: underline;
+ }
+footer ul li {
+    color: lightgray;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+ .copyright{
+    list-style : none;
+    text-decoration: none;
+}
+
+ 
+button {
+    background-color: rgb(6, 190, 247);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+  }
+  #login {
+    background-color: white; 
+    color: rgb(6, 190, 247); 
+    border: 2px solid rgb(6, 190, 247);
+   
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  #btn1{
+    background-color: white; 
+    color: rgb(6, 190, 247); 
+    border: 1px solid #1da1f2;
+    padding: 10px 2px;
+    cursor: pointer;
+    width: 10%;
+    border-radius: 12px;
+    margin-left: 0%;
+  }
+  #li1::before{
+    content: url("https://img.icons8.com/metro/26/000000/search.png");
+    margin-right: 10px;
+    -webkit-filter: invert(100%);
+  }
+  #li2::before{
+    content: url("https://img.icons8.com/wired/28/000000/conference-call.png");
+    margin-right: 10px;
+    -webkit-filter: invert(100%);
+  }
+  
+  #li3::before{
+    content: url("https://img.icons8.com/material-outlined/24/000000/topic.png");
+    margin-right: 10px;
+    -webkit-filter: invert(100%);
+  }
+  
+  
+  
