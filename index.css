@@ -1,0 +1,118 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+p, a, h1, h2, h3, li, span {
+    font-family: "Open Sans", sans-serif;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 85vh 15vh;
+}
+
+.container .blue {
+    background-color: #1da1f2;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .blue ul li {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 50px 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.container .blue ul li .icon {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.container .white {
+    background-color: #ffffff;
+    grid-column: 2 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .white .card {
+    min-width: 300px;
+    padding: 0 60px;
+}
+
+.container .white .card .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .white .card .head .logo-icon {
+    font-size: 3em;
+    color: #1da1f2;
+}
+
+.container .white .card h1{
+    font-size: 27px;
+    line-height: 32px;
+    color: #14171a;
+}
+
+.container .white .card p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #14171a;
+}
+
+.container .footer {
+    grid-column: 1 / -1;
+    border-top: 1px solid #e6ecf0;
+}
+
+.container .footer ul {
+    text-align: center;
+}
+
+.container .footer ul li {
+    display: inline-block;
+    margin: 0 5px
+}
+
+.container .footer ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #aab8c2;
+}
+
+button.btn {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+button.block {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+button.primary {
+    background-color: #1da1f2;
+    color: #ffffff;
+}
+
+button.outline {
+    background-color: #ffffff;
+    color: #1da1f2;
+    border: 1px solid #1da1f2;
+}
+
