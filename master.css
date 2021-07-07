@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.home-container {
+    height: 93vh;
+    display: flex;
+    flex-direction: row; /* check back later */
+    width: 100%;
+}
+
+#blue {
+    background-color: #1da1f2;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("images/birdbackground.png");
+    background-repeat: no-repeat;
+    background-size: 145%, 135%;
+    background-blend-mode: soft-light;
+    border-bottom: 1px #e6ecf0 solid;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.bluelis {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    justify-content: left;
+    padding-bottom: 50px;
+}
+
+.bluelis i {
+    margin-right: 10px;
+}
+.mid-blue-el {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#fyi::before{
+    content: url("https://img.icons8.com/android/24/000000/search.png");
+}
+
+#overSizedBird img {
+    width: 200%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#white {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px #e6ecf0 solid;
+}
+
+#whiteLogoDiv {
+    width: 200px;
+    height: 120px;
+    display: flex;
+    text-align: center;
+}
+
+#whiteLogo {
+    height: 65%;
+    margin: 50px -40px;
+}
+
+#jointTwitter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 27px;
+    line-height: 32px;
+}
+
+.topbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+header {
+    padding: 25px 100px;
+}
+
+input {
+    height: 15px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: #fff;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+}
+
+#headLogin {
+    background-color: #fff;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+    border-radius: 50px;
+    padding: 7px;
+    font-weight: 700;
+    font-size: 14px;
+    width: 75px;
+    height: 50px;
+}
+.forgotP {
+    display: flex;
+    flex-direction: column;
+    font-size: 9px;
+}
+.forgotPassword {
+    color: #bad2e0;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 6px 16px;
+    border-radius: 100px;
+    line-height: 20px;
+}
+
+.btn.large {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #1da1f2;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    border: none;
+}
+
+.btn.large:hover {
+    background-color: #104b6f;
+}
+
+.btn.large.secondary {
+    background-color: white;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+}
+
+.btn.large.secondary:hover {
+    background-color:#bad2e0;
+}
+.mid-section {
+    padding: 0 25%;
+}
+
+.joinTwitter h1 {
+    padding-bottom: 35px;
+    font-size: 27px;
+}
+
+.joinTwitter h3 {
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+
+footer {
+    background-color: white;
+    padding: 0 10px;
+    padding-top: 15px;
+}
+
+footer a {
+    color: #aab8c2;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#footerEl {
+    list-style-type: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 50px;
+}
